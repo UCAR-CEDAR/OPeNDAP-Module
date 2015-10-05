@@ -1,0 +1,46 @@
+
+$Id: NEWS 14029 2006-06-29 18:10:44Z pwest $
+
+Version 2.3.3
+
+Up to date with libdap 3.11.x and bes 3.9.x
+
+Updated storage container to find Madrigal data. This data is found in a
+different base directory than the cedar data, but is still all in a
+single directory (not in the madrigal data structure)
+
+Version 2.3.2
+
+Up to date with libdap 3.10.x and bes 3.8.x
+
+Version 2.3.0
+
+Kinst and parameter information is now retrieved from the database tables
+tbl_instrument and tbl_parameter_code.
+
+Re-wrote the database access classes to be more configurable and to be more
+like php database access. Data members retreived from a select call can be
+accessed from the result set using an overloaded operator->.
+
+Moved user authentication to a new database, now using table cedar_sessions
+in mediawiki database rather than tables in CEDARAUTHEN database.
+
+Removed use of AutoPtr classes created for cedar and now using built in C++
+autoptr class with vector instances rather than arrays of c types. Using
+arrays of c types forced us to create our own class so that the destructor
+would use the array delete call.
+
+Upgrading software for use with libdap 3.8.0 and bes 3.6.1
+
+Version 2.1.0
+
+This version of the Cedar handler includes an executable for use with
+Server3 and a shared-object library (aka module) for use with Server4. This
+is a source release to support the Server4 1.2 beta release and has not been
+tested with Server3, although there should be no problems.
+
+This software has been built using gcc 3.2.3 and gcc 4.0.1. It requires the
+user of autoconf 2.59 or newer and was built using automake 1.9.6.
+
+The current release of the Cedar software is used as an Apache module and
+can be used at cedarweb.hao.ucar.edu.

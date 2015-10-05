@@ -1,0 +1,449 @@
+CATALOG AND HEADER RECORD CORRESPONDING TO: mfp920504a
+
+LTOT	KREC	KINST	KINDAT	IBYRT	IBDTT	IBHMT	IBCST	IEYRT	IEDTT	IEHMT	IECST	LPROL	JPAR	MPAR	NROW
+8040	3002	5340	7001	1992	504	34	3700	1992	530	822	5200	16	4	16	N/A
+Character portion of the header record follows:                                 
+C                                                                               
+C Basic Instrument and Analysis description:                                    
+C                                                                               
+C     The Millstone Hill Fabry Perot interferometer is operated by MIT in       
+C cooperation with the University of Pittsburgh.  The interferometer is located 
+C near the Millstone Hill incoherent scatter radar at latitude 42 degrees 37    
+C minutes North (42.62) and longitude 71 degrees 27 minutes West (-71.45).      
+C Mean local solar time differs from UT by -(4 hour 46 minutes).  The local     
+C magnetic field has a 15 degree variation to the West and an inclination of    
+C 72 degrees.                                                                   
+C                                                                               
+C     The instrument was built at the University of Pittsburgh and is similar   
+C to the previous description (Sipler et. al., Planet. Space Sci., v31, p53,    
+C (1985)).  The instrument is a multiple aperture pressure scanned device,      
+C using a photomultiplier detector.  The multiple aperture collects light       
+C from several interference orders simultaneously, thereby improving the light  
+C throughput (Biondi et. al., Appl. Opt. v24, p232, (1985)).  Pressure scanning 
+C is performed by a stepping motor driven piston, which is driven at a          
+C constant rate to provide a triangular pressure ramp.                          
+C                                                                               
+C     Spatial scanning of the interferometer is performed by a two mirror       
+C pointing head which allows us to select any point in the sky for observation. 
+C Typically, a 5 position scan is used: a vertical measurement and 4            
+C measurements at an elevation of 30 degrees from the horizon looking at        
+C either the cardinal points or at 45 degrees from the cardinal points          
+C (azimuths 45, 135, 225 and 315).  This latter sequence was made the standard  
+C mode as of the spring of 1990, since it provides 2 orthogonal vector          
+C observations at each of two different latitudes.  This sequence is marked     
+C on some data sets as the "45 degree pointing head sequence".                  
+C                                                                               
+C     Data are collected on both the upward and downward ramps.  The data       
+C are added synchronously until either (1) the required signal is obtained,     
+C (2) a large background is observed or (3) a time limit (typically about       
+C 10 minutes) is reached.  To minimize pressure sensor hysteresis effects,      
+C the upward and downward scans are summed separately.  A frequency             
+C stabilized HeNe laser (632.8165 nm) is used to measure the instrumental       
+C response and to monitor instrumental drifts.                                  
+C                                                                               
+C     Analysis of the data is based on the methods used at the University of    
+C Pittsburgh.  The analysis is a three step process.  First, all the data from  
+C the frequency stabilized laser are fit to a parameterized Airy function,      
+C producing a table of the instrumental parameters as a function of time        
+C throughout the night.  Second, a parabolic numerical least squares fitting    
+C process is then used on the nightglow data, based on the measured             
+C instrumental parameters.  This method gives 4 parameters:  a doppler shift    
+C of the nightglow from the shift in the measured peak, a relative intensity    
+C of the nightglow from the signal integrated over the peak, an effective       
+C temperature of the neutral atmosphere from the doppler width of the measured  
+C spectrum and a continuum background signal from the baseline of the profile.  
+C In the third analysis step, the doppler shift of the nightglow line is        
+C interpreted in terms of a wind.                                               
+C                                                                               
+C     Log10 relative emission intensity (parameter 2506) is the integration of  
+C the fitted line profile over the free spectral range of the instrument.       
+C This is only a relative intensity parameter, intended for comparison of       
+C intensities during a single night, or perhaps over periods of a week or two.  
+C Changes or drifts in sensitivity are not removed from this number, so         
+C comparisons between different nights are not advised.  An order of magnitude  
+C estimate of the calibration is 10 of these units per rayleigh, however, this  
+C is only a very rough approximation.                                           
+C                                                                               
+C     Winds are calculated by measuring the difference in line position         
+C between the fitted line and a zero velocity reference.  The zero velocity     
+C reference is generated by taking all the fitted lines from vertical           
+C measurements and smoothing and interpolating them as a function of time.      
+C This assumes that the vertical velocity is small compared to the resolution   
+C of the interferometer.  For nights in which the quality of the vertical       
+C measurements is poor, or in which there are not enough vertical measurements  
+C for a good smoothed reference, the vertical measurements may be supplemented  
+C by an average of measurements in opposite directions.  This assumes that the  
+C wind field is uniform over the observation points, i.e. without divergences.  
+C The method used to obtain the vertical reference is flagged by KINDAT (see    
+C the end of this record).                                                      
+C                                                                               
+C     Since data from both the upward and downward pressure ramps are           
+C analyzed separately, there are generally 2 wind and temperature measurements  
+C at each time, which are combined to give a single wind and temperature.       
+C The final parameter is the geometric mean of the original 2 points.  The      
+C uncertainties could be reduced by a factor of the square root of 2 if the     
+C individual uncertainties were the same.  Another measure of the uncertainty   
+C is the difference between upward and downward ramps.  This is combined with   
+C the individual statistical uncertainties by taking half of the square root    
+C of [(the sum of the squares of the uncertainties) plus (the square of the     
+C difference)].  The resulting value is presented in these data as the          
+C uncertainty.                                                                  
+C                                                                               
+C     The smoothing and interpolation algorithm used in the analysis is a       
+C Hanning filter.  This filter is essentially a weighted sliding average.       
+C The weighting function is W(t) = 0.5 * (1.0 + cos (pi * t / t0)) in           
+C the range (t - t0) < t < (t + t0), and W(t) = 0 elsewhere, so that t0 is      
+C seen to be the smoothing width.  This filter effectively eliminates high      
+C frequencies without introducing ringing or peaks in the frequency response.   
+C                                                                               
+C     Data are presented in two records: "direct" and "derived" data.           
+C Geographic winds taken from observations in the cardinal directions are       
+C considered direct measurements.  This header record deals only with the       
+C direct data.  For a description of the derived data, see the header record    
+C for derived data (KINDAT = 17001 or 17002).                                   
+C                                                                               
+C     Uncertainties in the derived parameters are purely statistical, and do    
+C not reflect possible systematic errors.  The wind uncertainty is calculated   
+C from the data by considering the accuracy of determination of the center of   
+C gravity of a line (Hernandez, "Fabry-Perot Interferometers", Cambridge        
+C University Press, 1986).  Temperatures and temperature errors are estimated   
+C by taking a fourier cosine transform of the data and fitting the logarithm    
+C of the coefficients to a straight line (as described in Hernandez, op. cit.)  
+C The slope of the line gives a temperature estimate and the error in the slope 
+C gives the uncertainty in the temperature.  The temperature derived from the   
+C slope is used as a first estimate in the parabolic least squares fitting      
+C process.    If the temperature determined from the slope is outside of        
+C reasonable limits, the fitting process starts at 1000K.  If the temperature   
+C uncertainty is greater than 300K, the temperature is listed as missing data.  
+C Such temperatures are typically from very noisy data and are considered       
+C unreliable.                                                                   
+C                                                                               
+C     Due to some problems with the uniformity of the response of the           
+C interferometer over the aperture, some of the temperature determinations      
+C made before June 1989 may have a systematic bias towards high temperatures.   
+C Light passing through the center of the interferometer is collected more      
+C efficiently than light passing through the edge.  Any difference between the  
+C collection of light from the nightglow and the calibrating laser will result  
+C in a difference between the effective instrumental function (for the          
+C nightglow) and the measured instrumental function (from the laser             
+C measurements).  Given the observed spherical bowing of the interferometer     
+C plates and the observed differences between the light collection of the       
+C laser and white light, this will mean that the measured instrumental          
+C function is narrower than the effective instrumental function, so that        
+C a calculation of temperature will lead to a number which is high.  Any        
+C data for which this is considered a problem will be identified by a note      
+C in a catalogue record associated with the data set.  Measurements of the      
+C relative efficiency for the laser and white light were made in July 1989,     
+C and the instrument was adjusted to eliminate the problem.                     
+C                                                                               
+C    Due to a failure of the stabilized laser, data were taken between          
+C 891116 and 900113 using an unstabilized laser.  Wind data were calculated     
+C from the pressure shifts directly, without reference to the laser position.   
+C Temperature measurements require knowledge of the instrumental function of    
+C the interferometer, which was not well characterized by the use of the        
+C unstabilized laser.  Therefore the temperatures from this period listed       
+C in the database may have a systematic error, probably on the low side.        
+C                                                                               
+C   Parameters included in the direct data record:                              
+COLS:1-8 9-16     17-24 25-64                                    65-72   73-80  
+CKeyword DRWDNO   Value   Description                                UNITS      
+C       (DRWDNO is data record word number)                                     
+KRECH               3002 header record, version 2                               
+KINST       3      5340 Millstone Hill Fabry-Perot                              
+KINDAT      4      7001 KINDAT definition at end of header                      
+C                                                                               
+IBYRT       5      1992 Beginning year for this data set                        
+IBDT        6       504 Beginning month and day                                 
+IBHMT       7        34 Beginning UT hour and minute                            
+IBCST       8      3700 Beginning UT second                     0.01    sec     
+IEYRT       9      1992 Ending year for this data set                           
+IEDT       10       530 Ending month and day                                    
+IEHMT      11       822 Ending UT hour and minute                               
+IECST      12      5200 Ending UT second                        0.01    sec     
+LPROL      13        16 Data record prologue length                             
+JPAR       14         4 Number of single-valued parameters                      
+MPAR       15        16 Number of multiple-valued parameters                    
+NROW       16       100 Number of rows of multiple-valued parameters            
+C     NROW will vary from the above value in data records                       
+C     KODS contains the single-valued parameters                                
+KODS(1)    17       153 Geodetic Latitude of station            0.01    degree  
+KODS(2)    18       156 Geodetic Longitude of station           0.01    degree  
+KODS(3)    19      2400 Wavelength                              0.1     nm      
+KODS(4)    20      1010 Skew angle for geographic vectors       0.01    degree  
+C     KODM contains the multiple-valued parameters                              
+KODM(1)    25        10 Year                                    1.      year    
+KODM(2)    26        21 Day number of year (UT, 1 = Jan 1)      1.      day     
+KODM(3)    27        34 Time past 0000 UT (0 - 23.999)          0.001   hour    
+KODM(4)    28       130 Azimuth angle (0 = geog. N, 90 = East)  0.01    degree  
+KODM(5)    29       140 Elevation angle (0 = horiz, 90 = vert)  0.01    degree  
+KODM(6)    30       800 Line of sight neutral wind (+ = away)   1.      m/s     
+KODM(7)    31      -800 Uncertainty in 800                      1.      m/s     
+KODM(8)    32       810 Neutral gas temperature (Tn)            1.      K       
+KODM(9)    33      -810 Uncertainty in 810                      1.      K       
+KODM(10)   34       415 Number of samples                       1.              
+KODM(11)   35      2506 Log10 relative (uncalibrated) emission  0.001           
+KODM(12)   36       421 Reduced chi square goodness of fit      0.1             
+KODM(13)   37      1420 Neutral geog meridional wind (+ to N)   1.      m/s     
+KODM(14)   38     -1420 Uncertainty in 1420                     1.      m/s     
+KODM(15)   39      1410 Neutral geog zonal wind (+ to East)     1.      m/s     
+KODM(16)   40     -1410 Uncertainty in 1410                     1.      m/s     
+C                                                                               
+C      Missing parameters are assigned a value of -32767                        
+C      Assumed parameter error values are assigned a value of -32766            
+C                                                                               
+C  KINDAT = 7001: zero velocity reference uses only vertical measurements       
+C  KINDAT = 7002: zero velocity reference uses combined measurements            
+C               NOTE: these refer only to direct data                           
+C  KINDAT = 17001: same as 7001, but for derived data                           
+C  KINDAT = 17002: same as 7002, but for derived data                           
+C                                                                               
+C  ANALYST:      Dwight Sipler                                                  
+C                MIT Haystack Observatory                                       
+C                Atmospheric Sciences Group                                     
+C                Westford, MA 01886                                             
+C  ANDATE        1990 Dec 18                                                    
+
+
+LTOT	KREC	KINST	KINDAT	IBYRT	IBDTT	IBHMT	IBCST	IEYRT	IEDTT	IEHMT	IECST	LPROL	JPAR	MPAR	NROW
+4280	3002	5340	17001	1992	504	34	3700	1992	530	822	5200	16	6	14	N/A
+Character portion of the header record follows:                                 
+C                                                                               
+C     Data are presented in two records: "direct" and "derived" data.           
+C Geographic winds taken from observations in the cardinal directions are       
+C considered direct data.  This record refers only to derived data.  For        
+C a description of the instrument and analysis procedures, see the header       
+C record for the direct data, i.e. KINDAT = 7001 or 7002.                       
+C                                                                               
+C     Two or more measurements may be combined to obtain "derived" data,        
+C e.g. a direct meridional measurement and a smoothed interpolated zonal        
+C measurement are used to derive a wind vector, from which a geomagnetic        
+C meridional wind is determined.  A similar method is used to derive            
+C geomagnetic zonal winds.  The geomagnetic winds derived in this way are       
+C considered derived data.  Similarly, when data are taken at 45 degrees to     
+C the cardinal points, two measurements from orthogonal directions are used     
+C to define a vector, from which both geographic and geomagnetic winds are      
+C determined.  Again, these are derived data.                                   
+C                                                                               
+C      When data are taken in the cardinal directions, the winds derived        
+C from the measurements are either geographic meridional or zonal.  In          
+C order to determine the magnetic meridional or zonal wind, both components     
+C of the wind are needed.  In the case of a meridional measurement, the         
+C zonal winds through the night are smoothed and the resulting curve is         
+C used to interpolate the zonal wind at the time of the meridional              
+C measurement.  Similarly, the meridional winds are smoothed and interpolated   
+C to obtain magnetic zonal winds.  The smoothing and interpolation algorithm    
+C is briefly described in the direct data header (KINDAT = 7001 or 7002).       
+C The smoothed wind is not presented in the database as derived data.  These    
+C points are listed as missing data.  If interpolation is necessary, check      
+C with the data analyst (see end of header).                                    
+C                                                                               
+C      Occasionally, latitudinal gradients are seen in the winds.  When         
+C this occurs and data are being collected at 45 degrees to the cardinal        
+C points, the NW and SW data points and the NE and SE data points, which        
+C would ordinarily be used to resolve a wind vector, are not used since         
+C they represent different latitudes and therefore different winds.  The        
+C NW-NE points are from the same latitude and therefore the gradient should     
+C not affect the wind determination from these points.  Similarly, the          
+C SW-SE points are used.  When such gradients are observed, a note will be      
+C placed in the catalog record for that data set.                               
+C                                                                               
+C     The beginning azimuth (parameter 132) and ending azimuth (parameter 133)  
+C given for the derived data represent the two azimuths used in the derivation. 
+C The elevation (parameter 140) is the average of the two elevations used       
+C in the derivation, however, none of the data are combined for a derived wind  
+C if the elevation of the two points differs by more than 5 degrees.  Since     
+C these data use more than one observation point, the calculation of winds      
+C assumes spatial uniformity in the wind field, at least over the points used   
+C in the derivation.                                                            
+C                                                                               
+C   Parameters included in the derived data record:                             
+COLS:1-8 9-16     17-24 25-64                                    65-72   73-80  
+CKeyword DRWDNO   Value   Description                                UNITS      
+C       (DRWDNO is data record word number)                                     
+KRECH               3002 header record, version 2                               
+KINST       3      5340 Millstone Hill Fabry-Perot                              
+KINDAT      4     17001 KINDAT definition at end of header                      
+C                                                                               
+IBYRT       5      1992 Beginning year for this data set                        
+IBDT        6       504 Beginning month and day                                 
+IBHMT       7        34 Beginning UT hour and minute                            
+IBCST       8      3700 Beginning UT second                     0.01    sec     
+IEYRT       9      1992 Ending year for this data set                           
+IEDT       10       530 Ending month and day                                    
+IEHMT      11       822 Ending UT hour and minute                               
+IECST      12      5200 Ending UT second                        0.01    sec     
+LPROL      13        16 Data record prologue length                             
+JPAR       14         6 Number of single-valued parameters                      
+MPAR       15        14 Number of multiple-valued parameters                    
+NROW       16       100 Number of rows of multiple-valued parameters            
+C     NROW will vary from the above value in data records                       
+C     KODS contains the single-valued parameters                                
+KODS(1)    17       153 Geodetic Latitude of station            0.01    degree  
+KODS(2)    18       156 Geodetic Longitude of station           0.01    degree  
+KODS(3)    19      2400 Wavelength                              0.1     nm      
+KODS(4)    20      1010 Skew angle for geographic vectors       0.01    degree  
+KODS(5)    21      1020 Skew angle for geomagnetic vectors      0.01    degree  
+KODS(6)    22       213 Local magnetic declination angle        0.01    degree  
+C     KODM contains the multiple-valued parameters                              
+KODM(1)    29        10 Year                                    1.      year    
+KODM(2)    30        21 Day number of year (UT, 1 = Jan 1)      1.      day     
+KODM(3)    31        34 Time past 0000 UT (0 - 23.999)          0.001   hour    
+KODM(4)    32       132 Beginning azimuth (0 = geog. N, 90 = E) 0.01    degree  
+KODM(5)    33       133 Ending azimuth                          0.01    degree  
+KODM(6)    34       140 Mean elevation (0 = horiz, 90 = vert)   0.01    degree  
+KODM(7)    35      1420 Neutral geog meridional wind (+ to N)   1.      m/s     
+KODM(8)    36     -1420 Uncertainty in 1420                     1.      m/s     
+KODM(9)    37      1410 Neutral geog zonal wind (+ to East)     1.      m/s     
+KODM(10)   38     -1410 Uncertainty in 1410                     1.      m/s     
+KODM(11)   39      1455 Neut. horiz. magnetic merid. wind       1.      m/s     
+KODM(12)   40     -1455 Uncertainty in 1455                     1.      m/s     
+KODM(13)   41      1440 Neutral magnetic zonal wind             1.      m/s     
+KODM(14)   42     -1440 Uncertainty in 1440                     1.      m/s     
+C                                                                               
+C      Missing parameters are assigned a value of -32767                        
+C      Assumed parameter error values are assigned a value of -32766            
+C                                                                               
+C  KINDAT = 17001: zero velocity reference uses only vertical measurements      
+C  KINDAT = 17002: zero velocity reference uses combined measurements           
+C        NOTE:  these refer only to derived data.                               
+C                                                                               
+C  ANALYST:      Dwight Sipler                                                  
+C                MIT Haystack Observatory                                       
+C                Atmospheric Sciences Group                                     
+C                Westford, MA 01886                                             
+C  ANDATE        1990 Dec 18                                                    
+
+
+LTOT	KREC	KINST	KINDAT	IBYRT	IBDTT	IBHMT	IBCST	IEYRT	IEDTT	IEHMT	IECST	LPROL	JPAR	MPAR	NROW
+200	2001	5340	7001	1992	504	34	3700	1992	504	336	4200	N/A	N/A	N/A	N/A	
+C Data from 1992 May 04                                                         
+C clear until about 4 UT                                                        
+C using pointing head sequence MITPIT1                                          
+C       Analysis date/time 921104/075211                                        
+
+
+LTOT	KREC	KINST	KINDAT	IBYRT	IBDTT	IBHMT	IBCST	IEYRT	IEDTT	IEHMT	IECST	LPROL	JPAR	MPAR	NROW
+200	2001	5340	7001	1992	506	36	2200	1992	506	847	400	N/A	N/A	N/A	N/A	
+C Data from 1992 May 06                                                         
+C clear night                                                                   
+C using pointing head sequence MITPIT1                                          
+C       Analysis date/time 921104/075237                                        
+
+
+LTOT	KREC	KINST	KINDAT	IBYRT	IBDTT	IBHMT	IBCST	IEYRT	IEDTT	IEHMT	IECST	LPROL	JPAR	MPAR	NROW
+320	2001	5340	7001	1992	507	39	4200	1992	507	846	5500	N/A	N/A	N/A	N/A	
+C Data from 1992 May 07                                                         
+C clear night                                                                   
+C using pointing head sequence 45DEG                                            
+C radar using 9 point local sequence                                            
+C                                                                               
+C                                                                               
+C       Analysis date/time 921104/075303                                        
+
+
+LTOT	KREC	KINST	KINDAT	IBYRT	IBDTT	IBHMT	IBCST	IEYRT	IEDTT	IEHMT	IECST	LPROL	JPAR	MPAR	NROW
+280	2001	5340	7001	1992	510	41	5100	1992	510	845	1800	N/A	N/A	N/A	N/A	
+C Data from 1992 May 10                                                         
+C fairly clear with auroral activity                                            
+C using pointing head sequence 45DEGREE                                         
+C system switched to AURORA0 at 0152 UT                                         
+C system switched to AURORA1 at 0650 UT                                         
+C       Analysis date/time 921104/075342                                        
+
+
+LTOT	KREC	KINST	KINDAT	IBYRT	IBDTT	IBHMT	IBCST	IEYRT	IEDTT	IEHMT	IECST	LPROL	JPAR	MPAR	NROW
+200	2001	5340	7001	1992	512	45	2900	1992	512	836	4500	N/A	N/A	N/A	N/A	
+C Data from 1992 May 12                                                         
+C clear night                                                                   
+C using pointing head sequence 45DEGREE                                         
+C       Analysis date/time 921104/075408                                        
+
+
+LTOT	KREC	KINST	KINDAT	IBYRT	IBDTT	IBHMT	IBCST	IEYRT	IEDTT	IEHMT	IECST	LPROL	JPAR	MPAR	NROW
+200	2001	5340	7001	1992	514	47	3200	1992	514	207	100	N/A	N/A	N/A	N/A	
+C Data from 1992 May 14                                                         
+C clear until 02 UT                                                             
+C using pointing head sequence FULLMOON                                         
+C       Analysis date/time 921104/075424                                        
+
+
+LTOT	KREC	KINST	KINDAT	IBYRT	IBDTT	IBHMT	IBCST	IEYRT	IEDTT	IEHMT	IECST	LPROL	JPAR	MPAR	NROW
+200	2001	5340	7001	1992	516	51	200	1992	516	255	800	N/A	N/A	N/A	N/A	
+C Data from 1992 May 16                                                         
+C clouds after about 3 UT                                                       
+C using pointing head sequence FULLMOON                                         
+C       Analysis date/time 921104/075455                                        
+
+
+LTOT	KREC	KINST	KINDAT	IBYRT	IBDTT	IBHMT	IBCST	IEYRT	IEDTT	IEHMT	IECST	LPROL	JPAR	MPAR	NROW
+200	2001	5340	7001	1992	517	51	2800	1992	517	832	4900	N/A	N/A	N/A	N/A	
+C Data from 1992 May 17                                                         
+C clear night                                                                   
+C using pointing head sequence FULLMOON                                         
+C       Analysis date/time 921104/075528                                        
+
+
+LTOT	KREC	KINST	KINDAT	IBYRT	IBDTT	IBHMT	IBCST	IEYRT	IEDTT	IEHMT	IECST	LPROL	JPAR	MPAR	NROW
+200	2001	5340	7001	1992	518	52	5800	1992	518	444	2000	N/A	N/A	N/A	N/A	
+Data from 1992 May 18                                                           
+C clear until about 5 UT                                                        
+C using pointing head sequence FULLMOON                                         
+C       Analysis date/time 921104/075546                                        
+
+
+LTOT	KREC	KINST	KINDAT	IBYRT	IBDTT	IBHMT	IBCST	IEYRT	IEDTT	IEHMT	IECST	LPROL	JPAR	MPAR	NROW
+200	2001	5340	7001	1992	519	53	3200	1992	519	826	5200	N/A	N/A	N/A	N/A	
+C Data from 1992 May 19                                                         
+C clear night                                                                   
+C using pointing head sequence FULLMOON                                         
+C       Analysis date/time 921104/075605                                        
+
+
+LTOT	KREC	KINST	KINDAT	IBYRT	IBDTT	IBHMT	IBCST	IEYRT	IEDTT	IEHMT	IECST	LPROL	JPAR	MPAR	NROW
+200	2001	5340	7001	1992	520	55	1800	1992	520	827	3800	N/A	N/A	N/A	N/A	
+C Data from 1992 May 20                                                         
+C clear night                                                                   
+C using 45 degree pointing head sequence                                        
+C       Analysis date/time 921104/075627                                        
+
+
+LTOT	KREC	KINST	KINDAT	IBYRT	IBDTT	IBHMT	IBCST	IEYRT	IEDTT	IEHMT	IECST	LPROL	JPAR	MPAR	NROW
+200	2001	5340	7001	1992	521	56	2900	1992	521	826	4100	N/A	N/A	N/A	N/A	
+C Data from 1992 May 21                                                         
+C clear night                                                                   
+C using 45 degree pointing head sequence                                        
+C       Analysis date/time 921104/075646                                        
+
+
+LTOT	KREC	KINST	KINDAT	IBYRT	IBDTT	IBHMT	IBCST	IEYRT	IEDTT	IEHMT	IECST	LPROL	JPAR	MPAR	NROW
+200	2001	5340	7001	1992	522	56	4100	1992	522	828	0	N/A	N/A	N/A	N/A	
+C Data from 1992 May 22                                                         
+C clear night                                                                   
+C using pointing head sequence MITPIT1                                          
+C       Analysis date/time 921104/075706                                        
+
+
+LTOT	KREC	KINST	KINDAT	IBYRT	IBDTT	IBHMT	IBCST	IEYRT	IEDTT	IEHMT	IECST	LPROL	JPAR	MPAR	NROW
+200	2001	5340	7001	1992	526	100	4300	1992	526	825	4800	N/A	N/A	N/A	N/A	
+C Data from 1992 May 26                                                         
+C clear night                                                                   
+C using pointing head sequence MITPIT1                                          
+C       Analysis date/time 921104/075727                                        
+
+
+LTOT	KREC	KINST	KINDAT	IBYRT	IBDTT	IBHMT	IBCST	IEYRT	IEDTT	IEHMT	IECST	LPROL	JPAR	MPAR	NROW
+200	2001	5340	7001	1992	529	104	4400	1992	529	824	3000	N/A	N/A	N/A	N/A	
+C Data from 1992 May 29                                                         
+C clear night                                                                   
+C using 45 degree pointing head sequence                                        
+C       Analysis date/time 921104/075744                                        
+
+
+LTOT	KREC	KINST	KINDAT	IBYRT	IBDTT	IBHMT	IBCST	IEYRT	IEDTT	IEHMT	IECST	LPROL	JPAR	MPAR	NROW
+240	2001	5340	7001	1992	530	106	300	1992	530	822	5200	N/A	N/A	N/A	N/A	
+C Data from 1992 May 30                                                         
+C clear night                                                                   
+C using pointing head sequence FAB9205A                                         
+C radar running 9 point sequence plus up B                                      
+C       Analysis date/time 921104/075759                                        
+

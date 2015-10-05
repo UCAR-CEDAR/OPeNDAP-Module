@@ -1,0 +1,59 @@
+Commads added by the Cedar OPeNDAP server:
+
+get info|flat|tab|stream for <definition_name>;
+    * info: extra documentation related to the data set. info is
+	    equivalent to the header records and catalog records.
+    * flat: request for the data stream as a flat file
+    * tab: request for the data stream as a tab base file
+    * stream: request the file content as is
+
+Cedar notes:
+    When the access to data is restricted, users must first get
+    authenticated into the web server. In some cases this access is
+    performed through a proxy which is supplying the login for the
+    authentication. For this cases, it is possible for the proxy to sign
+    on behalf of whom is requesting the data. This is done by using the
+    server side function "signature (string s)" where the variable 's' is
+    the login for the person using the proxy. The variable s can not
+    contain spaces and in general it must follow of the rules for valid
+    logins in a computer system.
+
+    Constraint expressions:
+
+	To create a constraint expression this server offers the following
+	server side functions:
+	    a.- date(BEGIN_year,BEGIN_date,BEGIN_hour_min,
+	             BEGIN_centisecond,END_year,END_date,
+		     END_hour_min,END_centisecond)
+		The 8 parameters expose above are REQUIRED. This function
+		is used to let the server know that any data record whose
+		date is in the range [BEGIN, END] must be returned.
+	    b.- record_type(kinst(0)/kindat(0),kinst(1)/kindat(1),
+	                    ...,kinst(n)/kindat(n))
+		This function can take n parameters. The parameters are a
+		kinst-kindat combination which defines a record type.
+		Repeated record types are not accepted. A kinst value is a
+		unique positive integer that defines an instrument, a
+		kindat values is a positive integer defined by the
+		institution that manages the instrument.
+	    c.- parameters(p1,p2,p3,...,pn)
+		This function can take n parameters where each parameter
+		is a "CEDAR define parameter" (i.e 54 Magnetic local time)
+		A parameter is an integer number. Please notice that is
+		possible to request this function like this: parameters().
+		In this case no data is returned, just the prologues for
+		the data records.
+
+	Constraint expressions are only analized when you request either
+	dds,asc,dods,info or tab. For other actions the constraint
+	expression is ignored, this allow you, for example, to modified
+	the "ce" while reading the das which contains all the information
+	you need to fill record_type(...) or parameters(...)
+
+	Server side functions are "independent" among them, this means that
+	you may request all of them or none of them or only one or any
+	couple combination. In case that more than one server side functions
+	are present each data record should satisfy ALL of the constraints
+	in order to be returned.
+
+    For more information please contact Jose Garcia, jgarcia@ucar.edu

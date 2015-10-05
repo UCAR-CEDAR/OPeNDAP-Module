@@ -1,0 +1,425 @@
+Attributes {
+    Data_Descriptor_for_KINDAT_3410_KINST_31 {
+        KINST {
+            String KINST "31";
+            String NAME "Millstone Hill: steerable UHF antenna";
+            String PREFIX "MLH";
+            String LATITUDE "42 37'11\"";
+            String LONGITUDE "-71 29'28\"";
+            String ALTITUDE "0.146";
+        }
+        JPAR_0 {
+            String CODE "132";
+            String SHORTNAME "Beg Az";
+            String LONGNAME "Beginning azimuth (0=geog N,90=east)";
+            String SCALE "1.E-02";
+            String UNIT "deg";
+        }
+        JPAR_1 {
+            String CODE "133";
+            String SHORTNAME "End Az";
+            String LONGNAME "Ending azimuth (0=geog N,90=east)";
+            String SCALE "1.E-02";
+            String UNIT "deg";
+        }
+        JPAR_2 {
+            String CODE "142";
+            String SHORTNAME "Beg El";
+            String LONGNAME "Beginning elevation angle";
+            String SCALE "1.E-02";
+            String UNIT "deg";
+        }
+        JPAR_3 {
+            String CODE "143";
+            String SHORTNAME "End El";
+            String LONGNAME "Ending elevation angle";
+            String SCALE "1.E-02";
+            String UNIT "deg";
+        }
+        JPAR_4 {
+            String CODE "402";
+            String SHORTNAME "Pulse Len";
+            String LONGNAME "Pulse length";
+            String SCALE "1.E-06";
+            String UNIT "sec";
+        }
+        JPAR_5 {
+            String CODE "482";
+            String SHORTNAME "Tsys";
+            String LONGNAME "System temperature";
+            String SCALE "1.";
+            String UNIT "K";
+        }
+        JPAR_6 {
+            String CODE "483";
+            String SHORTNAME "Tsys Inc";
+            String LONGNAME "Additional increment to system temp";
+            String SCALE "1.E-04";
+            String UNIT "K";
+        }
+        JPAR_7 {
+            String CODE "3318";
+            String SHORTNAME "Power NrmK";
+            String LONGNAME "MLH D.P. Power Normalization constant";
+            String SCALE "1.e-03";
+            String UNIT "          3";
+        }
+        JPAR_8 {
+            String CODE "3319";
+            String SHORTNAME "Additnl P.";
+            String LONGNAME "MLH Additional increment to DP Pwr Nrm C";
+            String SCALE "1.e-07";
+            String UNIT "          3";
+        }
+        JPAR_9 {
+            String CODE "486";
+            String SHORTNAME "Peak Power";
+            String LONGNAME "Peak power";
+            String SCALE "1.";
+            String UNIT "kW";
+        }
+        JPAR_10 {
+            String CODE "3325";
+            String SHORTNAME "MLH Mode Ty";
+            String LONGNAME "MLH Mode type";
+            String SCALE "1.e+00";
+            String UNIT "";
+        }
+        JPAR_11 {
+            String CODE "3328";
+            String SHORTNAME "Fund Pullen";
+            String LONGNAME "MLH Fundamental Pulse Length";
+            String SCALE "1.e-06";
+            String UNIT "sec";
+        }
+        JPAR_12 {
+            String CODE "3346";
+            String SHORTNAME "MLH lag";
+            String LONGNAME "MLH Lag spacing";
+            String SCALE "1.e-07";
+            String UNIT "sec";
+        }
+        JPAR_13 {
+            String CODE "407";
+            String SHORTNAME "IPPI";
+            String LONGNAME "Interpulse Period; or 408 increment";
+            String SCALE "1.E-06";
+            String UNIT "sec";
+        }
+        JPAR_14 {
+            String CODE "490";
+            String SHORTNAME "Xmit Freq";
+            String LONGNAME "Transmitted frequency";
+            String SCALE "1.E+05";
+            String UNIT "Hz";
+        }
+        JPAR_15 {
+            String CODE "3320";
+            String SHORTNAME "tr phasvel";
+            String LONGNAME "MLH Transmitter phase velocity";
+            String SCALE "1.e-01";
+            String UNIT "m/s";
+        }
+        JPAR_16 {
+            String CODE "-3320";
+            String SHORTNAME "error tr phasvel";
+            String LONGNAME "ERROR FOR MLH Transmitter phase velocity";
+            String SCALE "1.e-01";
+            String UNIT "m/s";
+        }
+        JPAR_17 {
+            String CODE "94";
+            String SHORTNAME "Scan Type";
+            String LONGNAME "Scan type (0=any,1=fixed,2=az,3=el)";
+            String SCALE "1.";
+            String UNIT "";
+        }
+        JPAR_18 {
+            String CODE "95";
+            String SHORTNAME "Cyc No";
+            String LONGNAME "Cycle sequence number (e.g., 5th cycle)";
+            String SCALE "1.";
+            String UNIT "";
+        }
+        JPAR_19 {
+            String CODE "96";
+            String SHORTNAME "Pos No";
+            String LONGNAME "Position number within cycle";
+            String SCALE "1.";
+            String UNIT "";
+        }
+        MPAR_0 {
+            String CODE "120";
+            String SHORTNAME "Range";
+            String LONGNAME "Range";
+            String SCALE "1.";
+            String UNIT "km";
+        }
+        MPAR_1 {
+            String CODE "121";
+            String SHORTNAME "Range Inc";
+            String LONGNAME "Additional increment to range";
+            String SCALE "1.E-01";
+            String UNIT "m";
+        }
+        MPAR_2 {
+            String CODE "3329";
+            String SHORTNAME "Range Resol";
+            String LONGNAME "MLH Range resolution";
+            String SCALE "1.e-02";
+            String UNIT "km";
+        }
+        MPAR_3 {
+            String CODE "411";
+            String SHORTNAME "S/N";
+            String LONGNAME "Signal to noise ratio";
+            String SCALE "1.E-03";
+            String UNIT "";
+        }
+        MPAR_4 {
+            String CODE "425";
+            String SHORTNAME "Wide Chi Sq";
+            String LONGNAME "Wide reduced-chi square of fit";
+            String SCALE "1.E+00";
+            String UNIT "";
+        }
+        MPAR_5 {
+            String CODE "426";
+            String SHORTNAME "Wide ChiSqi";
+            String LONGNAME "Additional increment to wide chi square";
+            String SCALE "1.E-04";
+            String UNIT "";
+        }
+        MPAR_6 {
+            String CODE "430";
+            String SHORTNAME "Goodnes Fit";
+            String LONGNAME "Goodness of fit";
+            String SCALE "1.";
+            String UNIT "";
+        }
+        MPAR_7 {
+            String CODE "461";
+            String SHORTNAME "MLH Dat QC1";
+            String LONGNAME "Millstone Hill data quality code 1";
+            String SCALE "1.";
+            String UNIT "";
+        }
+        MPAR_8 {
+            String CODE "550";
+            String SHORTNAME "Ti";
+            String LONGNAME "Ion temperature";
+            String SCALE "1.";
+            String UNIT "K";
+        }
+        MPAR_9 {
+            String CODE "-550";
+            String SHORTNAME "error Ti";
+            String LONGNAME "ERROR FOR Ion temperature";
+            String SCALE "1.";
+            String UNIT "K";
+        }
+        MPAR_10 {
+            String CODE "570";
+            String SHORTNAME "Te/Ti";
+            String LONGNAME "Temperature ratio (Te/Ti)";
+            String SCALE "1.E-03";
+            String UNIT "";
+        }
+        MPAR_11 {
+            String CODE "-570";
+            String SHORTNAME "error Te/Ti";
+            String LONGNAME "ERROR FOR Temperature ratio (Te/Ti)";
+            String SCALE "1.E-03";
+            String UNIT "";
+        }
+        MPAR_12 {
+            String CODE "505";
+            String SHORTNAME "lg(RawNe)";
+            String LONGNAME "log10 (uncorrected electron density)";
+            String SCALE "1.E-03";
+            String UNIT "lg(m-3)";
+        }
+        MPAR_13 {
+            String CODE "-505";
+            String SHORTNAME "error lg(RawNe)";
+            String LONGNAME "ERROR FOR log10 (uncorrected electron density)";
+            String SCALE "1.E-03";
+            String UNIT "lg(m-3)";
+        }
+        MPAR_14 {
+            String CODE "660";
+            String SHORTNAME "[H+]/Ne";
+            String LONGNAME "Ion Composition - [H+]/Ne";
+            String SCALE "1.E-03";
+            String UNIT "";
+        }
+        MPAR_15 {
+            String CODE "-660";
+            String SHORTNAME "error [H+]/Ne";
+            String LONGNAME "ERROR FOR Ion Composition - [H+]/Ne";
+            String SCALE "1.E-03";
+            String UNIT "";
+        }
+        MPAR_16 {
+            String CODE "3313";
+            String SHORTNAME "ACF Norm";
+            String LONGNAME "MLH ACF Normalization Factor";
+            String SCALE "1.e-03";
+            String UNIT "";
+        }
+        MPAR_17 {
+            String CODE "-3313";
+            String SHORTNAME "error ACF Norm";
+            String LONGNAME "ERROR FOR MLH ACF Normalization Factor";
+            String SCALE "1.e-03";
+            String UNIT "";
+        }
+        MPAR_18 {
+            String CODE "709";
+            String SHORTNAME "UNDEFINED";
+            String LONGNAME "UNDEFINED";
+            String SCALE "UNDEFINED";
+            String UNIT "UNDEFINED";
+        }
+        MPAR_19 {
+            String CODE "710";
+            String SHORTNAME "Col Freq";
+            String LONGNAME "Ion-neutral collision frequency";
+            String SCALE "1.";
+            String UNIT "s-1";
+        }
+        MPAR_20 {
+            String CODE "-709";
+            String SHORTNAME "UNDEFINED";
+            String LONGNAME "UNDEFINED";
+            String SCALE "UNDEFINED";
+            String UNIT "UNDEFINED";
+        }
+        MPAR_21 {
+            String CODE "-710";
+            String SHORTNAME "error Col Freq";
+            String LONGNAME "ERROR FOR Ion-neutral collision frequency";
+            String SCALE "1.";
+            String UNIT "s-1";
+        }
+        MPAR_22 {
+            String CODE "690";
+            String SHORTNAME "[N-0]/Ne";
+            String LONGNAME "Ion Composition - [mol wt 28 to 32]/Ne";
+            String SCALE "1.E-03";
+            String UNIT "";
+        }
+        MPAR_23 {
+            String CODE "-690";
+            String SHORTNAME "error [N-0]/Ne";
+            String LONGNAME "ERROR FOR Ion Composition - [mol wt 28 to 32]/Ne";
+            String SCALE "1.E-03";
+            String UNIT "";
+        }
+        MPAR_24 {
+            String CODE "580";
+            String SHORTNAME "Vilos";
+            String LONGNAME "Line of sight ion velocity (pos = away)";
+            String SCALE "1.";
+            String UNIT "m/s";
+        }
+        MPAR_25 {
+            String CODE "581";
+            String SHORTNAME "Vilos Inc";
+            String LONGNAME "Additional increment to code 580";
+            String SCALE "1.E-04";
+            String UNIT "m/s";
+        }
+        MPAR_26 {
+            String CODE "-580";
+            String SHORTNAME "error Vilos";
+            String LONGNAME "ERROR FOR Line of sight ion velocity (pos = away)";
+            String SCALE "1.";
+            String UNIT "m/s";
+        }
+        MPAR_27 {
+            String CODE "-581";
+            String SHORTNAME "error Vilos Inc";
+            String LONGNAME "ERROR FOR Additional increment to code 580";
+            String SCALE "1.E-04";
+            String UNIT "m/s";
+        }
+        MPAR_28 {
+            String CODE "3350";
+            String SHORTNAME "Dopp Vel";
+            String LONGNAME "MLH Line of sight Doppler V(pos = away)";
+            String SCALE "1.e+00";
+            String UNIT "m/s";
+        }
+        MPAR_29 {
+            String CODE "-3350";
+            String SHORTNAME "error Dopp Vel";
+            String LONGNAME "ERROR FOR MLH Line of sight Doppler V(pos = away)";
+            String SCALE "1.e+00";
+            String UNIT "m/s";
+        }
+        MPAR_30 {
+            String CODE "3351";
+            String SHORTNAME "Ti basicfit";
+            String LONGNAME "MLH TI searching TI,TR,FN only";
+            String SCALE "1.e+00";
+            String UNIT "K";
+        }
+        MPAR_31 {
+            String CODE "-3351";
+            String SHORTNAME "error Ti basicfit";
+            String LONGNAME "ERROR FOR MLH TI searching TI,TR,FN only";
+            String SCALE "1.e+00";
+            String UNIT "K";
+        }
+        MPAR_32 {
+            String CODE "3352";
+            String SHORTNAME "Tr basicfit";
+            String LONGNAME "MLH TR searching TI,TR,FN only";
+            String SCALE "1.e-03";
+            String UNIT "";
+        }
+        MPAR_33 {
+            String CODE "-3352";
+            String SHORTNAME "error Tr basicfit";
+            String LONGNAME "ERROR FOR MLH TR searching TI,TR,FN only";
+            String SCALE "1.e-03";
+            String UNIT "";
+        }
+        MPAR_34 {
+            String CODE "3353";
+            String SHORTNAME "MLH fitcod";
+            String LONGNAME "MLH Fit type code";
+            String SCALE "1.e+00";
+            String UNIT "";
+        }
+        MPAR_35 {
+            String CODE "3321";
+            String SHORTNAME "cc Ti Tr";
+            String LONGNAME "MLH Ti, Tr correlation coefficient";
+            String SCALE "1.e-03";
+            String UNIT "";
+        }
+        MPAR_36 {
+            String CODE "3322";
+            String SHORTNAME "cc Ti Ph";
+            String LONGNAME "MLH Ti, Ph correlation coefficient";
+            String SCALE "1.e-03";
+            String UNIT "";
+        }
+        MPAR_37 {
+            String CODE "3323";
+            String SHORTNAME "cc Ti Co";
+            String LONGNAME "MLH Ti, Co correlation coefficient";
+            String SCALE "1.e-03";
+            String UNIT "";
+        }
+        MPAR_38 {
+            String CODE "3324";
+            String SHORTNAME "cc Tr Ph";
+            String LONGNAME "MLH Tr, Ph correlation coefficient";
+            String SCALE "1.e-03";
+            String UNIT "";
+        }
+    }
+}

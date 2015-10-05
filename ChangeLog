@@ -1,0 +1,1084 @@
+2011-03-24  Patrick West <pwest@ucar.edu>
+
+	Added one additional data set for testing
+	M    Makefile.am
+
+2011-03-24  Patrick West <pwest@ucar.edu>
+
+	Handle madrigal data in different directory
+	M    ContainerStorageCedar.cc
+	M    ContainerStorageCedar.h
+	M    bes-testsuite/bes.conf.in
+
+2011-03-06  Patrick West <pwest@ucar.edu>
+
+	Handles 001 files for madrigal. Added one test.
+	M    ContainerStorageCedar.cc
+	A    bes-testsuite/cedar/mlh090323g.tab.bescmd.baseline
+	A    bes-testsuite/cedar/mlh090323g.das.bescmd.baseline
+	A    bes-testsuite/cedar/mlh090323g.tab.bescmd
+	A    bes-testsuite/cedar/mlh090323g.das.bescmd
+	M    bes-testsuite/cedar_handlerTest.at
+	AM   data/mlh090323g.001
+
+2010-09-20  Patrick West <pwest@ucar.edu>
+
+	New release
+	M    configure.ac
+	M    NEWS
+	M    ChangeLog
+	M    bes-testsuite/Makefile.am
+
+2010-07-15  Patrick West <pwest@ucar.edu>
+
+	Added include of dependent dap.conf
+
+;; Local Variables:
+;; coding: utf-8
+;; End:
+2010-05-11  Patrick West <pwest@ucar.edu>
+
+	Updated to match newest version of Cedar library, removing auto
+	generated configure scripts, updating version requirements
+	M    configure.ac
+	M    cedar.conf.in
+	D    conf/mkinstalldirs
+	D    conf/depcomp
+	D    conf/missing
+	D    conf/config.guess
+	M    conf/libdap.m4
+	D    conf/config.sub
+	D    conf/ltmain.sh
+	A    conf/cedar.m4
+	D    conf/install-sh
+
+2010-03-29  Patrick West <pwest@ucar.edu>
+
+	Using += instead of = for BES.modules
+	M    cedar.conf.in
+
+2010-02-23  Patrick West <pwest@ucar.edu>
+
+	Not logging access attempts, just successful access by logged in users.
+	M    CedarReporter.cc
+
+2010-01-12  Patrick West <pwest@ucar.edu>
+
+	Using cedar.conf included by bes.conf instead of script to modify
+	bes.conf
+	A    cedar.conf.in
+	D    bes-cedar-data.sh.in
+	M    Makefile.am
+
+2010-01-10  Patrick West <pwest@ucar.edu>
+
+	API changes to BESKeys
+	M    CedarReporter.cc
+	M    ContainerStorageCedar.cc
+	M    CedarAuthenticate.cc
+	M    CedarAuthenticateException.cc
+	M    CedarDB.cc
+	M    CedarMySQLDB.cc
+
+2010-01-08  Patrick West <pwest@ucar.edu>
+
+	--clean to clean build and src files for rpmbuild
+	M    Makefile.am
+
+2009-08-31  Patrick West <pwest@ucar.edu>
+
+	changed path variables to use during autotest
+
+2009-08-31  Patrick West <pwest@ucar.edu>
+
+	changed include of cgi_util to mime_util and removed include where not needed
+
+2009-08-27  Patrick West <pwest@ucar.edu>
+
+	Converted bes-testsuite to use autotest instead of dejagnu
+	M    configure.ac
+	D    bes-testsuite/besstandalone.cedar
+	A    bes-testsuite/atlocal.in
+	D    bes-testsuite/config
+	D    bes-testsuite/common_tests.exp
+	M    bes-testsuite/Makefile.am
+	A    bes-testsuite/cedar_handlerTest.at
+
+2009-08-23  Patrick West <pwest@ucar.edu>
+
+	Added ; after each BESDEBUG statement
+
+2009-08-18  Patrick West <pwest@ucar.edu>
+
+	DAP Macro changes
+
+2009-07-15  Patrick West <pwest@ucar.edu>
+
+	show_containers was not using tags but was just adding text to the
+	information object. Changed this to use the helper method on
+	BESContainerStorage::show_container
+	M    ContainerStorageCedar.cc
+
+2009-07-12  Patrick West <pwest@ucar.edu>
+
+	Added debug to authentication
+	M    CedarAuthenticate.cc
+
+2009-06-18  Patrick West <pwest@ucar.edu>
+
+	New login screen using login.php.
+	M    cedar/cedar_login.html
+
+2009-06-08  Patrick West <pwest@ucar.edu>
+
+	Added the two data files needed by reporterT. Turned off authentication
+	in the unit-tests bes.conf file.
+	AM   data/mfp920603a.cbf
+	AM   data/mfp911104a.cbf
+	M    unit-tests/bes.conf.in
+
+2009-06-08  Patrick West <pwest@ucar.edu>
+
+	Allow other container stores a chance to read the file if it doesn't
+	exist in the cedar store.
+	M    ContainerStorageCedar.cc
+
+2009-05-28  Patrick West <pwest@ucar.edu>
+
+	instrument site lat and lon adjustments
+	M    bes-testsuite/cedar/mfp920504a.das.bescmd.baseline
+	M    bes-testsuite/cedar/mfp920504a.ddx.bescmd.baseline
+	M    unit-tests/kinstT.cc
+
+2009-05-28  Patrick West <pwest@ucar.edu>
+
+	Moved authentication to data retrieval in request hanlder instead of
+	initialization. Changed where to get username and token to context
+	manager instead of data handler interface.
+	M    CedarModule.cc
+	M    CedarRequestHandler.cc
+	M    CedarReporter.cc
+	M    CedarAuthenticate.cc
+	M    unit-tests/authT.cc
+	M    unit-tests/reporterT.cc
+	M    CedarAuthenticate.h
+
+2009-05-28  Patrick West <pwest@ucar.edu>
+
+	Services format now uses basic format instead of special cedar format.
+	Removing use of HttpTransmitter and using transmit_protocol context.
+	M    CedarModule.cc
+	M    FlatResponseHandler.cc
+	M    InfoResponseHandler.cc
+	M    CedarTransmitter.cc
+	M    TabResponseHandler.cc
+
+2009-05-28  Patrick West <pwest@ucar.edu>
+
+	Latitude and longitude corrections
+	M    bes-testsuite/cedar/mfp920504a.das.bescmd.baseline
+	M    bes-testsuite/cedar/mfp920504a.ddx.bescmd.baseline
+	M    unit-tests/kinstT.cc
+
+2009-04-10  Patrick West <pwest@ucar.edu>
+
+	No more cgi server is built and no longer providing apache 1.3 services
+	D    CedarHandlerApp.h
+	M    configure.ac
+	M    CedarModule.cc
+	M    CedarRequestHandler.cc
+	D    cedar_commands.cc
+	M    bes-testsuite/config/unix.exp
+	D    CedarHandlerApp.cc
+	M    CedarResponseNames.h
+	M    unit-tests/Makefile.am
+	M    CedarMySQLDB.cc
+	D    cedar_handler.cc
+	A    CedarTransmitter.cc
+	A    CedarTransmitter.h
+	D    cedar_module.cc
+	M    Makefile.am
+
+2009-02-20  Patrick West <pwest@ucar.edu>
+
+	test table for some of the unit tests
+	A    cedar_test.sql
+
+2009-01-29  Patrick West <pwest@ucar.edu>
+
+	Don't share that
+	M    unit-tests/bes.conf.in
+
+2009-01-26  Patrick West <pwest@ucar.edu>
+
+	Fixed bug with buffers not being created big enough
+	M    CedarEncode.cc
+
+2008-12-31  Patrick West <pwest@ucar.edu>
+
+	Changed report database to use CEDARCATALOG. Table is now tbl_report. Column
+	names changed as well.
+	M    CedarReporter.cc
+
+2008-11-14  James Gallagher <jgallagher@opendap.org>
+
+	Merged the xmlrequest branch to the trunk.
+
+	_M   .
+	M    CedarModule.cc
+	M    bes-testsuite/cedar/mfp920504a.ddx.bescmd
+	M    bes-testsuite/cedar/mfp920504a.flat.bescmd
+	M    bes-testsuite/cedar/mfp920504a.info.bescmd
+	M    bes-testsuite/cedar/mfp920504a.stream.bescmd
+	M    bes-testsuite/cedar/mfp920504a.tab.bescmd
+	M    bes-testsuite/cedar/mfp920504a.das.bescmd
+	M    bes-testsuite/cedar/mfp920504a.data.bescmd
+	M    bes-testsuite/cedar/mfp920504a.dds.bescmd
+
+2008-09-18  James Gallagher <jgallagher@opendap.org>
+
+	Merged multifile branch
+
+2008-08-29  Patrick West <pwest@ucar.edu>
+
+	Removing test configuration file. No longer needed.
+	D    bes.conf
+
+2008-08-29  Patrick West <pwest@ucar.edu>
+
+	Moved testsuite to bes-testsuite for bes regression tests
+	M    configure.ac
+	D    testsuite
+	A    bes-testsuite
+	M    Makefile.am
+
+2008-08-29  Patrick West <pwest@ucar.edu>
+
+	Forgot to add the baseline file.
+	A    mfp920504a.data.bescmd.baseline
+
+2008-08-29  Patrick West <pwest@ucar.edu>
+
+	Removed dap-server modules and changed BaseDir variable.
+	M    unit-tests/bes.conf.in
+	M    unit-tests/Makefile.am
+
+2008-08-29  Patrick West <pwest@ucar.edu>
+
+	Changed ascii to data test. Removed dap-server modules as they might not be
+	built.
+	D    testsuite/besstandalone.cedar/mfp920504a.ascii.exp
+	A    testsuite/besstandalone.cedar/mfp920504a.data.exp
+	M    testsuite/bes.conf.in
+	M    testsuite/config/unix.exp
+	M    testsuite/Makefile.am
+	D    testsuite/cedar/mfp920504a.ascii.bescmd
+	A    testsuite/cedar/mfp920504a.data.bescmd
+	D    testsuite/cedar/mfp920504a.ascii.bescmd.baseline
+
+2008-07-16  Patrick West <pwest@ucar.edu>
+
+	Simplified the dynamic cast checks.
+	M    CedarRequestHandler.cc
+
+2008-07-16  Patrick West <pwest@ucar.edu>
+
+	Checking result of dynamic cast if cast error occurred. Added the cedar help
+	files to the configuration script.
+	M    CedarRequestHandler.cc
+	M    bes-cedar-data.sh.in
+	M    Makefile.am
+
+2008-06-01  Patrick West <pwest@ucar.edu>
+
+	If fail to log to database catch all exceptions and report to the cedar log
+	file. Put a message in the BES log file saying there was a problem.
+	M    CedarReporter.cc
+	M    CedarReporter.h
+
+2008-05-31  Patrick West <pwest@ucar.edu>
+
+	Added insert, update, and delete methods to DB classes. Create better
+	testing in dbT, including adding insert, update, and delete tests. Cedar
+	reporting now goes to database. Added reporter test. Updated
+	bes-cedar-data.sh script for Catalog and Reporter database parameters.
+	M    bes.conf
+	M    CedarMySQLDB.h
+	M    CedarModule.cc
+	M    bes-cedar-data.sh.in
+	M    CedarReporter.cc
+	M    testsuite/bes.conf.in
+	M    testsuite/cedar/mfp920504a.ddx.bescmd.baseline
+	A    CedarDBFields.h
+	M    CedarDB.h
+	M    unit-tests/kinstT.cc
+	M    unit-tests/bes.conf.in
+	M    unit-tests/Makefile.am
+	A    unit-tests/reporterT.cc
+	M    unit-tests/dbT.cc
+	M    CedarMySQLResult.cc
+	M    CedarReporter.h
+	M    CedarMySQLDB.cc
+	M    Makefile.am
+
+2008-05-30  Patrick West <pwest@ucar.edu>
+
+	Adding ancillary das and dds information.
+	M    CedarRequestHandler.cc
+
+2008-05-25  Patrick West <pwest@ucar.edu>
+
+	Added tests for instrument without site and non-existant instrument
+	M    unit-tests/kinstT.cc
+	M    CedarReadKinst.cc
+
+2008-05-25  Patrick West <pwest@ucar.edu>
+
+	Using tbl_site table to get latitude, longitude, and altitude values
+
+	changed the structure of the DAS object to separate out the values instead
+	of having the reading code have to separate out the strings of the KINST and
+	parameters. The KINST attribute structure now contains KINST, NAME, PREFIX,
+	LATITUDE, LONGITUDE, ALTITUDE. The parameter structures (JPAR_0) now
+	includes CODE, SHORTNAME, LONGNAME, UNIT, SCALE. Updated the unit tests
+	M    checkKinst.cc
+	M    testsuite/cedar/mfp920504a.das.bescmd.baseline
+	M    cedar_read_attributes.cc
+	M    CedarReadParcods.cc
+	M    unit-tests/kinstT.cc
+	M    unit-tests/bes.conf.in
+	M    CedarReadKinst.cc
+	M    CedarReadKinst.h
+	M    CedarReadParcods.h
+
+2008-05-14  Patrick West <pwest@ucar.edu>
+
+	Added CPPUNIT as configurable
+	M    configure.ac
+	M    testsuite/bes.conf.in
+	A    conf/cppunit.m4
+	M    unit-tests/bes.conf.in
+	M    unit-tests/Makefile.am
+
+2008-05-06  Patrick West <pwest@ucar.edu>
+
+	Updated the version number in the NEWS file to 2.3.0
+	M    NEWS
+
+2008-05-06  Patrick West <pwest@ucar.edu>
+
+	This is version 2.3.0, not 2.2.0. We've already done 2.2.0. With only the
+	changes in the database code and how we look up instrument and parameter
+	types, this isn't a major release.
+	M    configure.ac
+
+2008-04-22  Patrick West <pwest@ucar.edu>
+
+	Cleaning up for release distribution
+	A    unit-tests/bes.conf.in
+	M    unit-tests/Makefile.am
+	D    unit-tests/bes.conf
+	M    Makefile.am
+
+2008-04-22  Patrick West <pwest@ucar.edu>
+
+	Clearing out some information
+	M    ChangeLog
+	M    testsuite/bes.conf.in
+	M    unit-tests/bes.conf
+
+;; Local Variables:
+;; coding: utf-8
+;; End:
+2008-04-22  Patrick West <pwest@ucar.edu>
+
+	If unable to access database to read instrument and parameter data,
+	exception was thrown of type BESError, but was being caught as an
+	unknown exception in the cedar_read_* functioons. Now catching
+	BESError.
+	M    configure.ac
+	M    cedar_read_info.cc
+	M    cedar_read_tab.cc
+	M    testsuite/bes.conf.in
+	M    testsuite/cedar/mfp920504a.das.bescmd.baseline
+	M    cedar_read_attributes.cc
+	M    unit-tests/bes.conf
+	M    cedar_read_flat.cc
+	M    cedar_read_descriptors.cc
+
+2008-04-21  Patrick West <pwest@ucar.edu>
+
+	If null value returned from database add an empty string.
+	M    COPYRIGHT
+	M    NEWS
+	M    ChangeLog
+	A    INSTALL
+	M    unit-tests/kinstT.cc
+	A    README
+	M    CedarMySQLDB.cc
+
+;; Local Variables:
+;; coding: utf-8
+;; End:
+2008-04-16  Patrick West <pwest@ucar.edu>
+
+	LATITUDE, LONGITUDE, and ALT no longer exist in the tbl_instrument
+	table but now in the tbl_site table.
+	M    CedarReadKinst.cc
+
+2008-03-03  Patrick West <pwest@ucar.edu>
+
+	extra distribution directory was wcs instead of cedar. Copy/paste.
+	Using resize instead of reserve on map<string,string> in
+	CedarMySQLResult. Changed the parameters to constructors to take
+	const int instead of const int reference.
+	M    testsuite/Makefile.am
+	M    CedarDBResult.h
+	M    unit-tests/kinstT.cc
+	M    unit-tests/parcodsT.cc
+	M    unit-tests/authT.cc
+	M    unit-tests/bes.conf
+	M    unit-tests/dbT.cc
+	M    CedarMySQLResult.cc
+	M    CedarMySQLResult.h
+
+2008-03-03  Patrick West <pwest@ucar.edu>
+
+	Renamed the MySQL classes to Cedar... instead of DODS... Re-wrote
+	the MySQL classes to be more intuitive. Moved the Parcods and Kinst
+	checking from the Cedar++ library to hear. Switched to accessing
+	database for Parcods and Kinst rather than ingest generated header
+	files. Added testsuite using besstandalone.
+	M    encode.cc
+	A    CedarEncode.h
+	D    DODSEncode.cc
+	M    CedarTab.h
+	M    bes.conf
+	D    DODSEncode.h
+	D    DODSMySQLChannel.h
+	A    CedarMySQLDB.h
+	M    configure.ac
+	M    CedarModule.cc
+	A    bes-cedar-data.sh.in
+	AM   checkKinst.cc
+	M    CedarFlat.h
+	M    CedarInfo.h
+	A    CedarEncode.cc
+	D    ContainerStorageMySQL.h
+	M    FlatResponseHandler.cc
+	D    DODSMySQLQuery.cc
+	A    testsuite
+	A    testsuite/besstandalone.cedar
+	A    testsuite/besstandalone.cedar/mfp920504a.ddx.exp
+	A    testsuite/besstandalone.cedar/mfp920504a.flat.exp
+	A    testsuite/besstandalone.cedar/mfp920504a.tab.exp
+	A    testsuite/besstandalone.cedar/mfp920504a.das.exp
+	A    testsuite/besstandalone.cedar/mfp920504a.ascii.exp
+	A    testsuite/besstandalone.cedar/mfp920504a.dds.exp
+	A    testsuite/besstandalone.cedar/mfp920504a.info.exp
+	A    testsuite/besstandalone.cedar/mfp920504a.stream.exp
+	A    testsuite/bes.conf.in
+	A    testsuite/common_tests.exp
+	A    testsuite/config
+	A    testsuite/config/unix.exp
+	A    testsuite/Makefile.am
+	A    testsuite/cedar
+	A    testsuite/cedar/mfp920504a.ddx.bescmd
+	A    testsuite/cedar/mfp920504a.flat.bescmd
+	A    testsuite/cedar/mfp920504a.tab.bescmd.baseline
+	A    testsuite/cedar/mfp920504a.ascii.bescmd
+	A    testsuite/cedar/mfp920504a.das.bescmd.baseline
+	A    testsuite/cedar/mfp920504a.dds.bescmd.baseline
+	A    testsuite/cedar/mfp920504a.info.bescmd
+	A    testsuite/cedar/mfp920504a.stream.bescmd
+	A    testsuite/cedar/mfp920504a.ddx.bescmd.baseline
+	A    testsuite/cedar/mfp920504a.tab.bescmd
+	A    testsuite/cedar/mfp920504a.das.bescmd
+	A    testsuite/cedar/mfp920504a.flat.bescmd.baseline
+	A    testsuite/cedar/mfp920504a.ascii.bescmd.baseline
+	A    testsuite/cedar/mfp920504a.dds.bescmd
+	AM   testsuite/cedar/mfp920504a.stream.bescmd.baseline
+	A    testsuite/cedar/mfp920504a.info.bescmd.baseline
+	M    InfoResponseHandler.cc
+	D    DODSMySQLChannel.cc
+	M    CedarAuthenticate.cc
+	D    DODSMySQLResult.cc
+	M    cedar_read_attributes.cc
+	M    cedar_read_attributes.h
+	A    CedarDB.h
+	A    CedarMySQLQuery.cc
+	D    DODSMySQLConnect.h
+	A    conf/pkg.m4
+	M    CedarTab.cc
+	AM   checkParcod.cc
+	M    CedarHandlerApp.cc
+	A    CedarMySQLConnect.cc
+	D    DODSMySQLResult.h
+	A    CedarDB.cc
+	A    CedarDBResult.h
+	M    CedarFlat.cc
+	A    data
+	AM   data/mfp920504a.cbf
+	A    CedarReadParcods.cc
+	A    unit-tests
+	A    unit-tests/test_config.h.in
+	A    unit-tests/kinstT.cc
+	A    unit-tests/parcodsT.cc
+	A    unit-tests/authT.cc
+	A    unit-tests/Makefile.am
+	A    unit-tests/bes.conf
+	A    unit-tests/dbT.cc
+	A    unit-tests/screen.xml
+	A    CedarMySQLQuery.h
+	D    ContainerStorageMySQL.cc
+	A    CedarMySQLResult.cc
+	A    CedarMySQLResult.h
+	D    DODSMySQLQuery.h
+	A    CedarMySQLDB.cc
+	M    cedar_read_flat.cc
+	A    CedarMySQLConnect.h
+	M    cedar_module.cc
+	M    TabResponseHandler.cc
+	A    CedarReadKinst.cc
+	M    Makefile.am
+	AM   CedarReadKinst.h
+	AM   CedarReadParcods.h
+	D    DODSMySQLConnect.cc
+	M    cedar_read_descriptors.cc
+	M    CedarInfo.cc
+
+2008-02-14  Patrick West <pwest@ucar.edu>
+
+	Don't need the config_cedar.h.in file as part of the release. It is
+	generated. Updated the libdap and bes configure scripts (m4 files).
+	M    configure.ac
+	D    config_cedar.h.in
+	M    conf/bes.m4
+	M    conf/libdap.m4
+	M    Makefile.am
+
+2008-02-02  Patrick West <pwest@ucar.edu>
+
+	Added using namespace libdap where needed.
+	M    CedarHandlerApp.h
+	M    CedarRequestHandler.cc
+	D    DODSMySQLQueryException.h
+	M    cedar_read_descriptors.h
+	M    CedarAuthenticateException.h
+	M    CedarReporter.cc
+	M    DODSMySQLQuery.cc
+	M    ContainerStorageCedar.cc
+	M    CedarFSDir.cc
+	M    CedarAuthenticate.cc
+	M    cedar_read_attributes.h
+	M    CedarAuthenticateException.cc
+	M    DODSMySQLQuery.h
+	D    DODSMySQLConnectException.h
+	M    cedar_handler.cc
+	M    cedar_module.cc
+	M    Makefile.am
+	M    CedarFilter.h
+	M    DODSMySQLConnect.cc
+
+2008-01-30  Patrick West <pwest@ucar.edu>
+
+	Underscore in name consistent with other handlers and modules
+	A    http://scm.opendap.org:8090/svn/trunk/cedar_handler
+	D    http://scm.opendap.org:8090/svn/trunk/cedar-handler
+
+2007-09-19  Patrick West <pwest@ucar.edu>
+
+	Adding \0 to the stream causes a question mark to be displayed
+	rather than marking the end of the string. Removed this from
+	cedar_read_info, read_tab, and read_flat. The STREAM capability in
+	the BES was added in this release of the BES. To get the Cedar
+	version of this needed to remove the BES STREAM response handler and
+	add the CEDAR one in cedar_module.cc.
+	M    cedar_read_info.cc
+	M    cedar_read_tab.cc
+	M    cedar_read_flat.cc
+	M    cedar_module.cc
+
+2007-09-11  Patrick West <pwest@ucar.edu>
+
+	Table name for authentication now cedar_sessions. New constructor
+	for BESTextInfo, changed in Tab, Flat and Info.
+	M    CedarAuthenticate.cc
+	M    CedarTab.cc
+	M    CedarFlat.cc
+	M    CedarInfo.cc
+
+2007-08-22  Patrick West <pwest@ucar.edu>
+
+	Replaced AutoPtr with C++ autoptr, which required using vector<type>
+	instead of type[]. Changed name of OPeNDAPDir and OPeNDAPFile to
+	CedarFSDir and CedarFSFile (FS referring to file system). Rearranged
+	includes in Cedar++ requiring changes here.
+	M    bes.conf
+	D    CedarDir.h
+	M    CedarModule.cc
+	M    cedar_read_descriptors.h
+	M    cedar_read_tab.cc
+	M    ContainerStorageCedar.cc
+	A    CedarFSDir.cc
+	M    cedar_read_attributes.cc
+	A    CedarFSFile.cc
+	A    CedarFSDir.h
+	A    CedarFSFile.h
+	D    CedarDir.cc
+	D    CedarFile.cc
+	M    cedar_read_flat.cc
+	D    CedarFile.h
+	M    Makefile.am
+	M    cedar_read_descriptors.cc
+
+2007-08-22  Patrick West <pwest@ucar.edu>
+
+	Renaming to be more Cedar specific
+	A    CedarDir.h
+	A    CedarDir.cc
+	A    CedarFile.h
+	A    CedarFile.cc
+	D    OPeNDAPDir.h
+	D    OPeNDAPDir.cc
+	D    OPeNDAPFile.h
+	D    OPeNDAPFile.cc
+
+2007-08-07  Patrick West <pwest@ucar.edu>
+
+	Not needed in libdap, specific to cedar project.
+	A    http://scm.opendap.org:8090/svn/trunk/cedar-handler/OPeNDAPFile.h
+	D    http://scm.opendap.org:8090/svn/trunk/libdap/OPeNDAPFile.h
+
+2007-08-07  Patrick West <pwest@ucar.edu>
+
+	Not needed in libdap, specific to cedar project.
+	A    http://scm.opendap.org:8090/svn/trunk/cedar-handler/OPeNDAPFile.cc
+	D    http://scm.opendap.org:8090/svn/trunk/libdap/OPeNDAPFile.cc
+
+2007-08-07  Patrick West <pwest@ucar.edu>
+
+	Not needed in libdap, specific to cedar project.
+	A    http://scm.opendap.org:8090/svn/trunk/cedar-handler/OPeNDAPDir.cc
+	D    http://scm.opendap.org:8090/svn/trunk/libdap/OPeNDAPDir.cc
+
+2007-08-07  Patrick West <pwest@ucar.edu>
+
+	Not needed in libdap, specific to cedar project.
+	A    http://scm.opendap.org:8090/svn/trunk/cedar-handler/OPeNDAPDir.h
+	D    http://scm.opendap.org:8090/svn/trunk/libdap/OPeNDAPDir.h
+
+2007-07-31  Patrick West <pwest@ucar.edu>
+
+	BESDebug modifications, passing context to BESDEBUG and registering
+	debug context in Module classes.
+
+	M    CedarRequestHandler.cc
+	M    cedar_handler.cc
+
+2007-07-14  Patrick West <pwest@ucar.edu>
+
+	Updates for cedar-handler with new response handler signatures
+	M    bes.conf
+	M    InfoResponseHandler.h
+	M    FlatResponseHandler.cc
+	M    FlatResponseHandler.h
+	M    ContainerStorageCedar.cc
+	M    InfoResponseHandler.cc
+	M    ContainerStorageCedar.h
+	M    StreamResponseHandler.h
+	M    CedarHandlerApp.cc
+	M    StreamResponseHandler.cc
+	M    TabResponseHandler.cc
+	M    TabResponseHandler.h
+
+2007-04-25  Patrick West <pwest@ucar.edu>
+
+	Moving opendap.ini to bes.conf
+	A    bes.conf
+	D    opendap.ini
+
+2007-02-07  Patrick West <pwest@ucar.edu>
+
+	Using the new exception methods to handle the cedar authentication
+	exceptions.
+	M    CedarAuthenticateException.cc
+	M    cedar_commands.cc
+
+2007-01-12  Patrick West <pwest@ucar.edu>
+
+	Created ChangeLog file to keep track of changes between releases.
+	A    ChangeLog
+
+;; Local Variables:
+;; coding: utf-8
+;; End:
+2007-01-11  Patrick West <pwest@ucar.edu>
+
+	Changed the name of the data handler to dap_cedar_handler to keep
+	with naming of other handlers. Added dump methods to the response
+	objects, the response handlers, and the request handler to debugging
+	purposes. Created a bes module library to be loaded by the bes. The
+	dap_cedar_handler and the bes module appear to be working, must now
+	test the apache module portion.
+	M    CedarTab.h
+	M    InfoResponseHandler.h
+	M    CedarHandlerApp.h
+	M    CedarRequestHandler.cc
+	M    CedarFlat.h
+	M    CedarInfo.h
+	M    FlatResponseHandler.cc
+	M    FlatResponseHandler.h
+	M    ContainerStorageCedar.cc
+	M    InfoResponseHandler.cc
+	M    opendap.ini
+	M    CedarTab.cc
+	M    StreamResponseHandler.h
+	M    CedarHandlerApp.cc
+	M    CedarFlat.cc
+	M    CedarRequestHandler.h
+	M    StreamResponseHandler.cc
+	M    cedar_handler.cc
+	M    cedar_module.cc
+	M    TabResponseHandler.cc
+	M    TabResponseHandler.h
+	M    Makefile.am
+	M    CedarInfo.cc
+
+2006-12-01  Patrick West <pwest@ucar.edu>
+
+	Changed configuration to use libdap.m4 from netcdf and changed
+	configure.ac to match. request handler was mis-casting in the
+	build_data call to DDS instead of BESDataDDSResponse.
+	M    configure.ac
+	M    CedarRequestHandler.cc
+	M    opendap.ini
+	M    cedar_commands.cc
+	M    conf/bes.m4
+	M    conf/libdap.m4
+	M    Makefile.am
+	M    cedar_read_descriptors.cc
+
+2006-11-23  Patrick West <pwest@ucar.edu>
+
+	Added a dump method to each of the classes listed below for BES
+	debugging.
+	M    CedarModule.cc
+	M    CedarReporter.cc
+	M    ContainerStorageCedar.cc
+	M    cedar_commands.cc
+	M    ContainerStorageCedar.h
+	M    CedarHandlerApp.cc
+	M    CedarReporter.h
+	M    CedarModule.h
+
+2006-11-02  Patrick West <pwest@ucar.edu>
+
+	ConstraintEvaluator is now a part of the BESDDSResponse and
+	BESDataDDSResponse classes instead of BESDataHandlerInterface. Any
+	Error exceptions need to be caught in the request handlers and
+	converted into BESHandlerException, which is the non-fatal
+	exception. Now using the --moduledir option on bes-config to
+	determine where the module libraries are.
+	M    CedarRequestHandler.cc
+	M    conf/bes.m4
+	M    Makefile.am
+
+2006-09-05  Patrick West <pwest@ucar.edu>
+
+	The Cedar login screen is now created from an outside file instead
+	of inside the code. This way we can make changes to the login screen
+	without having to rebuild the code. Created a cedar_login.html file
+	with the login screen.  Moved the help files to a subdirectory and
+	using pkgdata to install them instead of a local install. The
+	modules still have to be installed that way.
+	D    cedar_help.html
+	M    CedarAuthenticateException.cc
+	D    cedar_help.txt
+	M    cedar_module.cc
+	M    Makefile.am
+	A    cedar/cedar_help.txt
+	A    cedar/cedar_help.html
+	A    cedar/cedar_login.html
+
+2006-09-05  Patrick West <pwest@ucar.edu>
+
+	package directory added to cedar-handler
+
+2006-08-19  Patrick West <pwest@ucar.edu>
+
+	Passing the name of the module to the initialize and terminate
+	methods of the Module class so that it is set in the bes
+	configuration file instead of hard-coded
+
+2006-08-19  Patrick West <pwest@ucar.edu>
+
+	changed access to file to use access method on Container and added
+	compression parameters to the BES configuraiton file
+
+2006-08-15  Patrick West <pwest@ucar.edu>
+
+	updated release number to reflect addition of token string in
+	authentication
+
+2006-08-14  Patrick West <pwest@ucar.edu>
+
+	Cedar now can authenticate with a passed token. Check the token
+	against the tbl_sessions table in the CEDARAUTHEN database. Changed
+	the Makefile to use dap_cmd_module, the new naming scheme for
+	dynamically loaded library modules.
+	M    CedarAuthenticate.cc
+	M    Makefile.am
+
+2006-07-06  Patrick West <pwest@ucar.edu>
+
+	dap_cmdmodule library renamed to dap_cmd_module so that all loaded
+	module libraries are named <something>_module
+
+2006-06-30  Patrick West <pwest@ucar.edu>
+
+	In the help response added begin and end tags called handler to
+	separate the different hander help responses and added a tag called
+	name within the handler tag to say which handler this help is for
+
+2006-06-29  Patrick West <pwest@ucar.edu>
+
+	distribution check
+
+2006-06-28  Patrick West <pwest@ucar.edu>
+
+	bes exception updates, cleaned up configuration file, info classes
+	upgraded to new BESInfo class
+
+2006-06-16  Patrick West <pwest@ucar.edu>
+
+	now at version 2.1.0 of cedar-handler
+
+2006-06-16  Patrick West <pwest@ucar.edu>
+
+	mysql configuration fix
+
+2006-06-14  Patrick West <pwest@ucar.edu>
+
+	https port now configurable with --with-https=<port>
+
+2006-06-14  Patrick West <pwest@ucar.edu>
+
+	configuration updates, bes modules in lib/bes
+
+2006-05-24  Patrick West <pwest@ucar.edu>
+
+	bes module updates
+
+2006-05-16  Patrick West <pwest@ucar.edu>
+
+	container storage method name change rem_persistence to
+	del_persistence, the persistent store is deleted, not just removed.
+	Error handled in cedar_handler.
+
+2006-05-10  Patrick West <pwest@ucar.edu>
+
+	bes enabled
+
+2006-05-10  Patrick West <pwest@ucar.edu>
+
+	configuration updates
+
+2006-05-10  Patrick West <pwest@ucar.edu>
+
+	dap and command initialization automatic
+
+2006-05-10  Patrick West <pwest@ucar.edu>
+
+	added encode test program
+
+2006-05-10  Patrick West <pwest@ucar.edu>
+
+	added unix socket and port for mysql to opendap initialization file
+
+2006-03-07  Patrick West <pwest@ucar.edu>
+
+	removed cedar_version.h so needed to change configure.ac
+
+2006-03-07  Patrick West <pwest@ucar.edu>
+
+	no longer need cedar_version, now using config_cedar.h.in
+
+2006-03-07  Patrick West <pwest@ucar.edu>
+
+	update configuration
+
+2006-01-18  Patrick West <pwest@ucar.edu>
+
+	renamed persistence to storage. Put addition of
+	ContainerStorageCedar in cedar_module.
+
+2005-11-10  Patrick West <pwest@ucar.edu>
+
+	removed dependencies
+
+2005-11-10  Patrick West <pwest@ucar.edu>
+
+	added callbacks for initialization to do cedar authentication and
+	exception handler to catch authentication exception
+
+2005-10-07  Patrick West <pwest@ucar.edu>
+
+	changed deprecated C++ calls and catching problems in base app
+	initialization in cedar handler app
+
+2005-09-19  Patrick West <pwest@ucar.edu>
+
+	globals changed to static singleton references. Move authentication
+	out of bes and into cedar-handler since it is specific to cedar.
+	Moved mysql code out of bes since specific to cedar.
+
+2005-09-19  Patrick West <pwest@ucar.edu>
+
+	removing authentication from bes
+
+2005-09-16  Patrick West <pwest@ucar.edu>
+
+	moved mysql code from bes/dispatch to cedar-handler, updated
+	configuration and code to reflect that move
+
+2005-09-08  Patrick West <pwest@ucar.edu>
+
+	MySQL code is specific to cedar code and is not general
+
+2005-08-31  Patrick West <pwest@ucar.edu>
+
+	moved etc scripts to this directory, no dependency
+
+2005-08-31  Patrick West <pwest@ucar.edu>
+
+	macro changed to just one PERSISTENCE_INIT macro
+
+2005-08-22  Patrick West <pwest@ucar.edu>
+
+	Added comment headers
+
+2005-08-22  Patrick West <pwest@ucar.edu>
+
+	removed parsing from Response Handlers. Moved command building to
+	cedar_commands.cc. Using App class for Handler.
+
+2005-08-08  root
+
+	Auto reset of Subversion properties
+
+2005-08-01  Patrick West <pwest@ucar.edu>
+
+	no need to link in aggregation handler
+
+2005-07-06  Patrick West <pwest@ucar.edu>
+
+	default prefix is $OPENDAP_ROOT. using version like dispatch with
+	version.h file and cear_version function using that. Installing
+	module cedar_module.o and library and handler, but not headers.
+
+2005-07-05  Rob Morris <Robert.O.Morris@jpl.nasa.gov>
+
+	Set eol-style to native on all text file in the trunk
+
+2005-07-05  Patrick West <pwest@ucar.edu>
+
+	Moved configuration functions into configure.in
+
+2005-07-05  Patrick West <pwest@ucar.edu>
+
+	Moving cedar-handler code to top-level directory
+
+2005-05-27  Patrick West <pwest@ucar.edu>
+
+	install the cgi handler into a cgi-bin directory
+
+2005-05-09  Patrick West <pwest@ucar.edu>
+
+	using const reference to strings in signature instead of string values
+
+2005-05-09  Patrick West <pwest@ucar.edu>
+
+	removed dependence on DODS_ROOT, configuring to libdap, removed DODS
+	as much as possible
+
+2005-04-07  Patrick West <pwest@ucar.edu>
+
+	fixed CXXFLAGS
+
+2005-04-07  Patrick West <pwest@ucar.edu>
+
+	using add_data_from_file method of DODSInfo
+
+2005-04-07  Patrick West <pwest@ucar.edu>
+
+	created configure script to be used for releases
+
+2005-04-07  Patrick West <pwest@ucar.edu>
+
+	removed dependencies from checked in version
+
+2005-04-07  Patrick West <pwest@ucar.edu>
+
+	corrected help information removing general OPeNDAP help information
+
+2005-04-06  Patrick West <pwest@ucar.edu>
+
+	added install-program to install cedar_handler
+
+2005-04-06  Patrick West <pwest@ucar.edu>
+
+	added dods_module.o link line
+
+2005-04-06  Patrick West <pwest@ucar.edu>
+
+	added initialization and termination calls
+
+2005-03-17  Patrick West <pwest@ucar.edu>
+
+	added more information to error messages
+
+2005-03-17  Patrick West <pwest@ucar.edu>
+
+	impelementing rem_container and show_containers
+
+2005-02-09  Patrick West <pwest@ucar.edu>
+
+	catch up to dispatch
+
+2005-02-01  Patrick West <pwest@ucar.edu>
+
+	integration of ESG into opendap
+
+2004-12-15  Patrick West <pwest@ucar.edu>
+
+	added copyright, updated container persistence method look_for
+
+2004-07-09  Patrick West <pwest@ucar.edu>
+
+	If the user name is not available then print this information out,
+	otherwise print the user name.
+
+2004-07-09  Patrick West <pwest@ucar.edu>
+
+	Using default key for buffering information instead of uniq keys for
+	flat and tab
+
+2004-07-02  Patrick West <pwest@ucar.edu>
+
+	added function to read data instead of using dds function
+
+2004-06-30  Patrick West <pwest@ucar.edu>
+
+	type in CPPFLAGS
+
+2004-06-30  Patrick West <pwest@ucar.edu>
+
+	cedar_handler uses the new dispatch code and can also be built for
+	normal cgi scripting (except the cgi needs to be updated to not
+	check for extensions but allow the handler to do that) The cgi
+	handler also needs the dispatch code.
+
+;; Local Variables:
+;; coding: utf-8
+;; End:

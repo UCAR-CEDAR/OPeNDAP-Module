@@ -1,0 +1,84 @@
+#-----------------------------------------------------------------------#
+# OPeNDAP Cedar Data Handler BES Module Configuration file              #
+#-----------------------------------------------------------------------#
+
+#-----------------------------------------------------------------------#
+# Require dap configuration to be loaded first                          #
+#-----------------------------------------------------------------------#
+BES.Include=dap.conf
+
+#-----------------------------------------------------------------------#
+# modules to load, includes data modules and command modules            #
+#-----------------------------------------------------------------------#
+
+BES.modules+=cedar
+BES.module.cedar=@bes_modules_dir@/libcedar_module.so
+
+#-----------------------------------------------------------------------#
+# Setting the data information
+#-----------------------------------------------------------------------#
+
+# Cedar Handler specific parameters
+# Cedar.LogName - file to store cedar access information
+# Cedar.BaseDir - base directory where the cedar data resides
+# Cedar.LoginScreen.XML - file that contains the html page to
+#   display if login is needed
+# Cedar.Help.TXT - location of the text version of cedar help
+# Cedar.Help.HTML - location of the html version of cedar help
+# Cedar.Help.XML - location of the xml version of cedar help
+# Cedar.Authenticate.Mode=on|off - should the server authenticate
+# Cedar.DB.Authenticate.Type=mysql - type of database for authentication database
+# Cedar.DB.Authenticate.Server= - MySQL server (i.e. localhost)
+# Cedar.DB.Authenticate.User= - MySQL user name to connect to db
+# Cedar.DB.Authenticate.Password= - MySQL password for user to connect
+# Cedar.DB.Authenticate.Database= - MySQL database with session table
+# Cedar.DB.Authenticate.Socket= - MySQL unix socket used to connect
+# Cedar.DB.Authenticate.Port= - MySQL TCP Port used to connect, socket typically used
+# Cedar.DB.Catalog.Type=mysql - type of database for CEDARCATALOG
+# Cedar.DB.Catalog.Server= - MySQL server (i.e. localhost)
+# Cedar.DB.Catalog.User= - MySQL user name to connect to db
+# Cedar.DB.Catalog.Password= - MySQL password for user to connect
+# Cedar.DB.Catalog.Database= - MySQL database with catalog tables
+# Cedar.DB.Catalog.Socket= - MySQL unix socket used to connect
+# Cedar.DB.Catalog.Port= - MySQL TCP Port used to connect, socket typically used
+# Cedar.DB.Reporter.Type=mysql - type of database to use for CEDARREPORTER
+# Cedar.DB.Reporter.Server= - MySQL server (i.e. localhost)
+# Cedar.DB.Reporter.User= - MySQL user name to connect to db
+# Cedar.DB.Reporter.Password= - MySQL password for user to connect
+# Cedar.DB.Reporter.Database= - MySQL database with reporter table
+# Cedar.DB.Reporter.Socket= - MySQL unix socket used to connect
+# Cedar.DB.Reporter.Port= - MySQL TCP Port used to connect, socket typically used
+
+Cedar.LogName=./cedar.log
+Cedar.BaseDir=@datadir@/hyrax/data/cedar
+Cedar.LoginScreen.XML=./screen.xml
+
+Cedar.Help.TXT=@pkgdatadir@/cedar_help.txt
+Cedar.Help.HTML=@pkgdatadir@/cedar_help.html
+Cedar.Help.XML=@pkgdatadir@/cedar_help.txt
+
+Cedar.Authenticate.Mode=on
+Cedar.DB.Authenticate.Type=mysql
+Cedar.DB.Authenticate.Server=localhost
+Cedar.DB.Authenticate.User=root
+Cedar.DB.Authenticate.Password=
+Cedar.DB.Authenticate.Database=
+Cedar.DB.Authenticate.Socket=/tmp/mysql.sock
+Cedar.DB.Authenticate.Port=
+
+Cedar.DB.Catalog.Type=mysql
+Cedar.DB.Catalog.Server=localhost
+Cedar.DB.Catalog.User=root
+Cedar.DB.Catalog.Password=
+Cedar.DB.Catalog.Database=
+Cedar.DB.Catalog.Socket=/tmp/mysql.sock
+Cedar.DB.Catalog.Port=
+
+Cedar.DB.Reporter.Type=mysql
+Cedar.DB.Reporter.Server=localhost
+Cedar.DB.Reporter.User=root
+Cedar.DB.Reporter.Password=
+Cedar.DB.Reporter.Database=
+Cedar.DB.Reporter.Socket=/tmp/mysql.sock
+Cedar.DB.Reporter.Port=
+

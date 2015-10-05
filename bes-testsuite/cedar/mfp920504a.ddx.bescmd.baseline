@@ -1,0 +1,3392 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Dataset name="mfp920504a.cbf"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xmlns="http://xml.opendap.org/ns/DAP2"
+xsi:schemaLocation="http://xml.opendap.org/ns/DAP2  http://xml.opendap.org/dap/dap2.xsd">
+
+    <Attribute name="Data_Descriptor_for_KINDAT_7001_KINST_5340" type="Container">
+        <Attribute name="KINST" type="Container">
+            <Attribute name="KINST" type="String">
+                <value>&quot;5340&quot;</value>
+            </Attribute>
+            <Attribute name="NAME" type="String">
+                <value>&quot;Millstone Hill Fabry-Perot&quot;</value>
+            </Attribute>
+            <Attribute name="PREFIX" type="String">
+                <value>&quot;MFP&quot;</value>
+            </Attribute>
+            <Attribute name="LATITUDE" type="String">
+                <value>&quot;42 36&apos;43\&quot;&quot;</value>
+            </Attribute>
+            <Attribute name="LONGITUDE" type="String">
+                <value>&quot;-71 29&apos;05\&quot;&quot;</value>
+            </Attribute>
+            <Attribute name="ALTITUDE" type="String">
+                <value>&quot;0.146&quot;</value>
+            </Attribute>
+        </Attribute>
+        <Attribute name="JPAR_0" type="Container">
+            <Attribute name="CODE" type="String">
+                <value>&quot;153&quot;</value>
+            </Attribute>
+            <Attribute name="SHORTNAME" type="String">
+                <value>&quot;Ref Gd Lat&quot;</value>
+            </Attribute>
+            <Attribute name="LONGNAME" type="String">
+                <value>&quot;Reference geod latitude (N hemi=pos)&quot;</value>
+            </Attribute>
+            <Attribute name="SCALE" type="String">
+                <value>&quot;1.E-02&quot;</value>
+            </Attribute>
+            <Attribute name="UNIT" type="String">
+                <value>&quot;deg&quot;</value>
+            </Attribute>
+        </Attribute>
+        <Attribute name="JPAR_1" type="Container">
+            <Attribute name="CODE" type="String">
+                <value>&quot;156&quot;</value>
+            </Attribute>
+            <Attribute name="SHORTNAME" type="String">
+                <value>&quot;Ref Gd Lon&quot;</value>
+            </Attribute>
+            <Attribute name="LONGNAME" type="String">
+                <value>&quot;Reference geodetic longitude&quot;</value>
+            </Attribute>
+            <Attribute name="SCALE" type="String">
+                <value>&quot;1.E-02&quot;</value>
+            </Attribute>
+            <Attribute name="UNIT" type="String">
+                <value>&quot;deg&quot;</value>
+            </Attribute>
+        </Attribute>
+        <Attribute name="JPAR_2" type="Container">
+            <Attribute name="CODE" type="String">
+                <value>&quot;2400&quot;</value>
+            </Attribute>
+            <Attribute name="SHORTNAME" type="String">
+                <value>&quot;Wavelength&quot;</value>
+            </Attribute>
+            <Attribute name="LONGNAME" type="String">
+                <value>&quot;Wavelength&quot;</value>
+            </Attribute>
+            <Attribute name="SCALE" type="String">
+                <value>&quot;1.E-01&quot;</value>
+            </Attribute>
+            <Attribute name="UNIT" type="String">
+                <value>&quot;nm&quot;</value>
+            </Attribute>
+        </Attribute>
+        <Attribute name="JPAR_3" type="Container">
+            <Attribute name="CODE" type="String">
+                <value>&quot;1010&quot;</value>
+            </Attribute>
+            <Attribute name="SHORTNAME" type="String">
+                <value>&quot;Rot angl-gg&quot;</value>
+            </Attribute>
+            <Attribute name="LONGNAME" type="String">
+                <value>&quot;Geographic unit vector rotation angle&quot;</value>
+            </Attribute>
+            <Attribute name="SCALE" type="String">
+                <value>&quot;1.E-02&quot;</value>
+            </Attribute>
+            <Attribute name="UNIT" type="String">
+                <value>&quot;deg&quot;</value>
+            </Attribute>
+        </Attribute>
+        <Attribute name="MPAR_0" type="Container">
+            <Attribute name="CODE" type="String">
+                <value>&quot;10&quot;</value>
+            </Attribute>
+            <Attribute name="SHORTNAME" type="String">
+                <value>&quot;Yr&quot;</value>
+            </Attribute>
+            <Attribute name="LONGNAME" type="String">
+                <value>&quot;Year (universal time)&quot;</value>
+            </Attribute>
+            <Attribute name="SCALE" type="String">
+                <value>&quot;1.&quot;</value>
+            </Attribute>
+            <Attribute name="UNIT" type="String">
+                <value>&quot;yr&quot;</value>
+            </Attribute>
+        </Attribute>
+        <Attribute name="MPAR_1" type="Container">
+            <Attribute name="CODE" type="String">
+                <value>&quot;21&quot;</value>
+            </Attribute>
+            <Attribute name="SHORTNAME" type="String">
+                <value>&quot;Day No&quot;</value>
+            </Attribute>
+            <Attribute name="LONGNAME" type="String">
+                <value>&quot;Day number of year (universal time)&quot;</value>
+            </Attribute>
+            <Attribute name="SCALE" type="String">
+                <value>&quot;1.&quot;</value>
+            </Attribute>
+            <Attribute name="UNIT" type="String">
+                <value>&quot;day&quot;</value>
+            </Attribute>
+        </Attribute>
+        <Attribute name="MPAR_2" type="Container">
+            <Attribute name="CODE" type="String">
+                <value>&quot;34&quot;</value>
+            </Attribute>
+            <Attribute name="SHORTNAME" type="String">
+                <value>&quot;Time &gt; 0UT&quot;</value>
+            </Attribute>
+            <Attribute name="LONGNAME" type="String">
+                <value>&quot;Time past 0000 UT&quot;</value>
+            </Attribute>
+            <Attribute name="SCALE" type="String">
+                <value>&quot;1.E-03&quot;</value>
+            </Attribute>
+            <Attribute name="UNIT" type="String">
+                <value>&quot;hour&quot;</value>
+            </Attribute>
+        </Attribute>
+        <Attribute name="MPAR_3" type="Container">
+            <Attribute name="CODE" type="String">
+                <value>&quot;130&quot;</value>
+            </Attribute>
+            <Attribute name="SHORTNAME" type="String">
+                <value>&quot;Az&quot;</value>
+            </Attribute>
+            <Attribute name="LONGNAME" type="String">
+                <value>&quot;Mean azimuth angle (0=geog N,90=east)&quot;</value>
+            </Attribute>
+            <Attribute name="SCALE" type="String">
+                <value>&quot;1.E-02&quot;</value>
+            </Attribute>
+            <Attribute name="UNIT" type="String">
+                <value>&quot;deg&quot;</value>
+            </Attribute>
+        </Attribute>
+        <Attribute name="MPAR_4" type="Container">
+            <Attribute name="CODE" type="String">
+                <value>&quot;140&quot;</value>
+            </Attribute>
+            <Attribute name="SHORTNAME" type="String">
+                <value>&quot;El&quot;</value>
+            </Attribute>
+            <Attribute name="LONGNAME" type="String">
+                <value>&quot;Elevation angle (0=horizontal,90=vert)&quot;</value>
+            </Attribute>
+            <Attribute name="SCALE" type="String">
+                <value>&quot;1.E-02&quot;</value>
+            </Attribute>
+            <Attribute name="UNIT" type="String">
+                <value>&quot;deg&quot;</value>
+            </Attribute>
+        </Attribute>
+        <Attribute name="MPAR_5" type="Container">
+            <Attribute name="CODE" type="String">
+                <value>&quot;800&quot;</value>
+            </Attribute>
+            <Attribute name="SHORTNAME" type="String">
+                <value>&quot;Vnlos&quot;</value>
+            </Attribute>
+            <Attribute name="LONGNAME" type="String">
+                <value>&quot;Line of sight neutral vel (pos = away)&quot;</value>
+            </Attribute>
+            <Attribute name="SCALE" type="String">
+                <value>&quot;1.&quot;</value>
+            </Attribute>
+            <Attribute name="UNIT" type="String">
+                <value>&quot;m/s&quot;</value>
+            </Attribute>
+        </Attribute>
+        <Attribute name="MPAR_6" type="Container">
+            <Attribute name="CODE" type="String">
+                <value>&quot;-800&quot;</value>
+            </Attribute>
+            <Attribute name="SHORTNAME" type="String">
+                <value>&quot;error Vnlos&quot;</value>
+            </Attribute>
+            <Attribute name="LONGNAME" type="String">
+                <value>&quot;ERROR FOR Line of sight neutral vel (pos = away)&quot;</value>
+            </Attribute>
+            <Attribute name="SCALE" type="String">
+                <value>&quot;1.&quot;</value>
+            </Attribute>
+            <Attribute name="UNIT" type="String">
+                <value>&quot;m/s&quot;</value>
+            </Attribute>
+        </Attribute>
+        <Attribute name="MPAR_7" type="Container">
+            <Attribute name="CODE" type="String">
+                <value>&quot;810&quot;</value>
+            </Attribute>
+            <Attribute name="SHORTNAME" type="String">
+                <value>&quot;Tn&quot;</value>
+            </Attribute>
+            <Attribute name="LONGNAME" type="String">
+                <value>&quot;Neutral temperature&quot;</value>
+            </Attribute>
+            <Attribute name="SCALE" type="String">
+                <value>&quot;1.&quot;</value>
+            </Attribute>
+            <Attribute name="UNIT" type="String">
+                <value>&quot;K&quot;</value>
+            </Attribute>
+        </Attribute>
+        <Attribute name="MPAR_8" type="Container">
+            <Attribute name="CODE" type="String">
+                <value>&quot;-810&quot;</value>
+            </Attribute>
+            <Attribute name="SHORTNAME" type="String">
+                <value>&quot;error Tn&quot;</value>
+            </Attribute>
+            <Attribute name="LONGNAME" type="String">
+                <value>&quot;ERROR FOR Neutral temperature&quot;</value>
+            </Attribute>
+            <Attribute name="SCALE" type="String">
+                <value>&quot;1.&quot;</value>
+            </Attribute>
+            <Attribute name="UNIT" type="String">
+                <value>&quot;K&quot;</value>
+            </Attribute>
+        </Attribute>
+        <Attribute name="MPAR_9" type="Container">
+            <Attribute name="CODE" type="String">
+                <value>&quot;415&quot;</value>
+            </Attribute>
+            <Attribute name="SHORTNAME" type="String">
+                <value>&quot;Smpl Tm Usd&quot;</value>
+            </Attribute>
+            <Attribute name="LONGNAME" type="String">
+                <value>&quot;No smpls in time avg; or 414 incremnt&quot;</value>
+            </Attribute>
+            <Attribute name="SCALE" type="String">
+                <value>&quot;1.&quot;</value>
+            </Attribute>
+            <Attribute name="UNIT" type="String">
+                <value>&quot;&quot;</value>
+            </Attribute>
+        </Attribute>
+        <Attribute name="MPAR_10" type="Container">
+            <Attribute name="CODE" type="String">
+                <value>&quot;2506&quot;</value>
+            </Attribute>
+            <Attribute name="SHORTNAME" type="String">
+                <value>&quot;lg(rel br)&quot;</value>
+            </Attribute>
+            <Attribute name="LONGNAME" type="String">
+                <value>&quot;log10 (Relative line/band brightness)&quot;</value>
+            </Attribute>
+            <Attribute name="SCALE" type="String">
+                <value>&quot;1.E-03&quot;</value>
+            </Attribute>
+            <Attribute name="UNIT" type="String">
+                <value>&quot;lg&quot;</value>
+            </Attribute>
+        </Attribute>
+        <Attribute name="MPAR_11" type="Container">
+            <Attribute name="CODE" type="String">
+                <value>&quot;421&quot;</value>
+            </Attribute>
+            <Attribute name="SHORTNAME" type="String">
+                <value>&quot;Chi Sqr&quot;</value>
+            </Attribute>
+            <Attribute name="LONGNAME" type="String">
+                <value>&quot;Reduced-chi square of fit&quot;</value>
+            </Attribute>
+            <Attribute name="SCALE" type="String">
+                <value>&quot;1.E-01&quot;</value>
+            </Attribute>
+            <Attribute name="UNIT" type="String">
+                <value>&quot;&quot;</value>
+            </Attribute>
+        </Attribute>
+        <Attribute name="MPAR_12" type="Container">
+            <Attribute name="CODE" type="String">
+                <value>&quot;1420&quot;</value>
+            </Attribute>
+            <Attribute name="SHORTNAME" type="String">
+                <value>&quot;Vn2&quot;</value>
+            </Attribute>
+            <Attribute name="LONGNAME" type="String">
+                <value>&quot;Direction 2 Neutral wind (northward)&quot;</value>
+            </Attribute>
+            <Attribute name="SCALE" type="String">
+                <value>&quot;1.&quot;</value>
+            </Attribute>
+            <Attribute name="UNIT" type="String">
+                <value>&quot;m/s&quot;</value>
+            </Attribute>
+        </Attribute>
+        <Attribute name="MPAR_13" type="Container">
+            <Attribute name="CODE" type="String">
+                <value>&quot;-1420&quot;</value>
+            </Attribute>
+            <Attribute name="SHORTNAME" type="String">
+                <value>&quot;error Vn2&quot;</value>
+            </Attribute>
+            <Attribute name="LONGNAME" type="String">
+                <value>&quot;ERROR FOR Direction 2 Neutral wind (northward)&quot;</value>
+            </Attribute>
+            <Attribute name="SCALE" type="String">
+                <value>&quot;1.&quot;</value>
+            </Attribute>
+            <Attribute name="UNIT" type="String">
+                <value>&quot;m/s&quot;</value>
+            </Attribute>
+        </Attribute>
+        <Attribute name="MPAR_14" type="Container">
+            <Attribute name="CODE" type="String">
+                <value>&quot;1410&quot;</value>
+            </Attribute>
+            <Attribute name="SHORTNAME" type="String">
+                <value>&quot;Vn1&quot;</value>
+            </Attribute>
+            <Attribute name="LONGNAME" type="String">
+                <value>&quot;Direction 1 Neutral wind (eastward)&quot;</value>
+            </Attribute>
+            <Attribute name="SCALE" type="String">
+                <value>&quot;1.&quot;</value>
+            </Attribute>
+            <Attribute name="UNIT" type="String">
+                <value>&quot;m/s&quot;</value>
+            </Attribute>
+        </Attribute>
+        <Attribute name="MPAR_15" type="Container">
+            <Attribute name="CODE" type="String">
+                <value>&quot;-1410&quot;</value>
+            </Attribute>
+            <Attribute name="SHORTNAME" type="String">
+                <value>&quot;error Vn1&quot;</value>
+            </Attribute>
+            <Attribute name="LONGNAME" type="String">
+                <value>&quot;ERROR FOR Direction 1 Neutral wind (eastward)&quot;</value>
+            </Attribute>
+            <Attribute name="SCALE" type="String">
+                <value>&quot;1.&quot;</value>
+            </Attribute>
+            <Attribute name="UNIT" type="String">
+                <value>&quot;m/s&quot;</value>
+            </Attribute>
+        </Attribute>
+    </Attribute>
+    <Attribute name="Data_Descriptor_for_KINDAT_17001_KINST_5340" type="Container">
+        <Attribute name="KINST" type="Container">
+            <Attribute name="KINST" type="String">
+                <value>&quot;5340&quot;</value>
+            </Attribute>
+            <Attribute name="NAME" type="String">
+                <value>&quot;Millstone Hill Fabry-Perot&quot;</value>
+            </Attribute>
+            <Attribute name="PREFIX" type="String">
+                <value>&quot;MFP&quot;</value>
+            </Attribute>
+            <Attribute name="LATITUDE" type="String">
+                <value>&quot;42 36&apos;43\&quot;&quot;</value>
+            </Attribute>
+            <Attribute name="LONGITUDE" type="String">
+                <value>&quot;-71 29&apos;05\&quot;&quot;</value>
+            </Attribute>
+            <Attribute name="ALTITUDE" type="String">
+                <value>&quot;0.146&quot;</value>
+            </Attribute>
+        </Attribute>
+        <Attribute name="JPAR_0" type="Container">
+            <Attribute name="CODE" type="String">
+                <value>&quot;153&quot;</value>
+            </Attribute>
+            <Attribute name="SHORTNAME" type="String">
+                <value>&quot;Ref Gd Lat&quot;</value>
+            </Attribute>
+            <Attribute name="LONGNAME" type="String">
+                <value>&quot;Reference geod latitude (N hemi=pos)&quot;</value>
+            </Attribute>
+            <Attribute name="SCALE" type="String">
+                <value>&quot;1.E-02&quot;</value>
+            </Attribute>
+            <Attribute name="UNIT" type="String">
+                <value>&quot;deg&quot;</value>
+            </Attribute>
+        </Attribute>
+        <Attribute name="JPAR_1" type="Container">
+            <Attribute name="CODE" type="String">
+                <value>&quot;156&quot;</value>
+            </Attribute>
+            <Attribute name="SHORTNAME" type="String">
+                <value>&quot;Ref Gd Lon&quot;</value>
+            </Attribute>
+            <Attribute name="LONGNAME" type="String">
+                <value>&quot;Reference geodetic longitude&quot;</value>
+            </Attribute>
+            <Attribute name="SCALE" type="String">
+                <value>&quot;1.E-02&quot;</value>
+            </Attribute>
+            <Attribute name="UNIT" type="String">
+                <value>&quot;deg&quot;</value>
+            </Attribute>
+        </Attribute>
+        <Attribute name="JPAR_2" type="Container">
+            <Attribute name="CODE" type="String">
+                <value>&quot;2400&quot;</value>
+            </Attribute>
+            <Attribute name="SHORTNAME" type="String">
+                <value>&quot;Wavelength&quot;</value>
+            </Attribute>
+            <Attribute name="LONGNAME" type="String">
+                <value>&quot;Wavelength&quot;</value>
+            </Attribute>
+            <Attribute name="SCALE" type="String">
+                <value>&quot;1.E-01&quot;</value>
+            </Attribute>
+            <Attribute name="UNIT" type="String">
+                <value>&quot;nm&quot;</value>
+            </Attribute>
+        </Attribute>
+        <Attribute name="JPAR_3" type="Container">
+            <Attribute name="CODE" type="String">
+                <value>&quot;1010&quot;</value>
+            </Attribute>
+            <Attribute name="SHORTNAME" type="String">
+                <value>&quot;Rot angl-gg&quot;</value>
+            </Attribute>
+            <Attribute name="LONGNAME" type="String">
+                <value>&quot;Geographic unit vector rotation angle&quot;</value>
+            </Attribute>
+            <Attribute name="SCALE" type="String">
+                <value>&quot;1.E-02&quot;</value>
+            </Attribute>
+            <Attribute name="UNIT" type="String">
+                <value>&quot;deg&quot;</value>
+            </Attribute>
+        </Attribute>
+        <Attribute name="JPAR_4" type="Container">
+            <Attribute name="CODE" type="String">
+                <value>&quot;1020&quot;</value>
+            </Attribute>
+            <Attribute name="SHORTNAME" type="String">
+                <value>&quot;Rot angl-mg&quot;</value>
+            </Attribute>
+            <Attribute name="LONGNAME" type="String">
+                <value>&quot;Magnetic unit vector rotation angle&quot;</value>
+            </Attribute>
+            <Attribute name="SCALE" type="String">
+                <value>&quot;1.E-02&quot;</value>
+            </Attribute>
+            <Attribute name="UNIT" type="String">
+                <value>&quot;deg&quot;</value>
+            </Attribute>
+        </Attribute>
+        <Attribute name="JPAR_5" type="Container">
+            <Attribute name="CODE" type="String">
+                <value>&quot;213&quot;</value>
+            </Attribute>
+            <Attribute name="SHORTNAME" type="String">
+                <value>&quot;Bdec&quot;</value>
+            </Attribute>
+            <Attribute name="LONGNAME" type="String">
+                <value>&quot;Geomagnetic field east declination&quot;</value>
+            </Attribute>
+            <Attribute name="SCALE" type="String">
+                <value>&quot;1.E-02&quot;</value>
+            </Attribute>
+            <Attribute name="UNIT" type="String">
+                <value>&quot;deg&quot;</value>
+            </Attribute>
+        </Attribute>
+        <Attribute name="MPAR_0" type="Container">
+            <Attribute name="CODE" type="String">
+                <value>&quot;10&quot;</value>
+            </Attribute>
+            <Attribute name="SHORTNAME" type="String">
+                <value>&quot;Yr&quot;</value>
+            </Attribute>
+            <Attribute name="LONGNAME" type="String">
+                <value>&quot;Year (universal time)&quot;</value>
+            </Attribute>
+            <Attribute name="SCALE" type="String">
+                <value>&quot;1.&quot;</value>
+            </Attribute>
+            <Attribute name="UNIT" type="String">
+                <value>&quot;yr&quot;</value>
+            </Attribute>
+        </Attribute>
+        <Attribute name="MPAR_1" type="Container">
+            <Attribute name="CODE" type="String">
+                <value>&quot;21&quot;</value>
+            </Attribute>
+            <Attribute name="SHORTNAME" type="String">
+                <value>&quot;Day No&quot;</value>
+            </Attribute>
+            <Attribute name="LONGNAME" type="String">
+                <value>&quot;Day number of year (universal time)&quot;</value>
+            </Attribute>
+            <Attribute name="SCALE" type="String">
+                <value>&quot;1.&quot;</value>
+            </Attribute>
+            <Attribute name="UNIT" type="String">
+                <value>&quot;day&quot;</value>
+            </Attribute>
+        </Attribute>
+        <Attribute name="MPAR_2" type="Container">
+            <Attribute name="CODE" type="String">
+                <value>&quot;34&quot;</value>
+            </Attribute>
+            <Attribute name="SHORTNAME" type="String">
+                <value>&quot;Time &gt; 0UT&quot;</value>
+            </Attribute>
+            <Attribute name="LONGNAME" type="String">
+                <value>&quot;Time past 0000 UT&quot;</value>
+            </Attribute>
+            <Attribute name="SCALE" type="String">
+                <value>&quot;1.E-03&quot;</value>
+            </Attribute>
+            <Attribute name="UNIT" type="String">
+                <value>&quot;hour&quot;</value>
+            </Attribute>
+        </Attribute>
+        <Attribute name="MPAR_3" type="Container">
+            <Attribute name="CODE" type="String">
+                <value>&quot;132&quot;</value>
+            </Attribute>
+            <Attribute name="SHORTNAME" type="String">
+                <value>&quot;Beg Az&quot;</value>
+            </Attribute>
+            <Attribute name="LONGNAME" type="String">
+                <value>&quot;Beginning azimuth (0=geog N,90=east)&quot;</value>
+            </Attribute>
+            <Attribute name="SCALE" type="String">
+                <value>&quot;1.E-02&quot;</value>
+            </Attribute>
+            <Attribute name="UNIT" type="String">
+                <value>&quot;deg&quot;</value>
+            </Attribute>
+        </Attribute>
+        <Attribute name="MPAR_4" type="Container">
+            <Attribute name="CODE" type="String">
+                <value>&quot;133&quot;</value>
+            </Attribute>
+            <Attribute name="SHORTNAME" type="String">
+                <value>&quot;End Az&quot;</value>
+            </Attribute>
+            <Attribute name="LONGNAME" type="String">
+                <value>&quot;Ending azimuth (0=geog N,90=east)&quot;</value>
+            </Attribute>
+            <Attribute name="SCALE" type="String">
+                <value>&quot;1.E-02&quot;</value>
+            </Attribute>
+            <Attribute name="UNIT" type="String">
+                <value>&quot;deg&quot;</value>
+            </Attribute>
+        </Attribute>
+        <Attribute name="MPAR_5" type="Container">
+            <Attribute name="CODE" type="String">
+                <value>&quot;140&quot;</value>
+            </Attribute>
+            <Attribute name="SHORTNAME" type="String">
+                <value>&quot;El&quot;</value>
+            </Attribute>
+            <Attribute name="LONGNAME" type="String">
+                <value>&quot;Elevation angle (0=horizontal,90=vert)&quot;</value>
+            </Attribute>
+            <Attribute name="SCALE" type="String">
+                <value>&quot;1.E-02&quot;</value>
+            </Attribute>
+            <Attribute name="UNIT" type="String">
+                <value>&quot;deg&quot;</value>
+            </Attribute>
+        </Attribute>
+        <Attribute name="MPAR_6" type="Container">
+            <Attribute name="CODE" type="String">
+                <value>&quot;1420&quot;</value>
+            </Attribute>
+            <Attribute name="SHORTNAME" type="String">
+                <value>&quot;Vn2&quot;</value>
+            </Attribute>
+            <Attribute name="LONGNAME" type="String">
+                <value>&quot;Direction 2 Neutral wind (northward)&quot;</value>
+            </Attribute>
+            <Attribute name="SCALE" type="String">
+                <value>&quot;1.&quot;</value>
+            </Attribute>
+            <Attribute name="UNIT" type="String">
+                <value>&quot;m/s&quot;</value>
+            </Attribute>
+        </Attribute>
+        <Attribute name="MPAR_7" type="Container">
+            <Attribute name="CODE" type="String">
+                <value>&quot;-1420&quot;</value>
+            </Attribute>
+            <Attribute name="SHORTNAME" type="String">
+                <value>&quot;error Vn2&quot;</value>
+            </Attribute>
+            <Attribute name="LONGNAME" type="String">
+                <value>&quot;ERROR FOR Direction 2 Neutral wind (northward)&quot;</value>
+            </Attribute>
+            <Attribute name="SCALE" type="String">
+                <value>&quot;1.&quot;</value>
+            </Attribute>
+            <Attribute name="UNIT" type="String">
+                <value>&quot;m/s&quot;</value>
+            </Attribute>
+        </Attribute>
+        <Attribute name="MPAR_8" type="Container">
+            <Attribute name="CODE" type="String">
+                <value>&quot;1410&quot;</value>
+            </Attribute>
+            <Attribute name="SHORTNAME" type="String">
+                <value>&quot;Vn1&quot;</value>
+            </Attribute>
+            <Attribute name="LONGNAME" type="String">
+                <value>&quot;Direction 1 Neutral wind (eastward)&quot;</value>
+            </Attribute>
+            <Attribute name="SCALE" type="String">
+                <value>&quot;1.&quot;</value>
+            </Attribute>
+            <Attribute name="UNIT" type="String">
+                <value>&quot;m/s&quot;</value>
+            </Attribute>
+        </Attribute>
+        <Attribute name="MPAR_9" type="Container">
+            <Attribute name="CODE" type="String">
+                <value>&quot;-1410&quot;</value>
+            </Attribute>
+            <Attribute name="SHORTNAME" type="String">
+                <value>&quot;error Vn1&quot;</value>
+            </Attribute>
+            <Attribute name="LONGNAME" type="String">
+                <value>&quot;ERROR FOR Direction 1 Neutral wind (eastward)&quot;</value>
+            </Attribute>
+            <Attribute name="SCALE" type="String">
+                <value>&quot;1.&quot;</value>
+            </Attribute>
+            <Attribute name="UNIT" type="String">
+                <value>&quot;m/s&quot;</value>
+            </Attribute>
+        </Attribute>
+        <Attribute name="MPAR_10" type="Container">
+            <Attribute name="CODE" type="String">
+                <value>&quot;1455&quot;</value>
+            </Attribute>
+            <Attribute name="SHORTNAME" type="String">
+                <value>&quot;Vn5h&quot;</value>
+            </Attribute>
+            <Attribute name="LONGNAME" type="String">
+                <value>&quot;Direction 5 Neutral wind horizontl comp&quot;</value>
+            </Attribute>
+            <Attribute name="SCALE" type="String">
+                <value>&quot;1.&quot;</value>
+            </Attribute>
+            <Attribute name="UNIT" type="String">
+                <value>&quot;m/s&quot;</value>
+            </Attribute>
+        </Attribute>
+        <Attribute name="MPAR_11" type="Container">
+            <Attribute name="CODE" type="String">
+                <value>&quot;-1455&quot;</value>
+            </Attribute>
+            <Attribute name="SHORTNAME" type="String">
+                <value>&quot;error Vn5h&quot;</value>
+            </Attribute>
+            <Attribute name="LONGNAME" type="String">
+                <value>&quot;ERROR FOR Direction 5 Neutral wind horizontl comp&quot;</value>
+            </Attribute>
+            <Attribute name="SCALE" type="String">
+                <value>&quot;1.&quot;</value>
+            </Attribute>
+            <Attribute name="UNIT" type="String">
+                <value>&quot;m/s&quot;</value>
+            </Attribute>
+        </Attribute>
+        <Attribute name="MPAR_12" type="Container">
+            <Attribute name="CODE" type="String">
+                <value>&quot;1440&quot;</value>
+            </Attribute>
+            <Attribute name="SHORTNAME" type="String">
+                <value>&quot;Vn4&quot;</value>
+            </Attribute>
+            <Attribute name="LONGNAME" type="String">
+                <value>&quot;Direction 4 Neutral wind (perp east)&quot;</value>
+            </Attribute>
+            <Attribute name="SCALE" type="String">
+                <value>&quot;1.&quot;</value>
+            </Attribute>
+            <Attribute name="UNIT" type="String">
+                <value>&quot;m/s&quot;</value>
+            </Attribute>
+        </Attribute>
+        <Attribute name="MPAR_13" type="Container">
+            <Attribute name="CODE" type="String">
+                <value>&quot;-1440&quot;</value>
+            </Attribute>
+            <Attribute name="SHORTNAME" type="String">
+                <value>&quot;error Vn4&quot;</value>
+            </Attribute>
+            <Attribute name="LONGNAME" type="String">
+                <value>&quot;ERROR FOR Direction 4 Neutral wind (perp east)&quot;</value>
+            </Attribute>
+            <Attribute name="SCALE" type="String">
+                <value>&quot;1.&quot;</value>
+            </Attribute>
+            <Attribute name="UNIT" type="String">
+                <value>&quot;m/s&quot;</value>
+            </Attribute>
+        </Attribute>
+    </Attribute>
+
+    <Structure name="mfp920504a">
+        <Structure name="data_record_1">
+            <Structure name="prologue">
+                <Int16 name="KINST"/>
+                <Int16 name="KINDAT"/>
+                <UInt16 name="IBYRT"/>
+                <UInt16 name="IBDTT"/>
+                <UInt16 name="IBHMT"/>
+                <UInt16 name="IBCST"/>
+                <UInt16 name="IEYRT"/>
+                <UInt16 name="IEDTT"/>
+                <UInt16 name="IEHMT"/>
+                <UInt16 name="IECST"/>
+            </Structure>
+            <Structure name="JPAR">
+                <Int16 name="gdlatr"/>
+                <Int16 name="gdlonr"/>
+                <Int16 name="wavlen"/>
+                <Int16 name="gdra"/>
+            </Structure>
+            <Structure name="MPAR">
+                <Array name="year">
+                    <Int16/>
+                    <dimension size="19"/>
+                </Array>
+                <Array name="dayno">
+                    <Int16/>
+                    <dimension size="19"/>
+                </Array>
+                <Array name="uth">
+                    <Int16/>
+                    <dimension size="19"/>
+                </Array>
+                <Array name="azm">
+                    <Int16/>
+                    <dimension size="19"/>
+                </Array>
+                <Array name="elm">
+                    <Int16/>
+                    <dimension size="19"/>
+                </Array>
+                <Array name="vnlu">
+                    <Int16/>
+                    <dimension size="19"/>
+                </Array>
+                <Array name="e_vnlu">
+                    <Int16/>
+                    <dimension size="19"/>
+                </Array>
+                <Array name="tn">
+                    <Int16/>
+                    <dimension size="19"/>
+                </Array>
+                <Array name="e_tn">
+                    <Int16/>
+                    <dimension size="19"/>
+                </Array>
+                <Array name="nsmpti">
+                    <Int16/>
+                    <dimension size="19"/>
+                </Array>
+                <Array name="rbrl">
+                    <Int16/>
+                    <dimension size="19"/>
+                </Array>
+                <Array name="chip1">
+                    <Int16/>
+                    <dimension size="19"/>
+                </Array>
+                <Array name="vnn">
+                    <Int16/>
+                    <dimension size="19"/>
+                </Array>
+                <Array name="e_vnn">
+                    <Int16/>
+                    <dimension size="19"/>
+                </Array>
+                <Array name="vne">
+                    <Int16/>
+                    <dimension size="19"/>
+                </Array>
+                <Array name="e_vne">
+                    <Int16/>
+                    <dimension size="19"/>
+                </Array>
+            </Structure>
+        </Structure>
+        <Structure name="data_record_2">
+            <Structure name="prologue">
+                <Int16 name="KINST"/>
+                <Int16 name="KINDAT"/>
+                <UInt16 name="IBYRT"/>
+                <UInt16 name="IBDTT"/>
+                <UInt16 name="IBHMT"/>
+                <UInt16 name="IBCST"/>
+                <UInt16 name="IEYRT"/>
+                <UInt16 name="IEDTT"/>
+                <UInt16 name="IEHMT"/>
+                <UInt16 name="IECST"/>
+            </Structure>
+            <Structure name="JPAR">
+                <Int16 name="gdlatr"/>
+                <Int16 name="gdlonr"/>
+                <Int16 name="wavlen"/>
+                <Int16 name="gdra"/>
+                <Int16 name="gmra"/>
+                <Int16 name="bdec"/>
+            </Structure>
+            <Structure name="MPAR">
+                <Array name="year">
+                    <Int16/>
+                    <dimension size="13"/>
+                </Array>
+                <Array name="dayno">
+                    <Int16/>
+                    <dimension size="13"/>
+                </Array>
+                <Array name="uth">
+                    <Int16/>
+                    <dimension size="13"/>
+                </Array>
+                <Array name="az1">
+                    <Int16/>
+                    <dimension size="13"/>
+                </Array>
+                <Array name="az2">
+                    <Int16/>
+                    <dimension size="13"/>
+                </Array>
+                <Array name="elm">
+                    <Int16/>
+                    <dimension size="13"/>
+                </Array>
+                <Array name="vnn">
+                    <Int16/>
+                    <dimension size="13"/>
+                </Array>
+                <Array name="e_vnn">
+                    <Int16/>
+                    <dimension size="13"/>
+                </Array>
+                <Array name="vne">
+                    <Int16/>
+                    <dimension size="13"/>
+                </Array>
+                <Array name="e_vne">
+                    <Int16/>
+                    <dimension size="13"/>
+                </Array>
+                <Array name="vnpnh">
+                    <Int16/>
+                    <dimension size="13"/>
+                </Array>
+                <Array name="e_vnpnh">
+                    <Int16/>
+                    <dimension size="13"/>
+                </Array>
+                <Array name="vnpe">
+                    <Int16/>
+                    <dimension size="13"/>
+                </Array>
+                <Array name="e_vnpe">
+                    <Int16/>
+                    <dimension size="13"/>
+                </Array>
+            </Structure>
+        </Structure>
+        <Structure name="data_record_3">
+            <Structure name="prologue">
+                <Int16 name="KINST"/>
+                <Int16 name="KINDAT"/>
+                <UInt16 name="IBYRT"/>
+                <UInt16 name="IBDTT"/>
+                <UInt16 name="IBHMT"/>
+                <UInt16 name="IBCST"/>
+                <UInt16 name="IEYRT"/>
+                <UInt16 name="IEDTT"/>
+                <UInt16 name="IEHMT"/>
+                <UInt16 name="IECST"/>
+            </Structure>
+            <Structure name="JPAR">
+                <Int16 name="gdlatr"/>
+                <Int16 name="gdlonr"/>
+                <Int16 name="wavlen"/>
+                <Int16 name="gdra"/>
+            </Structure>
+            <Structure name="MPAR">
+                <Array name="year">
+                    <Int16/>
+                    <dimension size="46"/>
+                </Array>
+                <Array name="dayno">
+                    <Int16/>
+                    <dimension size="46"/>
+                </Array>
+                <Array name="uth">
+                    <Int16/>
+                    <dimension size="46"/>
+                </Array>
+                <Array name="azm">
+                    <Int16/>
+                    <dimension size="46"/>
+                </Array>
+                <Array name="elm">
+                    <Int16/>
+                    <dimension size="46"/>
+                </Array>
+                <Array name="vnlu">
+                    <Int16/>
+                    <dimension size="46"/>
+                </Array>
+                <Array name="e_vnlu">
+                    <Int16/>
+                    <dimension size="46"/>
+                </Array>
+                <Array name="tn">
+                    <Int16/>
+                    <dimension size="46"/>
+                </Array>
+                <Array name="e_tn">
+                    <Int16/>
+                    <dimension size="46"/>
+                </Array>
+                <Array name="nsmpti">
+                    <Int16/>
+                    <dimension size="46"/>
+                </Array>
+                <Array name="rbrl">
+                    <Int16/>
+                    <dimension size="46"/>
+                </Array>
+                <Array name="chip1">
+                    <Int16/>
+                    <dimension size="46"/>
+                </Array>
+                <Array name="vnn">
+                    <Int16/>
+                    <dimension size="46"/>
+                </Array>
+                <Array name="e_vnn">
+                    <Int16/>
+                    <dimension size="46"/>
+                </Array>
+                <Array name="vne">
+                    <Int16/>
+                    <dimension size="46"/>
+                </Array>
+                <Array name="e_vne">
+                    <Int16/>
+                    <dimension size="46"/>
+                </Array>
+            </Structure>
+        </Structure>
+        <Structure name="data_record_4">
+            <Structure name="prologue">
+                <Int16 name="KINST"/>
+                <Int16 name="KINDAT"/>
+                <UInt16 name="IBYRT"/>
+                <UInt16 name="IBDTT"/>
+                <UInt16 name="IBHMT"/>
+                <UInt16 name="IBCST"/>
+                <UInt16 name="IEYRT"/>
+                <UInt16 name="IEDTT"/>
+                <UInt16 name="IEHMT"/>
+                <UInt16 name="IECST"/>
+            </Structure>
+            <Structure name="JPAR">
+                <Int16 name="gdlatr"/>
+                <Int16 name="gdlonr"/>
+                <Int16 name="wavlen"/>
+                <Int16 name="gdra"/>
+                <Int16 name="gmra"/>
+                <Int16 name="bdec"/>
+            </Structure>
+            <Structure name="MPAR">
+                <Array name="year">
+                    <Int16/>
+                    <dimension size="34"/>
+                </Array>
+                <Array name="dayno">
+                    <Int16/>
+                    <dimension size="34"/>
+                </Array>
+                <Array name="uth">
+                    <Int16/>
+                    <dimension size="34"/>
+                </Array>
+                <Array name="az1">
+                    <Int16/>
+                    <dimension size="34"/>
+                </Array>
+                <Array name="az2">
+                    <Int16/>
+                    <dimension size="34"/>
+                </Array>
+                <Array name="elm">
+                    <Int16/>
+                    <dimension size="34"/>
+                </Array>
+                <Array name="vnn">
+                    <Int16/>
+                    <dimension size="34"/>
+                </Array>
+                <Array name="e_vnn">
+                    <Int16/>
+                    <dimension size="34"/>
+                </Array>
+                <Array name="vne">
+                    <Int16/>
+                    <dimension size="34"/>
+                </Array>
+                <Array name="e_vne">
+                    <Int16/>
+                    <dimension size="34"/>
+                </Array>
+                <Array name="vnpnh">
+                    <Int16/>
+                    <dimension size="34"/>
+                </Array>
+                <Array name="e_vnpnh">
+                    <Int16/>
+                    <dimension size="34"/>
+                </Array>
+                <Array name="vnpe">
+                    <Int16/>
+                    <dimension size="34"/>
+                </Array>
+                <Array name="e_vnpe">
+                    <Int16/>
+                    <dimension size="34"/>
+                </Array>
+            </Structure>
+        </Structure>
+        <Structure name="data_record_5">
+            <Structure name="prologue">
+                <Int16 name="KINST"/>
+                <Int16 name="KINDAT"/>
+                <UInt16 name="IBYRT"/>
+                <UInt16 name="IBDTT"/>
+                <UInt16 name="IBHMT"/>
+                <UInt16 name="IBCST"/>
+                <UInt16 name="IEYRT"/>
+                <UInt16 name="IEDTT"/>
+                <UInt16 name="IEHMT"/>
+                <UInt16 name="IECST"/>
+            </Structure>
+            <Structure name="JPAR">
+                <Int16 name="gdlatr"/>
+                <Int16 name="gdlonr"/>
+                <Int16 name="wavlen"/>
+                <Int16 name="gdra"/>
+            </Structure>
+            <Structure name="MPAR">
+                <Array name="year">
+                    <Int16/>
+                    <dimension size="37"/>
+                </Array>
+                <Array name="dayno">
+                    <Int16/>
+                    <dimension size="37"/>
+                </Array>
+                <Array name="uth">
+                    <Int16/>
+                    <dimension size="37"/>
+                </Array>
+                <Array name="azm">
+                    <Int16/>
+                    <dimension size="37"/>
+                </Array>
+                <Array name="elm">
+                    <Int16/>
+                    <dimension size="37"/>
+                </Array>
+                <Array name="vnlu">
+                    <Int16/>
+                    <dimension size="37"/>
+                </Array>
+                <Array name="e_vnlu">
+                    <Int16/>
+                    <dimension size="37"/>
+                </Array>
+                <Array name="tn">
+                    <Int16/>
+                    <dimension size="37"/>
+                </Array>
+                <Array name="e_tn">
+                    <Int16/>
+                    <dimension size="37"/>
+                </Array>
+                <Array name="nsmpti">
+                    <Int16/>
+                    <dimension size="37"/>
+                </Array>
+                <Array name="rbrl">
+                    <Int16/>
+                    <dimension size="37"/>
+                </Array>
+                <Array name="chip1">
+                    <Int16/>
+                    <dimension size="37"/>
+                </Array>
+                <Array name="vnn">
+                    <Int16/>
+                    <dimension size="37"/>
+                </Array>
+                <Array name="e_vnn">
+                    <Int16/>
+                    <dimension size="37"/>
+                </Array>
+                <Array name="vne">
+                    <Int16/>
+                    <dimension size="37"/>
+                </Array>
+                <Array name="e_vne">
+                    <Int16/>
+                    <dimension size="37"/>
+                </Array>
+            </Structure>
+        </Structure>
+        <Structure name="data_record_6">
+            <Structure name="prologue">
+                <Int16 name="KINST"/>
+                <Int16 name="KINDAT"/>
+                <UInt16 name="IBYRT"/>
+                <UInt16 name="IBDTT"/>
+                <UInt16 name="IBHMT"/>
+                <UInt16 name="IBCST"/>
+                <UInt16 name="IEYRT"/>
+                <UInt16 name="IEDTT"/>
+                <UInt16 name="IEHMT"/>
+                <UInt16 name="IECST"/>
+            </Structure>
+            <Structure name="JPAR">
+                <Int16 name="gdlatr"/>
+                <Int16 name="gdlonr"/>
+                <Int16 name="wavlen"/>
+                <Int16 name="gdra"/>
+                <Int16 name="gmra"/>
+                <Int16 name="bdec"/>
+            </Structure>
+            <Structure name="MPAR">
+                <Array name="year">
+                    <Int16/>
+                    <dimension size="27"/>
+                </Array>
+                <Array name="dayno">
+                    <Int16/>
+                    <dimension size="27"/>
+                </Array>
+                <Array name="uth">
+                    <Int16/>
+                    <dimension size="27"/>
+                </Array>
+                <Array name="az1">
+                    <Int16/>
+                    <dimension size="27"/>
+                </Array>
+                <Array name="az2">
+                    <Int16/>
+                    <dimension size="27"/>
+                </Array>
+                <Array name="elm">
+                    <Int16/>
+                    <dimension size="27"/>
+                </Array>
+                <Array name="vnn">
+                    <Int16/>
+                    <dimension size="27"/>
+                </Array>
+                <Array name="e_vnn">
+                    <Int16/>
+                    <dimension size="27"/>
+                </Array>
+                <Array name="vne">
+                    <Int16/>
+                    <dimension size="27"/>
+                </Array>
+                <Array name="e_vne">
+                    <Int16/>
+                    <dimension size="27"/>
+                </Array>
+                <Array name="vnpnh">
+                    <Int16/>
+                    <dimension size="27"/>
+                </Array>
+                <Array name="e_vnpnh">
+                    <Int16/>
+                    <dimension size="27"/>
+                </Array>
+                <Array name="vnpe">
+                    <Int16/>
+                    <dimension size="27"/>
+                </Array>
+                <Array name="e_vnpe">
+                    <Int16/>
+                    <dimension size="27"/>
+                </Array>
+            </Structure>
+        </Structure>
+        <Structure name="data_record_7">
+            <Structure name="prologue">
+                <Int16 name="KINST"/>
+                <Int16 name="KINDAT"/>
+                <UInt16 name="IBYRT"/>
+                <UInt16 name="IBDTT"/>
+                <UInt16 name="IBHMT"/>
+                <UInt16 name="IBCST"/>
+                <UInt16 name="IEYRT"/>
+                <UInt16 name="IEDTT"/>
+                <UInt16 name="IEHMT"/>
+                <UInt16 name="IECST"/>
+            </Structure>
+            <Structure name="JPAR">
+                <Int16 name="gdlatr"/>
+                <Int16 name="gdlonr"/>
+                <Int16 name="wavlen"/>
+                <Int16 name="gdra"/>
+            </Structure>
+            <Structure name="MPAR">
+                <Array name="year">
+                    <Int16/>
+                    <dimension size="102"/>
+                </Array>
+                <Array name="dayno">
+                    <Int16/>
+                    <dimension size="102"/>
+                </Array>
+                <Array name="uth">
+                    <Int16/>
+                    <dimension size="102"/>
+                </Array>
+                <Array name="azm">
+                    <Int16/>
+                    <dimension size="102"/>
+                </Array>
+                <Array name="elm">
+                    <Int16/>
+                    <dimension size="102"/>
+                </Array>
+                <Array name="vnlu">
+                    <Int16/>
+                    <dimension size="102"/>
+                </Array>
+                <Array name="e_vnlu">
+                    <Int16/>
+                    <dimension size="102"/>
+                </Array>
+                <Array name="tn">
+                    <Int16/>
+                    <dimension size="102"/>
+                </Array>
+                <Array name="e_tn">
+                    <Int16/>
+                    <dimension size="102"/>
+                </Array>
+                <Array name="nsmpti">
+                    <Int16/>
+                    <dimension size="102"/>
+                </Array>
+                <Array name="rbrl">
+                    <Int16/>
+                    <dimension size="102"/>
+                </Array>
+                <Array name="chip1">
+                    <Int16/>
+                    <dimension size="102"/>
+                </Array>
+                <Array name="vnn">
+                    <Int16/>
+                    <dimension size="102"/>
+                </Array>
+                <Array name="e_vnn">
+                    <Int16/>
+                    <dimension size="102"/>
+                </Array>
+                <Array name="vne">
+                    <Int16/>
+                    <dimension size="102"/>
+                </Array>
+                <Array name="e_vne">
+                    <Int16/>
+                    <dimension size="102"/>
+                </Array>
+            </Structure>
+        </Structure>
+        <Structure name="data_record_8">
+            <Structure name="prologue">
+                <Int16 name="KINST"/>
+                <Int16 name="KINDAT"/>
+                <UInt16 name="IBYRT"/>
+                <UInt16 name="IBDTT"/>
+                <UInt16 name="IBHMT"/>
+                <UInt16 name="IBCST"/>
+                <UInt16 name="IEYRT"/>
+                <UInt16 name="IEDTT"/>
+                <UInt16 name="IEHMT"/>
+                <UInt16 name="IECST"/>
+            </Structure>
+            <Structure name="JPAR">
+                <Int16 name="gdlatr"/>
+                <Int16 name="gdlonr"/>
+                <Int16 name="wavlen"/>
+                <Int16 name="gdra"/>
+                <Int16 name="gmra"/>
+                <Int16 name="bdec"/>
+            </Structure>
+            <Structure name="MPAR">
+                <Array name="year">
+                    <Int16/>
+                    <dimension size="59"/>
+                </Array>
+                <Array name="dayno">
+                    <Int16/>
+                    <dimension size="59"/>
+                </Array>
+                <Array name="uth">
+                    <Int16/>
+                    <dimension size="59"/>
+                </Array>
+                <Array name="az1">
+                    <Int16/>
+                    <dimension size="59"/>
+                </Array>
+                <Array name="az2">
+                    <Int16/>
+                    <dimension size="59"/>
+                </Array>
+                <Array name="elm">
+                    <Int16/>
+                    <dimension size="59"/>
+                </Array>
+                <Array name="vnn">
+                    <Int16/>
+                    <dimension size="59"/>
+                </Array>
+                <Array name="e_vnn">
+                    <Int16/>
+                    <dimension size="59"/>
+                </Array>
+                <Array name="vne">
+                    <Int16/>
+                    <dimension size="59"/>
+                </Array>
+                <Array name="e_vne">
+                    <Int16/>
+                    <dimension size="59"/>
+                </Array>
+                <Array name="vnpnh">
+                    <Int16/>
+                    <dimension size="59"/>
+                </Array>
+                <Array name="e_vnpnh">
+                    <Int16/>
+                    <dimension size="59"/>
+                </Array>
+                <Array name="vnpe">
+                    <Int16/>
+                    <dimension size="59"/>
+                </Array>
+                <Array name="e_vnpe">
+                    <Int16/>
+                    <dimension size="59"/>
+                </Array>
+            </Structure>
+        </Structure>
+        <Structure name="data_record_9">
+            <Structure name="prologue">
+                <Int16 name="KINST"/>
+                <Int16 name="KINDAT"/>
+                <UInt16 name="IBYRT"/>
+                <UInt16 name="IBDTT"/>
+                <UInt16 name="IBHMT"/>
+                <UInt16 name="IBCST"/>
+                <UInt16 name="IEYRT"/>
+                <UInt16 name="IEDTT"/>
+                <UInt16 name="IEHMT"/>
+                <UInt16 name="IECST"/>
+            </Structure>
+            <Structure name="JPAR">
+                <Int16 name="gdlatr"/>
+                <Int16 name="gdlonr"/>
+                <Int16 name="wavlen"/>
+                <Int16 name="gdra"/>
+            </Structure>
+            <Structure name="MPAR">
+                <Array name="year">
+                    <Int16/>
+                    <dimension size="37"/>
+                </Array>
+                <Array name="dayno">
+                    <Int16/>
+                    <dimension size="37"/>
+                </Array>
+                <Array name="uth">
+                    <Int16/>
+                    <dimension size="37"/>
+                </Array>
+                <Array name="azm">
+                    <Int16/>
+                    <dimension size="37"/>
+                </Array>
+                <Array name="elm">
+                    <Int16/>
+                    <dimension size="37"/>
+                </Array>
+                <Array name="vnlu">
+                    <Int16/>
+                    <dimension size="37"/>
+                </Array>
+                <Array name="e_vnlu">
+                    <Int16/>
+                    <dimension size="37"/>
+                </Array>
+                <Array name="tn">
+                    <Int16/>
+                    <dimension size="37"/>
+                </Array>
+                <Array name="e_tn">
+                    <Int16/>
+                    <dimension size="37"/>
+                </Array>
+                <Array name="nsmpti">
+                    <Int16/>
+                    <dimension size="37"/>
+                </Array>
+                <Array name="rbrl">
+                    <Int16/>
+                    <dimension size="37"/>
+                </Array>
+                <Array name="chip1">
+                    <Int16/>
+                    <dimension size="37"/>
+                </Array>
+                <Array name="vnn">
+                    <Int16/>
+                    <dimension size="37"/>
+                </Array>
+                <Array name="e_vnn">
+                    <Int16/>
+                    <dimension size="37"/>
+                </Array>
+                <Array name="vne">
+                    <Int16/>
+                    <dimension size="37"/>
+                </Array>
+                <Array name="e_vne">
+                    <Int16/>
+                    <dimension size="37"/>
+                </Array>
+            </Structure>
+        </Structure>
+        <Structure name="data_record_10">
+            <Structure name="prologue">
+                <Int16 name="KINST"/>
+                <Int16 name="KINDAT"/>
+                <UInt16 name="IBYRT"/>
+                <UInt16 name="IBDTT"/>
+                <UInt16 name="IBHMT"/>
+                <UInt16 name="IBCST"/>
+                <UInt16 name="IEYRT"/>
+                <UInt16 name="IEDTT"/>
+                <UInt16 name="IEHMT"/>
+                <UInt16 name="IECST"/>
+            </Structure>
+            <Structure name="JPAR">
+                <Int16 name="gdlatr"/>
+                <Int16 name="gdlonr"/>
+                <Int16 name="wavlen"/>
+                <Int16 name="gdra"/>
+                <Int16 name="gmra"/>
+                <Int16 name="bdec"/>
+            </Structure>
+            <Structure name="MPAR">
+                <Array name="year">
+                    <Int16/>
+                    <dimension size="27"/>
+                </Array>
+                <Array name="dayno">
+                    <Int16/>
+                    <dimension size="27"/>
+                </Array>
+                <Array name="uth">
+                    <Int16/>
+                    <dimension size="27"/>
+                </Array>
+                <Array name="az1">
+                    <Int16/>
+                    <dimension size="27"/>
+                </Array>
+                <Array name="az2">
+                    <Int16/>
+                    <dimension size="27"/>
+                </Array>
+                <Array name="elm">
+                    <Int16/>
+                    <dimension size="27"/>
+                </Array>
+                <Array name="vnn">
+                    <Int16/>
+                    <dimension size="27"/>
+                </Array>
+                <Array name="e_vnn">
+                    <Int16/>
+                    <dimension size="27"/>
+                </Array>
+                <Array name="vne">
+                    <Int16/>
+                    <dimension size="27"/>
+                </Array>
+                <Array name="e_vne">
+                    <Int16/>
+                    <dimension size="27"/>
+                </Array>
+                <Array name="vnpnh">
+                    <Int16/>
+                    <dimension size="27"/>
+                </Array>
+                <Array name="e_vnpnh">
+                    <Int16/>
+                    <dimension size="27"/>
+                </Array>
+                <Array name="vnpe">
+                    <Int16/>
+                    <dimension size="27"/>
+                </Array>
+                <Array name="e_vnpe">
+                    <Int16/>
+                    <dimension size="27"/>
+                </Array>
+            </Structure>
+        </Structure>
+        <Structure name="data_record_11">
+            <Structure name="prologue">
+                <Int16 name="KINST"/>
+                <Int16 name="KINDAT"/>
+                <UInt16 name="IBYRT"/>
+                <UInt16 name="IBDTT"/>
+                <UInt16 name="IBHMT"/>
+                <UInt16 name="IBCST"/>
+                <UInt16 name="IEYRT"/>
+                <UInt16 name="IEDTT"/>
+                <UInt16 name="IEHMT"/>
+                <UInt16 name="IECST"/>
+            </Structure>
+            <Structure name="JPAR">
+                <Int16 name="gdlatr"/>
+                <Int16 name="gdlonr"/>
+                <Int16 name="wavlen"/>
+                <Int16 name="gdra"/>
+            </Structure>
+            <Structure name="MPAR">
+                <Array name="year">
+                    <Int16/>
+                    <dimension size="10"/>
+                </Array>
+                <Array name="dayno">
+                    <Int16/>
+                    <dimension size="10"/>
+                </Array>
+                <Array name="uth">
+                    <Int16/>
+                    <dimension size="10"/>
+                </Array>
+                <Array name="azm">
+                    <Int16/>
+                    <dimension size="10"/>
+                </Array>
+                <Array name="elm">
+                    <Int16/>
+                    <dimension size="10"/>
+                </Array>
+                <Array name="vnlu">
+                    <Int16/>
+                    <dimension size="10"/>
+                </Array>
+                <Array name="e_vnlu">
+                    <Int16/>
+                    <dimension size="10"/>
+                </Array>
+                <Array name="tn">
+                    <Int16/>
+                    <dimension size="10"/>
+                </Array>
+                <Array name="e_tn">
+                    <Int16/>
+                    <dimension size="10"/>
+                </Array>
+                <Array name="nsmpti">
+                    <Int16/>
+                    <dimension size="10"/>
+                </Array>
+                <Array name="rbrl">
+                    <Int16/>
+                    <dimension size="10"/>
+                </Array>
+                <Array name="chip1">
+                    <Int16/>
+                    <dimension size="10"/>
+                </Array>
+                <Array name="vnn">
+                    <Int16/>
+                    <dimension size="10"/>
+                </Array>
+                <Array name="e_vnn">
+                    <Int16/>
+                    <dimension size="10"/>
+                </Array>
+                <Array name="vne">
+                    <Int16/>
+                    <dimension size="10"/>
+                </Array>
+                <Array name="e_vne">
+                    <Int16/>
+                    <dimension size="10"/>
+                </Array>
+            </Structure>
+        </Structure>
+        <Structure name="data_record_12">
+            <Structure name="prologue">
+                <Int16 name="KINST"/>
+                <Int16 name="KINDAT"/>
+                <UInt16 name="IBYRT"/>
+                <UInt16 name="IBDTT"/>
+                <UInt16 name="IBHMT"/>
+                <UInt16 name="IBCST"/>
+                <UInt16 name="IEYRT"/>
+                <UInt16 name="IEDTT"/>
+                <UInt16 name="IEHMT"/>
+                <UInt16 name="IECST"/>
+            </Structure>
+            <Structure name="JPAR">
+                <Int16 name="gdlatr"/>
+                <Int16 name="gdlonr"/>
+                <Int16 name="wavlen"/>
+                <Int16 name="gdra"/>
+                <Int16 name="gmra"/>
+                <Int16 name="bdec"/>
+            </Structure>
+            <Structure name="MPAR">
+                <Array name="year">
+                    <Int16/>
+                    <dimension size="5"/>
+                </Array>
+                <Array name="dayno">
+                    <Int16/>
+                    <dimension size="5"/>
+                </Array>
+                <Array name="uth">
+                    <Int16/>
+                    <dimension size="5"/>
+                </Array>
+                <Array name="az1">
+                    <Int16/>
+                    <dimension size="5"/>
+                </Array>
+                <Array name="az2">
+                    <Int16/>
+                    <dimension size="5"/>
+                </Array>
+                <Array name="elm">
+                    <Int16/>
+                    <dimension size="5"/>
+                </Array>
+                <Array name="vnn">
+                    <Int16/>
+                    <dimension size="5"/>
+                </Array>
+                <Array name="e_vnn">
+                    <Int16/>
+                    <dimension size="5"/>
+                </Array>
+                <Array name="vne">
+                    <Int16/>
+                    <dimension size="5"/>
+                </Array>
+                <Array name="e_vne">
+                    <Int16/>
+                    <dimension size="5"/>
+                </Array>
+                <Array name="vnpnh">
+                    <Int16/>
+                    <dimension size="5"/>
+                </Array>
+                <Array name="e_vnpnh">
+                    <Int16/>
+                    <dimension size="5"/>
+                </Array>
+                <Array name="vnpe">
+                    <Int16/>
+                    <dimension size="5"/>
+                </Array>
+                <Array name="e_vnpe">
+                    <Int16/>
+                    <dimension size="5"/>
+                </Array>
+            </Structure>
+        </Structure>
+        <Structure name="data_record_13">
+            <Structure name="prologue">
+                <Int16 name="KINST"/>
+                <Int16 name="KINDAT"/>
+                <UInt16 name="IBYRT"/>
+                <UInt16 name="IBDTT"/>
+                <UInt16 name="IBHMT"/>
+                <UInt16 name="IBCST"/>
+                <UInt16 name="IEYRT"/>
+                <UInt16 name="IEDTT"/>
+                <UInt16 name="IEHMT"/>
+                <UInt16 name="IECST"/>
+            </Structure>
+            <Structure name="JPAR">
+                <Int16 name="gdlatr"/>
+                <Int16 name="gdlonr"/>
+                <Int16 name="wavlen"/>
+                <Int16 name="gdra"/>
+            </Structure>
+            <Structure name="MPAR">
+                <Array name="year">
+                    <Int16/>
+                    <dimension size="12"/>
+                </Array>
+                <Array name="dayno">
+                    <Int16/>
+                    <dimension size="12"/>
+                </Array>
+                <Array name="uth">
+                    <Int16/>
+                    <dimension size="12"/>
+                </Array>
+                <Array name="azm">
+                    <Int16/>
+                    <dimension size="12"/>
+                </Array>
+                <Array name="elm">
+                    <Int16/>
+                    <dimension size="12"/>
+                </Array>
+                <Array name="vnlu">
+                    <Int16/>
+                    <dimension size="12"/>
+                </Array>
+                <Array name="e_vnlu">
+                    <Int16/>
+                    <dimension size="12"/>
+                </Array>
+                <Array name="tn">
+                    <Int16/>
+                    <dimension size="12"/>
+                </Array>
+                <Array name="e_tn">
+                    <Int16/>
+                    <dimension size="12"/>
+                </Array>
+                <Array name="nsmpti">
+                    <Int16/>
+                    <dimension size="12"/>
+                </Array>
+                <Array name="rbrl">
+                    <Int16/>
+                    <dimension size="12"/>
+                </Array>
+                <Array name="chip1">
+                    <Int16/>
+                    <dimension size="12"/>
+                </Array>
+                <Array name="vnn">
+                    <Int16/>
+                    <dimension size="12"/>
+                </Array>
+                <Array name="e_vnn">
+                    <Int16/>
+                    <dimension size="12"/>
+                </Array>
+                <Array name="vne">
+                    <Int16/>
+                    <dimension size="12"/>
+                </Array>
+                <Array name="e_vne">
+                    <Int16/>
+                    <dimension size="12"/>
+                </Array>
+            </Structure>
+        </Structure>
+        <Structure name="data_record_14">
+            <Structure name="prologue">
+                <Int16 name="KINST"/>
+                <Int16 name="KINDAT"/>
+                <UInt16 name="IBYRT"/>
+                <UInt16 name="IBDTT"/>
+                <UInt16 name="IBHMT"/>
+                <UInt16 name="IBCST"/>
+                <UInt16 name="IEYRT"/>
+                <UInt16 name="IEDTT"/>
+                <UInt16 name="IEHMT"/>
+                <UInt16 name="IECST"/>
+            </Structure>
+            <Structure name="JPAR">
+                <Int16 name="gdlatr"/>
+                <Int16 name="gdlonr"/>
+                <Int16 name="wavlen"/>
+                <Int16 name="gdra"/>
+                <Int16 name="gmra"/>
+                <Int16 name="bdec"/>
+            </Structure>
+            <Structure name="MPAR">
+                <Array name="year">
+                    <Int16/>
+                    <dimension size="6"/>
+                </Array>
+                <Array name="dayno">
+                    <Int16/>
+                    <dimension size="6"/>
+                </Array>
+                <Array name="uth">
+                    <Int16/>
+                    <dimension size="6"/>
+                </Array>
+                <Array name="az1">
+                    <Int16/>
+                    <dimension size="6"/>
+                </Array>
+                <Array name="az2">
+                    <Int16/>
+                    <dimension size="6"/>
+                </Array>
+                <Array name="elm">
+                    <Int16/>
+                    <dimension size="6"/>
+                </Array>
+                <Array name="vnn">
+                    <Int16/>
+                    <dimension size="6"/>
+                </Array>
+                <Array name="e_vnn">
+                    <Int16/>
+                    <dimension size="6"/>
+                </Array>
+                <Array name="vne">
+                    <Int16/>
+                    <dimension size="6"/>
+                </Array>
+                <Array name="e_vne">
+                    <Int16/>
+                    <dimension size="6"/>
+                </Array>
+                <Array name="vnpnh">
+                    <Int16/>
+                    <dimension size="6"/>
+                </Array>
+                <Array name="e_vnpnh">
+                    <Int16/>
+                    <dimension size="6"/>
+                </Array>
+                <Array name="vnpe">
+                    <Int16/>
+                    <dimension size="6"/>
+                </Array>
+                <Array name="e_vnpe">
+                    <Int16/>
+                    <dimension size="6"/>
+                </Array>
+            </Structure>
+        </Structure>
+        <Structure name="data_record_15">
+            <Structure name="prologue">
+                <Int16 name="KINST"/>
+                <Int16 name="KINDAT"/>
+                <UInt16 name="IBYRT"/>
+                <UInt16 name="IBDTT"/>
+                <UInt16 name="IBHMT"/>
+                <UInt16 name="IBCST"/>
+                <UInt16 name="IEYRT"/>
+                <UInt16 name="IEDTT"/>
+                <UInt16 name="IEHMT"/>
+                <UInt16 name="IECST"/>
+            </Structure>
+            <Structure name="JPAR">
+                <Int16 name="gdlatr"/>
+                <Int16 name="gdlonr"/>
+                <Int16 name="wavlen"/>
+                <Int16 name="gdra"/>
+            </Structure>
+            <Structure name="MPAR">
+                <Array name="year">
+                    <Int16/>
+                    <dimension size="39"/>
+                </Array>
+                <Array name="dayno">
+                    <Int16/>
+                    <dimension size="39"/>
+                </Array>
+                <Array name="uth">
+                    <Int16/>
+                    <dimension size="39"/>
+                </Array>
+                <Array name="azm">
+                    <Int16/>
+                    <dimension size="39"/>
+                </Array>
+                <Array name="elm">
+                    <Int16/>
+                    <dimension size="39"/>
+                </Array>
+                <Array name="vnlu">
+                    <Int16/>
+                    <dimension size="39"/>
+                </Array>
+                <Array name="e_vnlu">
+                    <Int16/>
+                    <dimension size="39"/>
+                </Array>
+                <Array name="tn">
+                    <Int16/>
+                    <dimension size="39"/>
+                </Array>
+                <Array name="e_tn">
+                    <Int16/>
+                    <dimension size="39"/>
+                </Array>
+                <Array name="nsmpti">
+                    <Int16/>
+                    <dimension size="39"/>
+                </Array>
+                <Array name="rbrl">
+                    <Int16/>
+                    <dimension size="39"/>
+                </Array>
+                <Array name="chip1">
+                    <Int16/>
+                    <dimension size="39"/>
+                </Array>
+                <Array name="vnn">
+                    <Int16/>
+                    <dimension size="39"/>
+                </Array>
+                <Array name="e_vnn">
+                    <Int16/>
+                    <dimension size="39"/>
+                </Array>
+                <Array name="vne">
+                    <Int16/>
+                    <dimension size="39"/>
+                </Array>
+                <Array name="e_vne">
+                    <Int16/>
+                    <dimension size="39"/>
+                </Array>
+            </Structure>
+        </Structure>
+        <Structure name="data_record_16">
+            <Structure name="prologue">
+                <Int16 name="KINST"/>
+                <Int16 name="KINDAT"/>
+                <UInt16 name="IBYRT"/>
+                <UInt16 name="IBDTT"/>
+                <UInt16 name="IBHMT"/>
+                <UInt16 name="IBCST"/>
+                <UInt16 name="IEYRT"/>
+                <UInt16 name="IEDTT"/>
+                <UInt16 name="IEHMT"/>
+                <UInt16 name="IECST"/>
+            </Structure>
+            <Structure name="JPAR">
+                <Int16 name="gdlatr"/>
+                <Int16 name="gdlonr"/>
+                <Int16 name="wavlen"/>
+                <Int16 name="gdra"/>
+                <Int16 name="gmra"/>
+                <Int16 name="bdec"/>
+            </Structure>
+            <Structure name="MPAR">
+                <Array name="year">
+                    <Int16/>
+                    <dimension size="24"/>
+                </Array>
+                <Array name="dayno">
+                    <Int16/>
+                    <dimension size="24"/>
+                </Array>
+                <Array name="uth">
+                    <Int16/>
+                    <dimension size="24"/>
+                </Array>
+                <Array name="az1">
+                    <Int16/>
+                    <dimension size="24"/>
+                </Array>
+                <Array name="az2">
+                    <Int16/>
+                    <dimension size="24"/>
+                </Array>
+                <Array name="elm">
+                    <Int16/>
+                    <dimension size="24"/>
+                </Array>
+                <Array name="vnn">
+                    <Int16/>
+                    <dimension size="24"/>
+                </Array>
+                <Array name="e_vnn">
+                    <Int16/>
+                    <dimension size="24"/>
+                </Array>
+                <Array name="vne">
+                    <Int16/>
+                    <dimension size="24"/>
+                </Array>
+                <Array name="e_vne">
+                    <Int16/>
+                    <dimension size="24"/>
+                </Array>
+                <Array name="vnpnh">
+                    <Int16/>
+                    <dimension size="24"/>
+                </Array>
+                <Array name="e_vnpnh">
+                    <Int16/>
+                    <dimension size="24"/>
+                </Array>
+                <Array name="vnpe">
+                    <Int16/>
+                    <dimension size="24"/>
+                </Array>
+                <Array name="e_vnpe">
+                    <Int16/>
+                    <dimension size="24"/>
+                </Array>
+            </Structure>
+        </Structure>
+        <Structure name="data_record_17">
+            <Structure name="prologue">
+                <Int16 name="KINST"/>
+                <Int16 name="KINDAT"/>
+                <UInt16 name="IBYRT"/>
+                <UInt16 name="IBDTT"/>
+                <UInt16 name="IBHMT"/>
+                <UInt16 name="IBCST"/>
+                <UInt16 name="IEYRT"/>
+                <UInt16 name="IEDTT"/>
+                <UInt16 name="IEHMT"/>
+                <UInt16 name="IECST"/>
+            </Structure>
+            <Structure name="JPAR">
+                <Int16 name="gdlatr"/>
+                <Int16 name="gdlonr"/>
+                <Int16 name="wavlen"/>
+                <Int16 name="gdra"/>
+            </Structure>
+            <Structure name="MPAR">
+                <Array name="year">
+                    <Int16/>
+                    <dimension size="20"/>
+                </Array>
+                <Array name="dayno">
+                    <Int16/>
+                    <dimension size="20"/>
+                </Array>
+                <Array name="uth">
+                    <Int16/>
+                    <dimension size="20"/>
+                </Array>
+                <Array name="azm">
+                    <Int16/>
+                    <dimension size="20"/>
+                </Array>
+                <Array name="elm">
+                    <Int16/>
+                    <dimension size="20"/>
+                </Array>
+                <Array name="vnlu">
+                    <Int16/>
+                    <dimension size="20"/>
+                </Array>
+                <Array name="e_vnlu">
+                    <Int16/>
+                    <dimension size="20"/>
+                </Array>
+                <Array name="tn">
+                    <Int16/>
+                    <dimension size="20"/>
+                </Array>
+                <Array name="e_tn">
+                    <Int16/>
+                    <dimension size="20"/>
+                </Array>
+                <Array name="nsmpti">
+                    <Int16/>
+                    <dimension size="20"/>
+                </Array>
+                <Array name="rbrl">
+                    <Int16/>
+                    <dimension size="20"/>
+                </Array>
+                <Array name="chip1">
+                    <Int16/>
+                    <dimension size="20"/>
+                </Array>
+                <Array name="vnn">
+                    <Int16/>
+                    <dimension size="20"/>
+                </Array>
+                <Array name="e_vnn">
+                    <Int16/>
+                    <dimension size="20"/>
+                </Array>
+                <Array name="vne">
+                    <Int16/>
+                    <dimension size="20"/>
+                </Array>
+                <Array name="e_vne">
+                    <Int16/>
+                    <dimension size="20"/>
+                </Array>
+            </Structure>
+        </Structure>
+        <Structure name="data_record_18">
+            <Structure name="prologue">
+                <Int16 name="KINST"/>
+                <Int16 name="KINDAT"/>
+                <UInt16 name="IBYRT"/>
+                <UInt16 name="IBDTT"/>
+                <UInt16 name="IBHMT"/>
+                <UInt16 name="IBCST"/>
+                <UInt16 name="IEYRT"/>
+                <UInt16 name="IEDTT"/>
+                <UInt16 name="IEHMT"/>
+                <UInt16 name="IECST"/>
+            </Structure>
+            <Structure name="JPAR">
+                <Int16 name="gdlatr"/>
+                <Int16 name="gdlonr"/>
+                <Int16 name="wavlen"/>
+                <Int16 name="gdra"/>
+                <Int16 name="gmra"/>
+                <Int16 name="bdec"/>
+            </Structure>
+            <Structure name="MPAR">
+                <Array name="year">
+                    <Int16/>
+                    <dimension size="12"/>
+                </Array>
+                <Array name="dayno">
+                    <Int16/>
+                    <dimension size="12"/>
+                </Array>
+                <Array name="uth">
+                    <Int16/>
+                    <dimension size="12"/>
+                </Array>
+                <Array name="az1">
+                    <Int16/>
+                    <dimension size="12"/>
+                </Array>
+                <Array name="az2">
+                    <Int16/>
+                    <dimension size="12"/>
+                </Array>
+                <Array name="elm">
+                    <Int16/>
+                    <dimension size="12"/>
+                </Array>
+                <Array name="vnn">
+                    <Int16/>
+                    <dimension size="12"/>
+                </Array>
+                <Array name="e_vnn">
+                    <Int16/>
+                    <dimension size="12"/>
+                </Array>
+                <Array name="vne">
+                    <Int16/>
+                    <dimension size="12"/>
+                </Array>
+                <Array name="e_vne">
+                    <Int16/>
+                    <dimension size="12"/>
+                </Array>
+                <Array name="vnpnh">
+                    <Int16/>
+                    <dimension size="12"/>
+                </Array>
+                <Array name="e_vnpnh">
+                    <Int16/>
+                    <dimension size="12"/>
+                </Array>
+                <Array name="vnpe">
+                    <Int16/>
+                    <dimension size="12"/>
+                </Array>
+                <Array name="e_vnpe">
+                    <Int16/>
+                    <dimension size="12"/>
+                </Array>
+            </Structure>
+        </Structure>
+        <Structure name="data_record_19">
+            <Structure name="prologue">
+                <Int16 name="KINST"/>
+                <Int16 name="KINDAT"/>
+                <UInt16 name="IBYRT"/>
+                <UInt16 name="IBDTT"/>
+                <UInt16 name="IBHMT"/>
+                <UInt16 name="IBCST"/>
+                <UInt16 name="IEYRT"/>
+                <UInt16 name="IEDTT"/>
+                <UInt16 name="IEHMT"/>
+                <UInt16 name="IECST"/>
+            </Structure>
+            <Structure name="JPAR">
+                <Int16 name="gdlatr"/>
+                <Int16 name="gdlonr"/>
+                <Int16 name="wavlen"/>
+                <Int16 name="gdra"/>
+            </Structure>
+            <Structure name="MPAR">
+                <Array name="year">
+                    <Int16/>
+                    <dimension size="40"/>
+                </Array>
+                <Array name="dayno">
+                    <Int16/>
+                    <dimension size="40"/>
+                </Array>
+                <Array name="uth">
+                    <Int16/>
+                    <dimension size="40"/>
+                </Array>
+                <Array name="azm">
+                    <Int16/>
+                    <dimension size="40"/>
+                </Array>
+                <Array name="elm">
+                    <Int16/>
+                    <dimension size="40"/>
+                </Array>
+                <Array name="vnlu">
+                    <Int16/>
+                    <dimension size="40"/>
+                </Array>
+                <Array name="e_vnlu">
+                    <Int16/>
+                    <dimension size="40"/>
+                </Array>
+                <Array name="tn">
+                    <Int16/>
+                    <dimension size="40"/>
+                </Array>
+                <Array name="e_tn">
+                    <Int16/>
+                    <dimension size="40"/>
+                </Array>
+                <Array name="nsmpti">
+                    <Int16/>
+                    <dimension size="40"/>
+                </Array>
+                <Array name="rbrl">
+                    <Int16/>
+                    <dimension size="40"/>
+                </Array>
+                <Array name="chip1">
+                    <Int16/>
+                    <dimension size="40"/>
+                </Array>
+                <Array name="vnn">
+                    <Int16/>
+                    <dimension size="40"/>
+                </Array>
+                <Array name="e_vnn">
+                    <Int16/>
+                    <dimension size="40"/>
+                </Array>
+                <Array name="vne">
+                    <Int16/>
+                    <dimension size="40"/>
+                </Array>
+                <Array name="e_vne">
+                    <Int16/>
+                    <dimension size="40"/>
+                </Array>
+            </Structure>
+        </Structure>
+        <Structure name="data_record_20">
+            <Structure name="prologue">
+                <Int16 name="KINST"/>
+                <Int16 name="KINDAT"/>
+                <UInt16 name="IBYRT"/>
+                <UInt16 name="IBDTT"/>
+                <UInt16 name="IBHMT"/>
+                <UInt16 name="IBCST"/>
+                <UInt16 name="IEYRT"/>
+                <UInt16 name="IEDTT"/>
+                <UInt16 name="IEHMT"/>
+                <UInt16 name="IECST"/>
+            </Structure>
+            <Structure name="JPAR">
+                <Int16 name="gdlatr"/>
+                <Int16 name="gdlonr"/>
+                <Int16 name="wavlen"/>
+                <Int16 name="gdra"/>
+                <Int16 name="gmra"/>
+                <Int16 name="bdec"/>
+            </Structure>
+            <Structure name="MPAR">
+                <Array name="year">
+                    <Int16/>
+                    <dimension size="25"/>
+                </Array>
+                <Array name="dayno">
+                    <Int16/>
+                    <dimension size="25"/>
+                </Array>
+                <Array name="uth">
+                    <Int16/>
+                    <dimension size="25"/>
+                </Array>
+                <Array name="az1">
+                    <Int16/>
+                    <dimension size="25"/>
+                </Array>
+                <Array name="az2">
+                    <Int16/>
+                    <dimension size="25"/>
+                </Array>
+                <Array name="elm">
+                    <Int16/>
+                    <dimension size="25"/>
+                </Array>
+                <Array name="vnn">
+                    <Int16/>
+                    <dimension size="25"/>
+                </Array>
+                <Array name="e_vnn">
+                    <Int16/>
+                    <dimension size="25"/>
+                </Array>
+                <Array name="vne">
+                    <Int16/>
+                    <dimension size="25"/>
+                </Array>
+                <Array name="e_vne">
+                    <Int16/>
+                    <dimension size="25"/>
+                </Array>
+                <Array name="vnpnh">
+                    <Int16/>
+                    <dimension size="25"/>
+                </Array>
+                <Array name="e_vnpnh">
+                    <Int16/>
+                    <dimension size="25"/>
+                </Array>
+                <Array name="vnpe">
+                    <Int16/>
+                    <dimension size="25"/>
+                </Array>
+                <Array name="e_vnpe">
+                    <Int16/>
+                    <dimension size="25"/>
+                </Array>
+            </Structure>
+        </Structure>
+        <Structure name="data_record_21">
+            <Structure name="prologue">
+                <Int16 name="KINST"/>
+                <Int16 name="KINDAT"/>
+                <UInt16 name="IBYRT"/>
+                <UInt16 name="IBDTT"/>
+                <UInt16 name="IBHMT"/>
+                <UInt16 name="IBCST"/>
+                <UInt16 name="IEYRT"/>
+                <UInt16 name="IEDTT"/>
+                <UInt16 name="IEHMT"/>
+                <UInt16 name="IECST"/>
+            </Structure>
+            <Structure name="JPAR">
+                <Int16 name="gdlatr"/>
+                <Int16 name="gdlonr"/>
+                <Int16 name="wavlen"/>
+                <Int16 name="gdra"/>
+            </Structure>
+            <Structure name="MPAR">
+                <Array name="year">
+                    <Int16/>
+                    <dimension size="37"/>
+                </Array>
+                <Array name="dayno">
+                    <Int16/>
+                    <dimension size="37"/>
+                </Array>
+                <Array name="uth">
+                    <Int16/>
+                    <dimension size="37"/>
+                </Array>
+                <Array name="azm">
+                    <Int16/>
+                    <dimension size="37"/>
+                </Array>
+                <Array name="elm">
+                    <Int16/>
+                    <dimension size="37"/>
+                </Array>
+                <Array name="vnlu">
+                    <Int16/>
+                    <dimension size="37"/>
+                </Array>
+                <Array name="e_vnlu">
+                    <Int16/>
+                    <dimension size="37"/>
+                </Array>
+                <Array name="tn">
+                    <Int16/>
+                    <dimension size="37"/>
+                </Array>
+                <Array name="e_tn">
+                    <Int16/>
+                    <dimension size="37"/>
+                </Array>
+                <Array name="nsmpti">
+                    <Int16/>
+                    <dimension size="37"/>
+                </Array>
+                <Array name="rbrl">
+                    <Int16/>
+                    <dimension size="37"/>
+                </Array>
+                <Array name="chip1">
+                    <Int16/>
+                    <dimension size="37"/>
+                </Array>
+                <Array name="vnn">
+                    <Int16/>
+                    <dimension size="37"/>
+                </Array>
+                <Array name="e_vnn">
+                    <Int16/>
+                    <dimension size="37"/>
+                </Array>
+                <Array name="vne">
+                    <Int16/>
+                    <dimension size="37"/>
+                </Array>
+                <Array name="e_vne">
+                    <Int16/>
+                    <dimension size="37"/>
+                </Array>
+            </Structure>
+        </Structure>
+        <Structure name="data_record_22">
+            <Structure name="prologue">
+                <Int16 name="KINST"/>
+                <Int16 name="KINDAT"/>
+                <UInt16 name="IBYRT"/>
+                <UInt16 name="IBDTT"/>
+                <UInt16 name="IBHMT"/>
+                <UInt16 name="IBCST"/>
+                <UInt16 name="IEYRT"/>
+                <UInt16 name="IEDTT"/>
+                <UInt16 name="IEHMT"/>
+                <UInt16 name="IECST"/>
+            </Structure>
+            <Structure name="JPAR">
+                <Int16 name="gdlatr"/>
+                <Int16 name="gdlonr"/>
+                <Int16 name="wavlen"/>
+                <Int16 name="gdra"/>
+                <Int16 name="gmra"/>
+                <Int16 name="bdec"/>
+            </Structure>
+            <Structure name="MPAR">
+                <Array name="year">
+                    <Int16/>
+                    <dimension size="27"/>
+                </Array>
+                <Array name="dayno">
+                    <Int16/>
+                    <dimension size="27"/>
+                </Array>
+                <Array name="uth">
+                    <Int16/>
+                    <dimension size="27"/>
+                </Array>
+                <Array name="az1">
+                    <Int16/>
+                    <dimension size="27"/>
+                </Array>
+                <Array name="az2">
+                    <Int16/>
+                    <dimension size="27"/>
+                </Array>
+                <Array name="elm">
+                    <Int16/>
+                    <dimension size="27"/>
+                </Array>
+                <Array name="vnn">
+                    <Int16/>
+                    <dimension size="27"/>
+                </Array>
+                <Array name="e_vnn">
+                    <Int16/>
+                    <dimension size="27"/>
+                </Array>
+                <Array name="vne">
+                    <Int16/>
+                    <dimension size="27"/>
+                </Array>
+                <Array name="e_vne">
+                    <Int16/>
+                    <dimension size="27"/>
+                </Array>
+                <Array name="vnpnh">
+                    <Int16/>
+                    <dimension size="27"/>
+                </Array>
+                <Array name="e_vnpnh">
+                    <Int16/>
+                    <dimension size="27"/>
+                </Array>
+                <Array name="vnpe">
+                    <Int16/>
+                    <dimension size="27"/>
+                </Array>
+                <Array name="e_vnpe">
+                    <Int16/>
+                    <dimension size="27"/>
+                </Array>
+            </Structure>
+        </Structure>
+        <Structure name="data_record_23">
+            <Structure name="prologue">
+                <Int16 name="KINST"/>
+                <Int16 name="KINDAT"/>
+                <UInt16 name="IBYRT"/>
+                <UInt16 name="IBDTT"/>
+                <UInt16 name="IBHMT"/>
+                <UInt16 name="IBCST"/>
+                <UInt16 name="IEYRT"/>
+                <UInt16 name="IEDTT"/>
+                <UInt16 name="IEHMT"/>
+                <UInt16 name="IECST"/>
+            </Structure>
+            <Structure name="JPAR">
+                <Int16 name="gdlatr"/>
+                <Int16 name="gdlonr"/>
+                <Int16 name="wavlen"/>
+                <Int16 name="gdra"/>
+            </Structure>
+            <Structure name="MPAR">
+                <Array name="year">
+                    <Int16/>
+                    <dimension size="38"/>
+                </Array>
+                <Array name="dayno">
+                    <Int16/>
+                    <dimension size="38"/>
+                </Array>
+                <Array name="uth">
+                    <Int16/>
+                    <dimension size="38"/>
+                </Array>
+                <Array name="azm">
+                    <Int16/>
+                    <dimension size="38"/>
+                </Array>
+                <Array name="elm">
+                    <Int16/>
+                    <dimension size="38"/>
+                </Array>
+                <Array name="vnlu">
+                    <Int16/>
+                    <dimension size="38"/>
+                </Array>
+                <Array name="e_vnlu">
+                    <Int16/>
+                    <dimension size="38"/>
+                </Array>
+                <Array name="tn">
+                    <Int16/>
+                    <dimension size="38"/>
+                </Array>
+                <Array name="e_tn">
+                    <Int16/>
+                    <dimension size="38"/>
+                </Array>
+                <Array name="nsmpti">
+                    <Int16/>
+                    <dimension size="38"/>
+                </Array>
+                <Array name="rbrl">
+                    <Int16/>
+                    <dimension size="38"/>
+                </Array>
+                <Array name="chip1">
+                    <Int16/>
+                    <dimension size="38"/>
+                </Array>
+                <Array name="vnn">
+                    <Int16/>
+                    <dimension size="38"/>
+                </Array>
+                <Array name="e_vnn">
+                    <Int16/>
+                    <dimension size="38"/>
+                </Array>
+                <Array name="vne">
+                    <Int16/>
+                    <dimension size="38"/>
+                </Array>
+                <Array name="e_vne">
+                    <Int16/>
+                    <dimension size="38"/>
+                </Array>
+            </Structure>
+        </Structure>
+        <Structure name="data_record_24">
+            <Structure name="prologue">
+                <Int16 name="KINST"/>
+                <Int16 name="KINDAT"/>
+                <UInt16 name="IBYRT"/>
+                <UInt16 name="IBDTT"/>
+                <UInt16 name="IBHMT"/>
+                <UInt16 name="IBCST"/>
+                <UInt16 name="IEYRT"/>
+                <UInt16 name="IEDTT"/>
+                <UInt16 name="IEHMT"/>
+                <UInt16 name="IECST"/>
+            </Structure>
+            <Structure name="JPAR">
+                <Int16 name="gdlatr"/>
+                <Int16 name="gdlonr"/>
+                <Int16 name="wavlen"/>
+                <Int16 name="gdra"/>
+                <Int16 name="gmra"/>
+                <Int16 name="bdec"/>
+            </Structure>
+            <Structure name="MPAR">
+                <Array name="year">
+                    <Int16/>
+                    <dimension size="28"/>
+                </Array>
+                <Array name="dayno">
+                    <Int16/>
+                    <dimension size="28"/>
+                </Array>
+                <Array name="uth">
+                    <Int16/>
+                    <dimension size="28"/>
+                </Array>
+                <Array name="az1">
+                    <Int16/>
+                    <dimension size="28"/>
+                </Array>
+                <Array name="az2">
+                    <Int16/>
+                    <dimension size="28"/>
+                </Array>
+                <Array name="elm">
+                    <Int16/>
+                    <dimension size="28"/>
+                </Array>
+                <Array name="vnn">
+                    <Int16/>
+                    <dimension size="28"/>
+                </Array>
+                <Array name="e_vnn">
+                    <Int16/>
+                    <dimension size="28"/>
+                </Array>
+                <Array name="vne">
+                    <Int16/>
+                    <dimension size="28"/>
+                </Array>
+                <Array name="e_vne">
+                    <Int16/>
+                    <dimension size="28"/>
+                </Array>
+                <Array name="vnpnh">
+                    <Int16/>
+                    <dimension size="28"/>
+                </Array>
+                <Array name="e_vnpnh">
+                    <Int16/>
+                    <dimension size="28"/>
+                </Array>
+                <Array name="vnpe">
+                    <Int16/>
+                    <dimension size="28"/>
+                </Array>
+                <Array name="e_vnpe">
+                    <Int16/>
+                    <dimension size="28"/>
+                </Array>
+            </Structure>
+        </Structure>
+        <Structure name="data_record_25">
+            <Structure name="prologue">
+                <Int16 name="KINST"/>
+                <Int16 name="KINDAT"/>
+                <UInt16 name="IBYRT"/>
+                <UInt16 name="IBDTT"/>
+                <UInt16 name="IBHMT"/>
+                <UInt16 name="IBCST"/>
+                <UInt16 name="IEYRT"/>
+                <UInt16 name="IEDTT"/>
+                <UInt16 name="IEHMT"/>
+                <UInt16 name="IECST"/>
+            </Structure>
+            <Structure name="JPAR">
+                <Int16 name="gdlatr"/>
+                <Int16 name="gdlonr"/>
+                <Int16 name="wavlen"/>
+                <Int16 name="gdra"/>
+            </Structure>
+            <Structure name="MPAR">
+                <Array name="year">
+                    <Int16/>
+                    <dimension size="43"/>
+                </Array>
+                <Array name="dayno">
+                    <Int16/>
+                    <dimension size="43"/>
+                </Array>
+                <Array name="uth">
+                    <Int16/>
+                    <dimension size="43"/>
+                </Array>
+                <Array name="azm">
+                    <Int16/>
+                    <dimension size="43"/>
+                </Array>
+                <Array name="elm">
+                    <Int16/>
+                    <dimension size="43"/>
+                </Array>
+                <Array name="vnlu">
+                    <Int16/>
+                    <dimension size="43"/>
+                </Array>
+                <Array name="e_vnlu">
+                    <Int16/>
+                    <dimension size="43"/>
+                </Array>
+                <Array name="tn">
+                    <Int16/>
+                    <dimension size="43"/>
+                </Array>
+                <Array name="e_tn">
+                    <Int16/>
+                    <dimension size="43"/>
+                </Array>
+                <Array name="nsmpti">
+                    <Int16/>
+                    <dimension size="43"/>
+                </Array>
+                <Array name="rbrl">
+                    <Int16/>
+                    <dimension size="43"/>
+                </Array>
+                <Array name="chip1">
+                    <Int16/>
+                    <dimension size="43"/>
+                </Array>
+                <Array name="vnn">
+                    <Int16/>
+                    <dimension size="43"/>
+                </Array>
+                <Array name="e_vnn">
+                    <Int16/>
+                    <dimension size="43"/>
+                </Array>
+                <Array name="vne">
+                    <Int16/>
+                    <dimension size="43"/>
+                </Array>
+                <Array name="e_vne">
+                    <Int16/>
+                    <dimension size="43"/>
+                </Array>
+            </Structure>
+        </Structure>
+        <Structure name="data_record_26">
+            <Structure name="prologue">
+                <Int16 name="KINST"/>
+                <Int16 name="KINDAT"/>
+                <UInt16 name="IBYRT"/>
+                <UInt16 name="IBDTT"/>
+                <UInt16 name="IBHMT"/>
+                <UInt16 name="IBCST"/>
+                <UInt16 name="IEYRT"/>
+                <UInt16 name="IEDTT"/>
+                <UInt16 name="IEHMT"/>
+                <UInt16 name="IECST"/>
+            </Structure>
+            <Structure name="JPAR">
+                <Int16 name="gdlatr"/>
+                <Int16 name="gdlonr"/>
+                <Int16 name="wavlen"/>
+                <Int16 name="gdra"/>
+                <Int16 name="gmra"/>
+                <Int16 name="bdec"/>
+            </Structure>
+            <Structure name="MPAR">
+                <Array name="year">
+                    <Int16/>
+                    <dimension size="31"/>
+                </Array>
+                <Array name="dayno">
+                    <Int16/>
+                    <dimension size="31"/>
+                </Array>
+                <Array name="uth">
+                    <Int16/>
+                    <dimension size="31"/>
+                </Array>
+                <Array name="az1">
+                    <Int16/>
+                    <dimension size="31"/>
+                </Array>
+                <Array name="az2">
+                    <Int16/>
+                    <dimension size="31"/>
+                </Array>
+                <Array name="elm">
+                    <Int16/>
+                    <dimension size="31"/>
+                </Array>
+                <Array name="vnn">
+                    <Int16/>
+                    <dimension size="31"/>
+                </Array>
+                <Array name="e_vnn">
+                    <Int16/>
+                    <dimension size="31"/>
+                </Array>
+                <Array name="vne">
+                    <Int16/>
+                    <dimension size="31"/>
+                </Array>
+                <Array name="e_vne">
+                    <Int16/>
+                    <dimension size="31"/>
+                </Array>
+                <Array name="vnpnh">
+                    <Int16/>
+                    <dimension size="31"/>
+                </Array>
+                <Array name="e_vnpnh">
+                    <Int16/>
+                    <dimension size="31"/>
+                </Array>
+                <Array name="vnpe">
+                    <Int16/>
+                    <dimension size="31"/>
+                </Array>
+                <Array name="e_vnpe">
+                    <Int16/>
+                    <dimension size="31"/>
+                </Array>
+            </Structure>
+        </Structure>
+        <Structure name="data_record_27">
+            <Structure name="prologue">
+                <Int16 name="KINST"/>
+                <Int16 name="KINDAT"/>
+                <UInt16 name="IBYRT"/>
+                <UInt16 name="IBDTT"/>
+                <UInt16 name="IBHMT"/>
+                <UInt16 name="IBCST"/>
+                <UInt16 name="IEYRT"/>
+                <UInt16 name="IEDTT"/>
+                <UInt16 name="IEHMT"/>
+                <UInt16 name="IECST"/>
+            </Structure>
+            <Structure name="JPAR">
+                <Int16 name="gdlatr"/>
+                <Int16 name="gdlonr"/>
+                <Int16 name="wavlen"/>
+                <Int16 name="gdra"/>
+            </Structure>
+            <Structure name="MPAR">
+                <Array name="year">
+                    <Int16/>
+                    <dimension size="43"/>
+                </Array>
+                <Array name="dayno">
+                    <Int16/>
+                    <dimension size="43"/>
+                </Array>
+                <Array name="uth">
+                    <Int16/>
+                    <dimension size="43"/>
+                </Array>
+                <Array name="azm">
+                    <Int16/>
+                    <dimension size="43"/>
+                </Array>
+                <Array name="elm">
+                    <Int16/>
+                    <dimension size="43"/>
+                </Array>
+                <Array name="vnlu">
+                    <Int16/>
+                    <dimension size="43"/>
+                </Array>
+                <Array name="e_vnlu">
+                    <Int16/>
+                    <dimension size="43"/>
+                </Array>
+                <Array name="tn">
+                    <Int16/>
+                    <dimension size="43"/>
+                </Array>
+                <Array name="e_tn">
+                    <Int16/>
+                    <dimension size="43"/>
+                </Array>
+                <Array name="nsmpti">
+                    <Int16/>
+                    <dimension size="43"/>
+                </Array>
+                <Array name="rbrl">
+                    <Int16/>
+                    <dimension size="43"/>
+                </Array>
+                <Array name="chip1">
+                    <Int16/>
+                    <dimension size="43"/>
+                </Array>
+                <Array name="vnn">
+                    <Int16/>
+                    <dimension size="43"/>
+                </Array>
+                <Array name="e_vnn">
+                    <Int16/>
+                    <dimension size="43"/>
+                </Array>
+                <Array name="vne">
+                    <Int16/>
+                    <dimension size="43"/>
+                </Array>
+                <Array name="e_vne">
+                    <Int16/>
+                    <dimension size="43"/>
+                </Array>
+            </Structure>
+        </Structure>
+        <Structure name="data_record_28">
+            <Structure name="prologue">
+                <Int16 name="KINST"/>
+                <Int16 name="KINDAT"/>
+                <UInt16 name="IBYRT"/>
+                <UInt16 name="IBDTT"/>
+                <UInt16 name="IBHMT"/>
+                <UInt16 name="IBCST"/>
+                <UInt16 name="IEYRT"/>
+                <UInt16 name="IEDTT"/>
+                <UInt16 name="IEHMT"/>
+                <UInt16 name="IECST"/>
+            </Structure>
+            <Structure name="JPAR">
+                <Int16 name="gdlatr"/>
+                <Int16 name="gdlonr"/>
+                <Int16 name="wavlen"/>
+                <Int16 name="gdra"/>
+                <Int16 name="gmra"/>
+                <Int16 name="bdec"/>
+            </Structure>
+            <Structure name="MPAR">
+                <Array name="year">
+                    <Int16/>
+                    <dimension size="31"/>
+                </Array>
+                <Array name="dayno">
+                    <Int16/>
+                    <dimension size="31"/>
+                </Array>
+                <Array name="uth">
+                    <Int16/>
+                    <dimension size="31"/>
+                </Array>
+                <Array name="az1">
+                    <Int16/>
+                    <dimension size="31"/>
+                </Array>
+                <Array name="az2">
+                    <Int16/>
+                    <dimension size="31"/>
+                </Array>
+                <Array name="elm">
+                    <Int16/>
+                    <dimension size="31"/>
+                </Array>
+                <Array name="vnn">
+                    <Int16/>
+                    <dimension size="31"/>
+                </Array>
+                <Array name="e_vnn">
+                    <Int16/>
+                    <dimension size="31"/>
+                </Array>
+                <Array name="vne">
+                    <Int16/>
+                    <dimension size="31"/>
+                </Array>
+                <Array name="e_vne">
+                    <Int16/>
+                    <dimension size="31"/>
+                </Array>
+                <Array name="vnpnh">
+                    <Int16/>
+                    <dimension size="31"/>
+                </Array>
+                <Array name="e_vnpnh">
+                    <Int16/>
+                    <dimension size="31"/>
+                </Array>
+                <Array name="vnpe">
+                    <Int16/>
+                    <dimension size="31"/>
+                </Array>
+                <Array name="e_vnpe">
+                    <Int16/>
+                    <dimension size="31"/>
+                </Array>
+            </Structure>
+        </Structure>
+        <Structure name="data_record_29">
+            <Structure name="prologue">
+                <Int16 name="KINST"/>
+                <Int16 name="KINDAT"/>
+                <UInt16 name="IBYRT"/>
+                <UInt16 name="IBDTT"/>
+                <UInt16 name="IBHMT"/>
+                <UInt16 name="IBCST"/>
+                <UInt16 name="IEYRT"/>
+                <UInt16 name="IEDTT"/>
+                <UInt16 name="IEHMT"/>
+                <UInt16 name="IECST"/>
+            </Structure>
+            <Structure name="JPAR">
+                <Int16 name="gdlatr"/>
+                <Int16 name="gdlonr"/>
+                <Int16 name="wavlen"/>
+                <Int16 name="gdra"/>
+            </Structure>
+            <Structure name="MPAR">
+                <Array name="year">
+                    <Int16/>
+                    <dimension size="33"/>
+                </Array>
+                <Array name="dayno">
+                    <Int16/>
+                    <dimension size="33"/>
+                </Array>
+                <Array name="uth">
+                    <Int16/>
+                    <dimension size="33"/>
+                </Array>
+                <Array name="azm">
+                    <Int16/>
+                    <dimension size="33"/>
+                </Array>
+                <Array name="elm">
+                    <Int16/>
+                    <dimension size="33"/>
+                </Array>
+                <Array name="vnlu">
+                    <Int16/>
+                    <dimension size="33"/>
+                </Array>
+                <Array name="e_vnlu">
+                    <Int16/>
+                    <dimension size="33"/>
+                </Array>
+                <Array name="tn">
+                    <Int16/>
+                    <dimension size="33"/>
+                </Array>
+                <Array name="e_tn">
+                    <Int16/>
+                    <dimension size="33"/>
+                </Array>
+                <Array name="nsmpti">
+                    <Int16/>
+                    <dimension size="33"/>
+                </Array>
+                <Array name="rbrl">
+                    <Int16/>
+                    <dimension size="33"/>
+                </Array>
+                <Array name="chip1">
+                    <Int16/>
+                    <dimension size="33"/>
+                </Array>
+                <Array name="vnn">
+                    <Int16/>
+                    <dimension size="33"/>
+                </Array>
+                <Array name="e_vnn">
+                    <Int16/>
+                    <dimension size="33"/>
+                </Array>
+                <Array name="vne">
+                    <Int16/>
+                    <dimension size="33"/>
+                </Array>
+                <Array name="e_vne">
+                    <Int16/>
+                    <dimension size="33"/>
+                </Array>
+            </Structure>
+        </Structure>
+        <Structure name="data_record_30">
+            <Structure name="prologue">
+                <Int16 name="KINST"/>
+                <Int16 name="KINDAT"/>
+                <UInt16 name="IBYRT"/>
+                <UInt16 name="IBDTT"/>
+                <UInt16 name="IBHMT"/>
+                <UInt16 name="IBCST"/>
+                <UInt16 name="IEYRT"/>
+                <UInt16 name="IEDTT"/>
+                <UInt16 name="IEHMT"/>
+                <UInt16 name="IECST"/>
+            </Structure>
+            <Structure name="JPAR">
+                <Int16 name="gdlatr"/>
+                <Int16 name="gdlonr"/>
+                <Int16 name="wavlen"/>
+                <Int16 name="gdra"/>
+                <Int16 name="gmra"/>
+                <Int16 name="bdec"/>
+            </Structure>
+            <Structure name="MPAR">
+                <Array name="year">
+                    <Int16/>
+                    <dimension size="24"/>
+                </Array>
+                <Array name="dayno">
+                    <Int16/>
+                    <dimension size="24"/>
+                </Array>
+                <Array name="uth">
+                    <Int16/>
+                    <dimension size="24"/>
+                </Array>
+                <Array name="az1">
+                    <Int16/>
+                    <dimension size="24"/>
+                </Array>
+                <Array name="az2">
+                    <Int16/>
+                    <dimension size="24"/>
+                </Array>
+                <Array name="elm">
+                    <Int16/>
+                    <dimension size="24"/>
+                </Array>
+                <Array name="vnn">
+                    <Int16/>
+                    <dimension size="24"/>
+                </Array>
+                <Array name="e_vnn">
+                    <Int16/>
+                    <dimension size="24"/>
+                </Array>
+                <Array name="vne">
+                    <Int16/>
+                    <dimension size="24"/>
+                </Array>
+                <Array name="e_vne">
+                    <Int16/>
+                    <dimension size="24"/>
+                </Array>
+                <Array name="vnpnh">
+                    <Int16/>
+                    <dimension size="24"/>
+                </Array>
+                <Array name="e_vnpnh">
+                    <Int16/>
+                    <dimension size="24"/>
+                </Array>
+                <Array name="vnpe">
+                    <Int16/>
+                    <dimension size="24"/>
+                </Array>
+                <Array name="e_vnpe">
+                    <Int16/>
+                    <dimension size="24"/>
+                </Array>
+            </Structure>
+        </Structure>
+        <Structure name="data_record_31">
+            <Structure name="prologue">
+                <Int16 name="KINST"/>
+                <Int16 name="KINDAT"/>
+                <UInt16 name="IBYRT"/>
+                <UInt16 name="IBDTT"/>
+                <UInt16 name="IBHMT"/>
+                <UInt16 name="IBCST"/>
+                <UInt16 name="IEYRT"/>
+                <UInt16 name="IEDTT"/>
+                <UInt16 name="IEHMT"/>
+                <UInt16 name="IECST"/>
+            </Structure>
+            <Structure name="JPAR">
+                <Int16 name="gdlatr"/>
+                <Int16 name="gdlonr"/>
+                <Int16 name="wavlen"/>
+                <Int16 name="gdra"/>
+            </Structure>
+            <Structure name="MPAR">
+                <Array name="year">
+                    <Int16/>
+                    <dimension size="34"/>
+                </Array>
+                <Array name="dayno">
+                    <Int16/>
+                    <dimension size="34"/>
+                </Array>
+                <Array name="uth">
+                    <Int16/>
+                    <dimension size="34"/>
+                </Array>
+                <Array name="azm">
+                    <Int16/>
+                    <dimension size="34"/>
+                </Array>
+                <Array name="elm">
+                    <Int16/>
+                    <dimension size="34"/>
+                </Array>
+                <Array name="vnlu">
+                    <Int16/>
+                    <dimension size="34"/>
+                </Array>
+                <Array name="e_vnlu">
+                    <Int16/>
+                    <dimension size="34"/>
+                </Array>
+                <Array name="tn">
+                    <Int16/>
+                    <dimension size="34"/>
+                </Array>
+                <Array name="e_tn">
+                    <Int16/>
+                    <dimension size="34"/>
+                </Array>
+                <Array name="nsmpti">
+                    <Int16/>
+                    <dimension size="34"/>
+                </Array>
+                <Array name="rbrl">
+                    <Int16/>
+                    <dimension size="34"/>
+                </Array>
+                <Array name="chip1">
+                    <Int16/>
+                    <dimension size="34"/>
+                </Array>
+                <Array name="vnn">
+                    <Int16/>
+                    <dimension size="34"/>
+                </Array>
+                <Array name="e_vnn">
+                    <Int16/>
+                    <dimension size="34"/>
+                </Array>
+                <Array name="vne">
+                    <Int16/>
+                    <dimension size="34"/>
+                </Array>
+                <Array name="e_vne">
+                    <Int16/>
+                    <dimension size="34"/>
+                </Array>
+            </Structure>
+        </Structure>
+        <Structure name="data_record_32">
+            <Structure name="prologue">
+                <Int16 name="KINST"/>
+                <Int16 name="KINDAT"/>
+                <UInt16 name="IBYRT"/>
+                <UInt16 name="IBDTT"/>
+                <UInt16 name="IBHMT"/>
+                <UInt16 name="IBCST"/>
+                <UInt16 name="IEYRT"/>
+                <UInt16 name="IEDTT"/>
+                <UInt16 name="IEHMT"/>
+                <UInt16 name="IECST"/>
+            </Structure>
+            <Structure name="JPAR">
+                <Int16 name="gdlatr"/>
+                <Int16 name="gdlonr"/>
+                <Int16 name="wavlen"/>
+                <Int16 name="gdra"/>
+                <Int16 name="gmra"/>
+                <Int16 name="bdec"/>
+            </Structure>
+            <Structure name="MPAR">
+                <Array name="year">
+                    <Int16/>
+                    <dimension size="25"/>
+                </Array>
+                <Array name="dayno">
+                    <Int16/>
+                    <dimension size="25"/>
+                </Array>
+                <Array name="uth">
+                    <Int16/>
+                    <dimension size="25"/>
+                </Array>
+                <Array name="az1">
+                    <Int16/>
+                    <dimension size="25"/>
+                </Array>
+                <Array name="az2">
+                    <Int16/>
+                    <dimension size="25"/>
+                </Array>
+                <Array name="elm">
+                    <Int16/>
+                    <dimension size="25"/>
+                </Array>
+                <Array name="vnn">
+                    <Int16/>
+                    <dimension size="25"/>
+                </Array>
+                <Array name="e_vnn">
+                    <Int16/>
+                    <dimension size="25"/>
+                </Array>
+                <Array name="vne">
+                    <Int16/>
+                    <dimension size="25"/>
+                </Array>
+                <Array name="e_vne">
+                    <Int16/>
+                    <dimension size="25"/>
+                </Array>
+                <Array name="vnpnh">
+                    <Int16/>
+                    <dimension size="25"/>
+                </Array>
+                <Array name="e_vnpnh">
+                    <Int16/>
+                    <dimension size="25"/>
+                </Array>
+                <Array name="vnpe">
+                    <Int16/>
+                    <dimension size="25"/>
+                </Array>
+                <Array name="e_vnpe">
+                    <Int16/>
+                    <dimension size="25"/>
+                </Array>
+            </Structure>
+        </Structure>
+    </Structure>
+
+    <dataBLOB href=""/>
+</Dataset>

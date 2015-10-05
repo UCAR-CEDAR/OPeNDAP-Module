@@ -1,0 +1,302 @@
+Attributes {
+    Data_Descriptor_for_KINDAT_7001_KINST_5340 {
+        KINST {
+            String KINST "5340";
+            String NAME "Millstone Hill Fabry-Perot";
+            String PREFIX "MFP";
+            String LATITUDE "42 36'43\"";
+            String LONGITUDE "-71 29'05\"";
+            String ALTITUDE "0.146";
+        }
+        JPAR_0 {
+            String CODE "153";
+            String SHORTNAME "Ref Gd Lat";
+            String LONGNAME "Reference geod latitude (N hemi=pos)";
+            String SCALE "1.E-02";
+            String UNIT "deg";
+        }
+        JPAR_1 {
+            String CODE "156";
+            String SHORTNAME "Ref Gd Lon";
+            String LONGNAME "Reference geodetic longitude";
+            String SCALE "1.E-02";
+            String UNIT "deg";
+        }
+        JPAR_2 {
+            String CODE "2400";
+            String SHORTNAME "Wavelength";
+            String LONGNAME "Wavelength";
+            String SCALE "1.E-01";
+            String UNIT "nm";
+        }
+        JPAR_3 {
+            String CODE "1010";
+            String SHORTNAME "Rot angl-gg";
+            String LONGNAME "Geographic unit vector rotation angle";
+            String SCALE "1.E-02";
+            String UNIT "deg";
+        }
+        MPAR_0 {
+            String CODE "10";
+            String SHORTNAME "Yr";
+            String LONGNAME "Year (universal time)";
+            String SCALE "1.";
+            String UNIT "yr";
+        }
+        MPAR_1 {
+            String CODE "21";
+            String SHORTNAME "Day No";
+            String LONGNAME "Day number of year (universal time)";
+            String SCALE "1.";
+            String UNIT "day";
+        }
+        MPAR_2 {
+            String CODE "34";
+            String SHORTNAME "Time > 0UT";
+            String LONGNAME "Time past 0000 UT";
+            String SCALE "1.E-03";
+            String UNIT "hour";
+        }
+        MPAR_3 {
+            String CODE "130";
+            String SHORTNAME "Az";
+            String LONGNAME "Mean azimuth angle (0=geog N,90=east)";
+            String SCALE "1.E-02";
+            String UNIT "deg";
+        }
+        MPAR_4 {
+            String CODE "140";
+            String SHORTNAME "El";
+            String LONGNAME "Elevation angle (0=horizontal,90=vert)";
+            String SCALE "1.E-02";
+            String UNIT "deg";
+        }
+        MPAR_5 {
+            String CODE "800";
+            String SHORTNAME "Vnlos";
+            String LONGNAME "Line of sight neutral vel (pos = away)";
+            String SCALE "1.";
+            String UNIT "m/s";
+        }
+        MPAR_6 {
+            String CODE "-800";
+            String SHORTNAME "error Vnlos";
+            String LONGNAME "ERROR FOR Line of sight neutral vel (pos = away)";
+            String SCALE "1.";
+            String UNIT "m/s";
+        }
+        MPAR_7 {
+            String CODE "810";
+            String SHORTNAME "Tn";
+            String LONGNAME "Neutral temperature";
+            String SCALE "1.";
+            String UNIT "K";
+        }
+        MPAR_8 {
+            String CODE "-810";
+            String SHORTNAME "error Tn";
+            String LONGNAME "ERROR FOR Neutral temperature";
+            String SCALE "1.";
+            String UNIT "K";
+        }
+        MPAR_9 {
+            String CODE "415";
+            String SHORTNAME "Smpl Tm Usd";
+            String LONGNAME "No smpls in time avg; or 414 incremnt";
+            String SCALE "1.";
+            String UNIT "";
+        }
+        MPAR_10 {
+            String CODE "2506";
+            String SHORTNAME "lg(rel br)";
+            String LONGNAME "log10 (Relative line/band brightness)";
+            String SCALE "1.E-03";
+            String UNIT "lg";
+        }
+        MPAR_11 {
+            String CODE "421";
+            String SHORTNAME "Chi Sqr";
+            String LONGNAME "Reduced-chi square of fit";
+            String SCALE "1.E-01";
+            String UNIT "";
+        }
+        MPAR_12 {
+            String CODE "1420";
+            String SHORTNAME "Vn2";
+            String LONGNAME "Direction 2 Neutral wind (northward)";
+            String SCALE "1.";
+            String UNIT "m/s";
+        }
+        MPAR_13 {
+            String CODE "-1420";
+            String SHORTNAME "error Vn2";
+            String LONGNAME "ERROR FOR Direction 2 Neutral wind (northward)";
+            String SCALE "1.";
+            String UNIT "m/s";
+        }
+        MPAR_14 {
+            String CODE "1410";
+            String SHORTNAME "Vn1";
+            String LONGNAME "Direction 1 Neutral wind (eastward)";
+            String SCALE "1.";
+            String UNIT "m/s";
+        }
+        MPAR_15 {
+            String CODE "-1410";
+            String SHORTNAME "error Vn1";
+            String LONGNAME "ERROR FOR Direction 1 Neutral wind (eastward)";
+            String SCALE "1.";
+            String UNIT "m/s";
+        }
+    }
+    Data_Descriptor_for_KINDAT_17001_KINST_5340 {
+        KINST {
+            String KINST "5340";
+            String NAME "Millstone Hill Fabry-Perot";
+            String PREFIX "MFP";
+            String LATITUDE "42 36'43\"";
+            String LONGITUDE "-71 29'05\"";
+            String ALTITUDE "0.146";
+        }
+        JPAR_0 {
+            String CODE "153";
+            String SHORTNAME "Ref Gd Lat";
+            String LONGNAME "Reference geod latitude (N hemi=pos)";
+            String SCALE "1.E-02";
+            String UNIT "deg";
+        }
+        JPAR_1 {
+            String CODE "156";
+            String SHORTNAME "Ref Gd Lon";
+            String LONGNAME "Reference geodetic longitude";
+            String SCALE "1.E-02";
+            String UNIT "deg";
+        }
+        JPAR_2 {
+            String CODE "2400";
+            String SHORTNAME "Wavelength";
+            String LONGNAME "Wavelength";
+            String SCALE "1.E-01";
+            String UNIT "nm";
+        }
+        JPAR_3 {
+            String CODE "1010";
+            String SHORTNAME "Rot angl-gg";
+            String LONGNAME "Geographic unit vector rotation angle";
+            String SCALE "1.E-02";
+            String UNIT "deg";
+        }
+        JPAR_4 {
+            String CODE "1020";
+            String SHORTNAME "Rot angl-mg";
+            String LONGNAME "Magnetic unit vector rotation angle";
+            String SCALE "1.E-02";
+            String UNIT "deg";
+        }
+        JPAR_5 {
+            String CODE "213";
+            String SHORTNAME "Bdec";
+            String LONGNAME "Geomagnetic field east declination";
+            String SCALE "1.E-02";
+            String UNIT "deg";
+        }
+        MPAR_0 {
+            String CODE "10";
+            String SHORTNAME "Yr";
+            String LONGNAME "Year (universal time)";
+            String SCALE "1.";
+            String UNIT "yr";
+        }
+        MPAR_1 {
+            String CODE "21";
+            String SHORTNAME "Day No";
+            String LONGNAME "Day number of year (universal time)";
+            String SCALE "1.";
+            String UNIT "day";
+        }
+        MPAR_2 {
+            String CODE "34";
+            String SHORTNAME "Time > 0UT";
+            String LONGNAME "Time past 0000 UT";
+            String SCALE "1.E-03";
+            String UNIT "hour";
+        }
+        MPAR_3 {
+            String CODE "132";
+            String SHORTNAME "Beg Az";
+            String LONGNAME "Beginning azimuth (0=geog N,90=east)";
+            String SCALE "1.E-02";
+            String UNIT "deg";
+        }
+        MPAR_4 {
+            String CODE "133";
+            String SHORTNAME "End Az";
+            String LONGNAME "Ending azimuth (0=geog N,90=east)";
+            String SCALE "1.E-02";
+            String UNIT "deg";
+        }
+        MPAR_5 {
+            String CODE "140";
+            String SHORTNAME "El";
+            String LONGNAME "Elevation angle (0=horizontal,90=vert)";
+            String SCALE "1.E-02";
+            String UNIT "deg";
+        }
+        MPAR_6 {
+            String CODE "1420";
+            String SHORTNAME "Vn2";
+            String LONGNAME "Direction 2 Neutral wind (northward)";
+            String SCALE "1.";
+            String UNIT "m/s";
+        }
+        MPAR_7 {
+            String CODE "-1420";
+            String SHORTNAME "error Vn2";
+            String LONGNAME "ERROR FOR Direction 2 Neutral wind (northward)";
+            String SCALE "1.";
+            String UNIT "m/s";
+        }
+        MPAR_8 {
+            String CODE "1410";
+            String SHORTNAME "Vn1";
+            String LONGNAME "Direction 1 Neutral wind (eastward)";
+            String SCALE "1.";
+            String UNIT "m/s";
+        }
+        MPAR_9 {
+            String CODE "-1410";
+            String SHORTNAME "error Vn1";
+            String LONGNAME "ERROR FOR Direction 1 Neutral wind (eastward)";
+            String SCALE "1.";
+            String UNIT "m/s";
+        }
+        MPAR_10 {
+            String CODE "1455";
+            String SHORTNAME "Vn5h";
+            String LONGNAME "Direction 5 Neutral wind horizontl comp";
+            String SCALE "1.";
+            String UNIT "m/s";
+        }
+        MPAR_11 {
+            String CODE "-1455";
+            String SHORTNAME "error Vn5h";
+            String LONGNAME "ERROR FOR Direction 5 Neutral wind horizontl comp";
+            String SCALE "1.";
+            String UNIT "m/s";
+        }
+        MPAR_12 {
+            String CODE "1440";
+            String SHORTNAME "Vn4";
+            String LONGNAME "Direction 4 Neutral wind (perp east)";
+            String SCALE "1.";
+            String UNIT "m/s";
+        }
+        MPAR_13 {
+            String CODE "-1440";
+            String SHORTNAME "error Vn4";
+            String LONGNAME "ERROR FOR Direction 4 Neutral wind (perp east)";
+            String SCALE "1.";
+            String UNIT "m/s";
+        }
+    }
+}
